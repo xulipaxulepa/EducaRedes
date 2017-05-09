@@ -22,10 +22,32 @@ cc.Class({
             type: cc.Node
         },
         
-        button: {
+        button1: {
+            default: null,
+            type: cc.Node
+        },
+        
+        button2: {
+            default: null,
+            type: cc.Node
+        },
+        
+        button3: {
+            default: null,
+            type: cc.Node
+        },
+        
+        button4: {
             default: null,
             type: cc.Node
         }
+    },
+    
+    mudaButton: function(){
+        this.button1.setPosition(596, -244);
+        this.button2.setPosition(596, -244);
+        this.button3.setPosition(596, -244);
+        this.button4.setPosition(326, -244);
     },
     
     showProfButton: function(){
@@ -33,7 +55,7 @@ cc.Class({
         this.prof2.setOpacity(0);
         this.prof3.setOpacity(0);
         this.prof4.setOpacity(1000);
-        this.button.setPosition(326, -244);
+        this.mudaButton();
     },
 
     // use this for initialization
