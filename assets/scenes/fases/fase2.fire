@@ -369,7 +369,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 0,
-      "height": 40
+      "height": 35
     },
     "_children": [],
     "_rotationX": 0,
@@ -379,7 +379,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -198
+      "y": -177
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -406,9 +406,9 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 40,
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_actualFontSize": 35,
+    "_fontSize": 35,
+    "_lineHeight": 35,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -448,7 +448,7 @@
     "_rotationX": 0,
     "_rotationY": 0,
     "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 347,

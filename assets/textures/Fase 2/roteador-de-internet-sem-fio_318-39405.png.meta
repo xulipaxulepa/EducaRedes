@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "0b3d16ba-ce7c-4941-af8b-ca2ffeba23cc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "roteador-de-internet-sem-fio_318-39405": {
+      "ver": "1.0.3",
+      "uuid": "aa8bec5d-d96c-44ff-b0f6-746192f03344",
+      "rawTextureUuid": "0b3d16ba-ce7c-4941-af8b-ca2ffeba23cc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 626,
+      "height": 626,
+      "rawWidth": 626,
+      "rawHeight": 626,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

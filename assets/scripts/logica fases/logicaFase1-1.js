@@ -104,6 +104,12 @@ cc.Class({
         this.player.runAction(cc.sequence(desce, frente));
     },
     
+    vaiFrentePlayer: function(){
+        this.player.stopAllActions();
+        var frente = cc.moveBy(300, cc.p(10000, 0));
+        this.player.runAction(frente);
+    },
+    
     vaiPraFrente: function(){
     var frente = cc.moveBy(300, cc.p(10000, 0));
         return frente;
@@ -201,11 +207,19 @@ cc.Class({
             "ja que possui um conjunto de valores em um intervalo de tempo";
             this.contTexto += 1;
         } else if(this.contTexto == 2){
-            this.textoFase.string = "Visto a diferença entre os sinais\n"+
-            "e os conteudos visto nesta fase e em sala de aula\n"+
-            "responda agora o Quiz";
+            this.textoFase.string = "A camada de acesso a rede tambem fornece\n"+
+            "o serviço de  transformar  um  canal  de transmissão  bruta\n"+
+            "em  uma  linha  que  pareça  livre  de  erros  de  transmissão";
             this.contTexto += 1;
         } else if(this.contTexto == 3){
+            this.textoFase.string = "Oferecendo enquadramento de bits\n"+
+            "verificaçao de erros e protocolos que garantam a correçao de erros";
+            this.contTexto += 1;
+        }else if(this.contTexto == 4){
+            this.textoFase.string = "Visto os conteudos desta fase e em sala de aula\n"+
+            "responda agora o Quiz";
+            this.contTexto += 1;
+        } else if(this.contTexto == 5){
             this.textoFase.string = "";
             this.contTexto = 0;
             this.fase = 2;
