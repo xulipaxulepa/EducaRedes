@@ -27,6 +27,11 @@ cc.Class({
             type: cc.Node
         },
         
+        tabRoteamento: {
+            default: null,
+            type: cc.Node
+        },
+        
         roteador: {
             default: null,
             type: cc.Node
@@ -88,7 +93,29 @@ cc.Class({
         } else if(this.contTexto == 7){
             this.computador.setPosition(-379, 9);
             this.computador.setScale(0.1, 0.1);
-            this.textoFase.string = "O roteador...";
+            this.roteador.setScale(0.3, 0.3);
+            this.roteador.setPosition(0, 100);
+            this.textoFase.string = "O roteador neste cenario interliga\n"+
+            "a rede local com a rede externa, para que isso ocorra\n"+
+            "o roteador possui uma tabela de roteamento";
+            this.contTexto += 1;
+        } else if(this.contTexto == 8){
+            this.textoFase.string = "A tabela de roteamento possui\n"+
+            "o endereço da rede, a sua mascara e a qual interface\n"+
+            "ela esta conectada";
+            this.contTexto += 1;
+        } else if(this.contTexto == 9){
+            this.textoFase.string = "Vamos ver isso na pratica";
+            this.contTexto += 1;
+        } else if(this.contTexto == 10){
+            this.tabRoteamento.setPosition(312, 24);
+            this.textoFase.string = "A tabela de roteamento e preenchida\n"+
+            "a medida que os pacotes de informaçao vao chegando ao roteador";
+            this.contTexto += 1;
+        } else if(this.contTexto == 11){
+            this.textoFase.string = "O mini-jogo a seguir, te coloca na pele\n"+
+            "do roteador, tendo que preencher a tabela de roteamento\n"+ 
+            "e entregar os pacotes";
             this.contTexto += 1;
         }
     },
