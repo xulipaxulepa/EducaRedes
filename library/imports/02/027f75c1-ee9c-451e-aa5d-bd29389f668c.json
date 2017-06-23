@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cabo",
+    "texture": "52f27e19-d09d-4009-a707-1293a19417be",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      600,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      600,
+      50
+    ]
+  }
+}

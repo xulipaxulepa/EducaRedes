@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "label",
+    "default",
+    "type",
+    "Label",
+    "contador",
+    "mudaTexto",
+    "string",
+    "director",
+    "loadScene",
+    "onLoad"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,eAAO;AACHC,qBAAS,IADN;AAEHC,kBAAMP,GAAGQ;AAFN,SADC;;AAMRC,kBAAU;AANF,KAHP;;AAYLC,eAAW,qBAAU;AACjB,YAAG,KAAKD,QAAL,KAAkB,CAArB,EAAuB;AACnB,iBAAKJ,KAAL,CAAWM,MAAX,GAAoB,2CACpB,mDADoB,GAEpB,uCAFA;AAGA,iBAAKF,QAAL,IAAiB,CAAjB;AACH,SALD,MAKM,IAAG,KAAKA,QAAL,IAAiB,CAApB,EAAsB;AACxB,iBAAKJ,KAAL,CAAWM,MAAX,GAAoB,iDACpB,iCADoB,GAEpB,8BAFA;AAGA,iBAAKF,QAAL,IAAiB,CAAjB;AACH,SALK,MAKC,IAAG,KAAKA,QAAL,IAAiB,CAApB,EAAsB;AACzBT,eAAGY,QAAH,CAAYC,SAAZ,CAAsB,WAAtB;AACH;AACJ,KA1BI;;AA4BL;AACAC,YAAQ,kBAAY;AAChB,aAAKL,QAAL,GAAgB,CAAhB;AACA,aAAKJ,KAAL,CAAWM,MAAX,GAAoB,oCACpB,6CADA;AAGH;;AAlCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        label: {\r\n            default: null,\r\n            type: cc.Label\r\n        },\r\n        \r\n        contador: 0\r\n    },\r\n    \r\n    mudaTexto: function(){\r\n        if(this.contador === 0){\r\n            this.label.string = 'A  camada  de  transporte estabelece\\n'+  \r\n            'uma  conexão  fim  a  fim  (conexão  confiável)\\n'+ \r\n            'entre a origem e o destino dos dados.';\r\n            this.contador += 1;\r\n        }else if(this.contador == 1){\r\n            this.label.string = 'os  protocolos  na  camada  de  transporte\\n'+\r\n            'podem resolver problemas como\\n'+ \r\n            'confiabilidade e integridade';\r\n            this.contador += 1;\r\n        } else if(this.contador == 2){\r\n            cc.director.loadScene(\"jogoFase3\");\r\n        } \r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.contador = 0;\r\n        this.label.string = 'Ola, eu sou o professor Nect!\\n'+\r\n        'Eu vou te ensinar sobre a camada Transporte';\r\n\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
+  ]
+}

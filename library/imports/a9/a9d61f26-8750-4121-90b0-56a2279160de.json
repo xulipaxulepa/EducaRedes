@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "prof camada1",
+    "texture": "beea903e-b97d-4268-b6a4-51b41d755b07",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1350,
+      2050
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1350,
+      2050
+    ]
+  }
+}

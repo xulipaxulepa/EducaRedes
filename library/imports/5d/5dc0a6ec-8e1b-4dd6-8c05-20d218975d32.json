@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btnSelectStage",
+    "texture": "dead893b-5230-4268-beb2-b2e30151185b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      400,
+      150
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      400,
+      150
+    ]
+  }
+}

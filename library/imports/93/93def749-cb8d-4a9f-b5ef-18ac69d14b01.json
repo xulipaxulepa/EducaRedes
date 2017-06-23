@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "textwrapper",
+    "texture": "42199a1e-1e63-4de6-9780-e56517cde4f2",
+    "atlas": "",
+    "rect": [
+      0,
+      4,
+      640,
+      296
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      640,
+      300
+    ]
+  }
+}

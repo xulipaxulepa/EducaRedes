@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ipstabela",
+    "texture": "c09f46bb-6fa8-4073-9cfa-ade9d8cbf848",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      590,
+      65
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      590,
+      65
+    ]
+  }
+}

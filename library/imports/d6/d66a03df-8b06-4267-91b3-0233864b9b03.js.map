@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "timer",
+    "duracaoLogo",
+    "onLoad",
+    "vaiPraMain",
+    "director",
+    "loadScene",
+    "update",
+    "dt"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,eAAO,CADC;;AAGRC,qBAAa;AAHL,KAHP;;AASL;AACAC,YAAQ,kBAAY;AAChB,aAAKF,KAAL,GAAa,CAAb;AAEH,KAbI;;AAeLG,gBAAY,sBAAU;AAClBR,WAAGS,QAAH,CAAYC,SAAZ,CAAsB,MAAtB;AACH,KAjBI;;AAmBL;AACAC,YAAQ,gBAAUC,EAAV,EAAc;AAClB,YAAI,KAAKP,KAAL,GAAa,KAAKC,WAAtB,EAAmC;AAC/B,iBAAKE,UAAL;AAEH;AACD,aAAKH,KAAL,IAAcO,EAAd;AAEH;AA3BI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        timer: 0,\r\n        \r\n        duracaoLogo: 0,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.timer = 0;\r\n\r\n    },\r\n    \r\n    vaiPraMain: function(){\r\n        cc.director.loadScene(\"main\");\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    update: function (dt) {\r\n        if (this.timer > this.duracaoLogo) {\r\n            this.vaiPraMain();\r\n            \r\n        }\r\n        this.timer += dt;\r\n\r\n    },\r\n});\r\n"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "respostaserrada",
+    "texture": "7284b34f-8244-4fd1-b2b2-39bc1b17602d",
+    "atlas": "",
+    "rect": [
+      33,
+      29,
+      571,
+      227
+    ],
+    "offset": [
+      -1.5,
+      7.5
+    ],
+    "originalSize": [
+      640,
+      300
+    ]
+  }
+}

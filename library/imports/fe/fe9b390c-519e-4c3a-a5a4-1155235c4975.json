@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tabela roteamento",
+    "texture": "d9488ae6-7df8-4f6c-b084-62c1ccb5f726",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      593,
+      396
+    ],
+    "offset": [
+      -1.5,
+      0
+    ],
+    "originalSize": [
+      600,
+      400
+    ]
+  }
+}

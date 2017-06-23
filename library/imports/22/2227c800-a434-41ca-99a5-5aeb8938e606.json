@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btnOpcoes",
+    "texture": "4be3bd15-68c1-49d4-91e6-153fb5868c21",
+    "atlas": "",
+    "rect": [
+      54,
+      111,
+      460,
+      177
+    ],
+    "offset": [
+      -36,
+      40.5
+    ],
+    "originalSize": [
+      640,
+      480
+    ]
+  }
+}

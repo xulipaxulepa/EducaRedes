@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "alvo",
+    "texture": "7fe10eeb-a685-41f4-bf76-27e199d8054d",
+    "atlas": "",
+    "rect": [
+      70,
+      72,
+      253,
+      253
+    ],
+    "offset": [
+      -3.5,
+      1.5
+    ],
+    "originalSize": [
+      400,
+      400
+    ]
+  }
+}

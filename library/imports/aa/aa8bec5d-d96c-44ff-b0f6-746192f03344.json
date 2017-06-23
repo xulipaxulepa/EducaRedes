@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "roteador-de-internet-sem-fio_318-39405",
+    "texture": "0b3d16ba-ce7c-4941-af8b-ca2ffeba23cc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      626,
+      626
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      626,
+      626
+    ]
+  }
+}

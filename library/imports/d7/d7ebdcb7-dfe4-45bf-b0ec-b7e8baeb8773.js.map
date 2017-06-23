@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "prof1",
+    "default",
+    "type",
+    "Node",
+    "prof2",
+    "prof3",
+    "prof4",
+    "button1",
+    "button2",
+    "button3",
+    "button4",
+    "mudaButton",
+    "setPosition",
+    "showProfButton",
+    "setOpacity",
+    "onLoad"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,eAAO;AACHC,qBAAS,IADN;AAEHC,kBAAMP,GAAGQ;AAFN,SADC;;AAMRC,eAAO;AACHH,qBAAS,IADN;AAEHC,kBAAMP,GAAGQ;AAFN,SANC;;AAWRE,eAAO;AACHJ,qBAAS,IADN;AAEHC,kBAAMP,GAAGQ;AAFN,SAXC;;AAgBRG,eAAO;AACHL,qBAAS,IADN;AAEHC,kBAAMP,GAAGQ;AAFN,SAhBC;;AAqBRI,iBAAS;AACLN,qBAAS,IADJ;AAELC,kBAAMP,GAAGQ;AAFJ,SArBD;;AA0BRK,iBAAS;AACLP,qBAAS,IADJ;AAELC,kBAAMP,GAAGQ;AAFJ,SA1BD;;AA+BRM,iBAAS;AACLR,qBAAS,IADJ;AAELC,kBAAMP,GAAGQ;AAFJ,SA/BD;;AAoCRO,iBAAS;AACLT,qBAAS,IADJ;AAELC,kBAAMP,GAAGQ;AAFJ;;AApCD,KAHP;;AA8CLQ,gBAAY,sBAAU;AAClB,aAAKJ,OAAL,CAAaK,WAAb,CAAyB,GAAzB,EAA8B,CAAC,GAA/B;AACA,aAAKJ,OAAL,CAAaI,WAAb,CAAyB,GAAzB,EAA8B,CAAC,GAA/B;AACA,aAAKH,OAAL,CAAaG,WAAb,CAAyB,GAAzB,EAA8B,CAAC,GAA/B;AACA,aAAKF,OAAL,CAAaE,WAAb,CAAyB,GAAzB,EAA8B,CAAC,GAA/B;AACH,KAnDI;;AAqDLC,oBAAgB,0BAAU;AACtB,aAAKb,KAAL,CAAWc,UAAX,CAAsB,CAAtB;AACA,aAAKV,KAAL,CAAWU,UAAX,CAAsB,CAAtB;AACA,aAAKT,KAAL,CAAWS,UAAX,CAAsB,IAAtB;AACA,aAAKR,KAAL,CAAWQ,UAAX,CAAsB,CAAtB;AACA,aAAKH,UAAL;AACH,KA3DI;;AA6DL;AACAI,YAAQ,kBAAY,CAEnB;;AAhEI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        prof1: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        prof2: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        prof3: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        prof4: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        button1: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        button2: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        button3: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        \r\n        button4: {\r\n            default: null,\r\n            type: cc.Node\r\n        }\r\n\r\n    },\r\n    \r\n    mudaButton: function(){\r\n        this.button1.setPosition(596, -244);\r\n        this.button2.setPosition(596, -244);\r\n        this.button3.setPosition(326, -244);\r\n        this.button4.setPosition(596, -244);\r\n    },\r\n    \r\n    showProfButton: function(){\r\n        this.prof1.setOpacity(0);\r\n        this.prof2.setOpacity(0);\r\n        this.prof3.setOpacity(1000);\r\n        this.prof4.setOpacity(0);\r\n        this.mudaButton();\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
+  ]
+}

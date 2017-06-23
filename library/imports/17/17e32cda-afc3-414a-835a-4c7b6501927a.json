@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bgfase2",
+    "texture": "c5ed8c83-eca6-4ddb-9a52-ef417654b7c4",
+    "atlas": "",
+    "rect": [
+      9,
+      13,
+      782,
+      578
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      800,
+      600
+    ]
+  }
+}

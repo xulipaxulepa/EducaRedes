@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btnSair",
+    "texture": "aaebd9e3-2f2b-4da8-891a-52bcc09dd8a7",
+    "atlas": "",
+    "rect": [
+      54,
+      111,
+      460,
+      177
+    ],
+    "offset": [
+      -36,
+      40.5
+    ],
+    "originalSize": [
+      640,
+      480
+    ]
+  }
+}

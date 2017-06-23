@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "quadro",
+    "texture": "667cef31-b41d-45cf-88ba-cd54a7c64802",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      800,
+      600
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      800,
+      600
+    ]
+  }
+}

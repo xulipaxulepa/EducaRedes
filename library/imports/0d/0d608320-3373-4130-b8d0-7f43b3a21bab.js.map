@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "label",
+    "default",
+    "type",
+    "Label",
+    "contador",
+    "mudaTexto",
+    "string",
+    "director",
+    "loadScene",
+    "onLoad"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,eAAO;AACHC,qBAAS,IADN;AAEHC,kBAAMP,GAAGQ;AAFN,SADC;;AAMRC,kBAAU;AANF,KAHP;;AAYLC,eAAW,qBAAU;AACjB,YAAG,KAAKD,QAAL,KAAkB,CAArB,EAAuB;AACnB,iBAAKJ,KAAL,CAAWM,MAAX,GAAoB,0CACpB,uCADoB,GAEpB,2CAFoB,GAGpB,4CAHA;AAIA,iBAAKF,QAAL,IAAiB,CAAjB;AACH,SAND,MAMM,IAAG,KAAKA,QAAL,IAAiB,CAApB,EAAsB;AACxB,iBAAKJ,KAAL,CAAWM,MAAX,GAAoB,2CACpB,iCADoB,GAEpB,oBAFA;AAGA,iBAAKF,QAAL,IAAiB,CAAjB;AACH,SALK,MAKA,IAAG,KAAKA,QAAL,IAAiB,CAApB,EAAsB;AACxB,iBAAKJ,KAAL,CAAWM,MAAX,GAAoB,0CACpB,sDADoB,GAEpB,iDAFoB,GAGpB,iBAHA;AAIA,iBAAKF,QAAL,IAAiB,CAAjB;AACH,SANK,MAMC,IAAG,KAAKA,QAAL,IAAiB,CAApB,EAAsB;AACzBT,eAAGY,QAAH,CAAYC,SAAZ,CAAsB,WAAtB;AACH;AACJ,KAjCI;;AAmCL;AACAC,YAAQ,kBAAY;AAChB,aAAKL,QAAL,GAAgB,CAAhB;AACA,aAAKJ,KAAL,CAAWM,MAAX,GAAoB,uCACpB,4CADA;AAGH;;AAzCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        label: {\r\n            default: null,\r\n            type: cc.Label\r\n        },\r\n        \r\n        contador: 0\r\n    },\r\n    \r\n    mudaTexto: function(){\r\n        if(this.contador === 0){\r\n            this.label.string = 'A camada de aplicação é responsável\\n'+\r\n            'pelos protocolos de comunicação com\\n'+ \r\n            'as diferentes aplicações é a interface \\n'+\r\n            'entre os programas e a arquitetura TCP/IP.';\r\n            this.contador += 1;\r\n        }else if(this.contador == 1){\r\n            this.label.string = 'o dado é passado do programa de rede\\n'+\r\n            'no formato usado internamente\\n'+ \r\n            'por essa aplicação';\r\n            this.contador += 1;\r\n        }else if(this.contador == 2){\r\n            this.label.string = 'Um  exemplo  de  serviço  oferecido\\n'+  \r\n            'nessa  camada  é  o  recebimento  de  arquivosHTTP\\n'+\r\n            '(HyperText Transfer Protocol) para a exibição\\n'+ \r\n            'de páginas Web.';\r\n            this.contador += 1;\r\n        } else if(this.contador == 3){\r\n            cc.director.loadScene(\"jogoFase4\");\r\n        } \r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.contador = 0;\r\n        this.label.string = 'Ola, eu sou o professor Geraldo!\\n'+\r\n        'Eu vou te ensinar sobre a camada Aplicação';\r\n\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
+  ]
+}

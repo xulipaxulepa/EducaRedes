@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "playerfase1",
+    "texture": "ab026ec7-6ea2-4118-a91d-b647cbb58fb6",
+    "atlas": "",
+    "rect": [
+      30,
+      33,
+      90,
+      80
+    ],
+    "offset": [
+      0,
+      2
+    ],
+    "originalSize": [
+      150,
+      150
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "buttondown",
+    "texture": "d9aae62f-dcce-413e-a798-d666789b12a8",
+    "atlas": "",
+    "rect": [
+      16,
+      5,
+      231,
+      233
+    ],
+    "offset": [
+      3.5,
+      -2.5
+    ],
+    "originalSize": [
+      256,
+      238
+    ]
+  }
+}

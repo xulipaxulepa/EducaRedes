@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "respostas",
+    "texture": "99d47528-9bcc-4edb-a86f-0e77eeeb3998",
+    "atlas": "",
+    "rect": [
+      33,
+      29,
+      571,
+      227
+    ],
+    "offset": [
+      -1.5,
+      7.5
+    ],
+    "originalSize": [
+      640,
+      300
+    ]
+  }
+}

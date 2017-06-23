@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btnNovoJogo",
+    "texture": "398607a1-6017-4bb9-a22b-4a29c76f7061",
+    "atlas": "",
+    "rect": [
+      54,
+      111,
+      460,
+      177
+    ],
+    "offset": [
+      -36,
+      40.5
+    ],
+    "originalSize": [
+      640,
+      480
+    ]
+  }
+}

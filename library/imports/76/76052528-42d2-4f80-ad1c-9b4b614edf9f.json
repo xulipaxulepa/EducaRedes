@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btnCamada3",
+    "texture": "f0b82286-7004-4234-b6d5-9d3bc688d3d0",
+    "atlas": "",
+    "rect": [
+      119,
+      115,
+      330,
+      116
+    ],
+    "offset": [
+      -36,
+      67
+    ],
+    "originalSize": [
+      640,
+      480
+    ]
+  }
+}

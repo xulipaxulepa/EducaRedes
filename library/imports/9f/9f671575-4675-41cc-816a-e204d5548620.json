@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "prof camada1 colorido",
+    "texture": "fb769655-3348-4f2d-9b71-f067492c6ea0",
+    "atlas": "",
+    "rect": [
+      0,
+      514,
+      1350,
+      1536
+    ],
+    "offset": [
+      0,
+      -257
+    ],
+    "originalSize": [
+      1350,
+      2050
+    ]
+  }
+}
