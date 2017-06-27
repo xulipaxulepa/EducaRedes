@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, '0d608MgM3NBMLjQf0Ozohur', 'btnContFase4');
-// scripts\buttons\buttons dialogues\btnContFase4.js
+cc._RF.push(module, '0d608MgM3NBMLjQf0Ozohur', 'btnContFase4');
+// scripts/buttons/buttons dialogues/btnContFase4.js
 
 'use strict';
 
@@ -39,4 +39,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();

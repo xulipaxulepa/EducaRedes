@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, 'c9918FY9ixM5rmy9w8Y/uEr', 'btnAcessoARede');
+// scripts/buttons/buttons camadas/btnAcessoARede.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -64,3 +68,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
+
+cc._RF.pop();

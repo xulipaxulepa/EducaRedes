@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, 'd66a0PfiwZCZ5GzAjOGS5sD', 'logo');
+// scripts/logo.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -26,3 +30,5 @@ cc.Class({
         this.timer += dt;
     }
 });
+
+cc._RF.pop();

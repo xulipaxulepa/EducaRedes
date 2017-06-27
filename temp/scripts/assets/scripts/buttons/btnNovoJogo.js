@@ -1,9 +1,11 @@
 "use strict";
-cc._RFpush(module, 'b94cbMJ8WpDNKS0SpR87W9N', 'btnNovoJogo');
-// scripts\buttons\btnNovoJogo.js
+cc._RF.push(module, 'b94cbMJ8WpDNKS0SpR87W9N', 'btnNovoJogo');
+// scripts/buttons/btnNovoJogo.js
+
+"use strict";
 
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -26,9 +28,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
-// called every frame, uncomment this function to activate update callback
-// update: function (dt) {
 
-// },
-
-cc._RFpop();
+cc._RF.pop();

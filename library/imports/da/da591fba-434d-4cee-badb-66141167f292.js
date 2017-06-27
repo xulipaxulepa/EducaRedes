@@ -1,3 +1,7 @@
+"use strict";
+cc._RF.push(module, 'da591+6Q01M7rrbZhQRZ/KS', 'quizFase2');
+// scripts/quiz fases/quizFase2.js
+
 'use strict';
 
 cc.Class({
@@ -230,3 +234,5 @@ cc.Class({
         this.timer -= dt;
     }
 });
+
+cc._RF.pop();

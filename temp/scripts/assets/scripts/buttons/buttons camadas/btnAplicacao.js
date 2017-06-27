@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, '00df6hAp4hCiIpx+GvpezGv', 'btnAplicacao');
-// scripts\buttons\buttons camadas\btnAplicacao.js
+cc._RF.push(module, '00df6hAp4hCiIpx+GvpezGv', 'btnAplicacao');
+// scripts/buttons/buttons camadas/btnAplicacao.js
 
 "use strict";
 
@@ -69,4 +69,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();

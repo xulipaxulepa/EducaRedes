@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, 'ad2dfsTZshIrIMIlP4Ufxjb', 'logicaFase1');
+// scripts/logica fases/logicaFase1.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -254,3 +258,5 @@ cc.Class({
         }
     }
 });
+
+cc._RF.pop();

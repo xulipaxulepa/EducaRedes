@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, '5b4231rmL9Kzqawp2hK9ylc', 'btnQuiz4');
-// scripts\buttons\button quiz\btnQuiz4.js
+cc._RF.push(module, '5b4231rmL9Kzqawp2hK9ylc', 'btnQuiz4');
+// scripts/buttons/button quiz/btnQuiz4.js
 
 "use strict";
 
@@ -29,4 +29,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();

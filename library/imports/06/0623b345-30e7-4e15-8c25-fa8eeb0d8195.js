@@ -1,5 +1,11 @@
+"use strict";
+cc._RF.push(module, '0623bNFMOdOFYwl+o7rDYGV', 'btnCarregarJogo');
+// scripts/buttons/btnCarregarJogo.js
+
+"use strict";
+
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -22,7 +28,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
-// called every frame, uncomment this function to activate update callback
-// update: function (dt) {
 
-// },
+cc._RF.pop();

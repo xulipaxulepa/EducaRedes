@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, 'be410/DQ6NMUa2FROMcamiA', 'quizFase4');
-// scripts\quiz fases\quizFase4.js
+cc._RF.push(module, 'be410/DQ6NMUa2FROMcamiA', 'quizFase4');
+// scripts/quiz fases/quizFase4.js
 
 'use strict';
 
@@ -235,4 +235,4 @@ cc.Class({
     }
 });
 
-cc._RFpop();
+cc._RF.pop();

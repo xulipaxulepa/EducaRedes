@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, '6ec98tavstF46fC5jCFjmOB', 'btnPlayCamada1');
-// scripts\buttons\btnPlay\btnPlayCamada1.js
+cc._RF.push(module, '6ec98tavstF46fC5jCFjmOB', 'btnPlayCamada1');
+// scripts/buttons/btnPlay/btnPlayCamada1.js
 
 "use strict";
 
@@ -29,4 +29,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();

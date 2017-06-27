@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, 'd7ebdy33+RFv7Dst+i664dz', 'btnTransporte');
+// scripts/buttons/buttons camadas/btnTransporte.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -65,3 +69,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
+
+cc._RF.pop();

@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, '00df6hAp4hCiIpx+GvpezGv', 'btnAplicacao');
+// scripts/buttons/buttons camadas/btnAplicacao.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -64,3 +68,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
+
+cc._RF.pop();

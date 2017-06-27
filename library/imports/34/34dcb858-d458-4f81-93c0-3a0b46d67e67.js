@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, '34dcbhY1FhPgZPAOgtG1n5n', 'btnQuiz2');
+// scripts/buttons/button quiz/btnQuiz2.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -24,3 +28,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
+
+cc._RF.pop();

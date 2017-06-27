@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, '3ae0acxn/9OU7Byg/NIgeR5', 'btnPlayCamada2');
+// scripts/buttons/btnPlay/btnPlayCamada2.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -24,3 +28,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
+
+cc._RF.pop();

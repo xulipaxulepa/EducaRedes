@@ -1,3 +1,7 @@
+"use strict";
+cc._RF.push(module, 'a6a8f/mkKlANLuxzDKnffKG', 'btnContFase2');
+// scripts/buttons/buttons dialogues/btnContFase2.js
+
 'use strict';
 
 cc.Class({
@@ -46,3 +50,5 @@ cc.Class({
     }
 
 });
+
+cc._RF.pop();

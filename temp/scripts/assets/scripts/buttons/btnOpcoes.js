@@ -1,9 +1,11 @@
 "use strict";
-cc._RFpush(module, 'a6892JACbZPYartnZOolo/y', 'btnOpcoes');
-// scripts\buttons\btnOpcoes.js
+cc._RF.push(module, 'a6892JACbZPYartnZOolo/y', 'btnOpcoes');
+// scripts/buttons/btnOpcoes.js
+
+"use strict";
 
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -26,9 +28,5 @@ cc.Class({
     onLoad: function onLoad() {}
 
 });
-// called every frame, uncomment this function to activate update callback
-// update: function (dt) {
 
-// },
-
-cc._RFpop();
+cc._RF.pop();

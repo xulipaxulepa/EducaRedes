@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, 'd7ebdy33+RFv7Dst+i664dz', 'btnTransporte');
-// scripts\buttons\buttons camadas\btnTransporte.js
+cc._RF.push(module, 'd7ebdy33+RFv7Dst+i664dz', 'btnTransporte');
+// scripts/buttons/buttons camadas/btnTransporte.js
 
 "use strict";
 
@@ -70,4 +70,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();

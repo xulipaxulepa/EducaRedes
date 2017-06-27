@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, 'c9918FY9ixM5rmy9w8Y/uEr', 'btnAcessoARede');
-// scripts\buttons\buttons camadas\btnAcessoARede.js
+cc._RF.push(module, 'c9918FY9ixM5rmy9w8Y/uEr', 'btnAcessoARede');
+// scripts/buttons/buttons camadas/btnAcessoARede.js
 
 "use strict";
 
@@ -69,4 +69,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();

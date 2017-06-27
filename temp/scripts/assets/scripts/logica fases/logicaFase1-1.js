@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, '4b39dColCpOArq1yhND3+DD', 'logicaFase1-1');
-// scripts\logica fases\logicaFase1-1.js
+cc._RF.push(module, '4b39dColCpOArq1yhND3+DD', 'logicaFase1-1');
+// scripts/logica fases/logicaFase1-1.js
 
 "use strict";
 
@@ -244,4 +244,4 @@ cc.Class({
     }
 });
 
-cc._RFpop();
+cc._RF.pop();

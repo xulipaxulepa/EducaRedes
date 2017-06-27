@@ -1,9 +1,11 @@
 "use strict";
-cc._RFpush(module, 'd1625RGXZFImoy+5eRjGQ8Y', 'profCamada2');
-// scripts\profs\profCamada2.js
+cc._RF.push(module, 'd1625RGXZFImoy+5eRjGQ8Y', 'profCamada2');
+// scripts/profs/profCamada2.js
+
+"use strict";
 
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -24,9 +26,5 @@ cc.Class({
     }
 
 });
-// called every frame, uncomment this function to activate update callback
-// update: function (dt) {
 
-// },
-
-cc._RFpop();
+cc._RF.pop();

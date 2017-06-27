@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, 'e0c0bW/qaNBc6B7UGzvpdKH', 'logicaFase2');
+// scripts/logica fases/logicaFase2.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -223,7 +227,7 @@ cc.Class({
             this.pontuacao += 1;
             this.ip = "192.168.50.44";
             this.ipPacote.string = "IP:192.168.50.44\n" + "Mask:255.255.255.0";
-        } else if (this.buttonCont1 == 6) {
+        } else if (this.buttonCont1 == 7) {
             ipbutton = "192.168.10.50";
             this.verificaButton11(ipbutton);
             this.errado += 1;
@@ -433,11 +437,11 @@ cc.Class({
     },
 
     passouFase: function passouFase() {
-        if (this.pontuacao == 6 && this.certo > 3) {
+        if (this.pontuacao == 6 && this.certo >= 3) {
             this.contTexto = 20;
             this.twBG.setPosition(-3, -210);
             this.textoFase.string = "Parabens! voce passou de fase\n" + "responda agora as questoes do quiz!\n" + "clique em continuar para prosseguir";
-        } else if (this.pontuacao == 6 && this.errado > 3) {
+        } else if (this.pontuacao == 6 && this.errado >= 3) {
             this.contTexto = 21;
             this.twBG.setPosition(-3, -210);
             this.textoFase.string = "Que pena! voce nao passou de fase\n" + "reveja a explicaçao e tente novamente!\n" + "clique em continuar para prosseguir";
@@ -449,3 +453,5 @@ cc.Class({
         this.passouFase();
     }
 });
+
+cc._RF.pop();

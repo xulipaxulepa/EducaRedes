@@ -1,6 +1,6 @@
 "use strict";
-cc._RFpush(module, 'fd4a6mCbvdDg43YYgEZsLRe', 'btnInternet');
-// scripts\buttons\buttons camadas\btnInternet.js
+cc._RF.push(module, 'fd4a6mCbvdDg43YYgEZsLRe', 'btnInternet');
+// scripts/buttons/buttons camadas/btnInternet.js
 
 "use strict";
 
@@ -70,4 +70,4 @@ cc.Class({
 
 });
 
-cc._RFpop();
+cc._RF.pop();
