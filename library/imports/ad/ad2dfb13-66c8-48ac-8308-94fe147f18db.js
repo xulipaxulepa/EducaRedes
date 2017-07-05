@@ -113,7 +113,7 @@ cc.Class({
 
     vaiPraFrente: function vaiPraFrente() {
         var frente = cc.moveBy(3, cc.p(100, 0));
-        return cc.repeatForever(cc.sequence(frente));
+        return cc.repeatForever(frente);
     },
 
     frentePlayer: function frentePlayer() {
