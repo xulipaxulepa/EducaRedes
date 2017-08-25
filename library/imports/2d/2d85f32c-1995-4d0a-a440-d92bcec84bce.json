@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btnrealizarsalto",
+    "texture": "eb83e9cd-0a11-40f7-bde5-50dc43cee6f0",
+    "atlas": "",
+    "rect": [
+      10,
+      5,
+      339,
+      102
+    ],
+    "offset": [
+      -3.5,
+      1
+    ],
+    "originalSize": [
+      366,
+      114
+    ]
+  }
+}

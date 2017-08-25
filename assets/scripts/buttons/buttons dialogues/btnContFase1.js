@@ -17,7 +17,7 @@ cc.Class({
     
     mudaTexto: function(){
         if(this.contador === 0){
-            this.label.string = 'Rede de computadores e um conjunto de computadores\n'+ 
+            this.label.string = 'Rede de computadores é um conjunto de computadores\n'+ 
             'autônomos interconectados por uma única tecnologia.'; 
             this.contador += 1;
         } else if(this.contador == 1){
@@ -32,7 +32,7 @@ cc.Class({
             'internacional dos protocolos empregados nas diversas camadas';
             this.contador += 1;
         } else if(this.contador == 3){
-            this.label.string = 'O modelo OSI possui 7 camadas, sao elas:\n'+ 
+            this.label.string = 'O modelo OSI possui 7 camadas, são elas:\n'+ 
             'Física\n'+
             'Enlace\n'+ 
             'Redes';

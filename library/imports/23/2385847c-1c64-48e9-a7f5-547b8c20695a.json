@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pacote1",
+    "texture": "324cf9c9-327f-474b-8636-d1446aa9c384",
+    "atlas": "",
+    "rect": [
+      59,
+      86,
+      192,
+      118
+    ],
+    "offset": [
+      5,
+      5
+    ],
+    "originalSize": [
+      300,
+      300
+    ]
+  }
+}

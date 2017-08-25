@@ -119,7 +119,7 @@ cc.Class({
     perguntas: function(){
         if(this.contador === 0){
         this.someResposta();
-        this.pergunta.string = 'A camada transporte e responsável por...';
+        this.pergunta.string = 'A camada transporte é responsável por...';
         
         this.resposta1.string = 'Gerenciar os pacotes na rede';
         
@@ -131,7 +131,7 @@ cc.Class({
         } else if(this.contador == 1){
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Qual destes protocolos nao pertence\n a camada de transporte?';
+        this.pergunta.string = 'Qual destes protocolos não pertence\n a camada de transporte?';
         
         this.resposta1.string = 'ARP';
         
@@ -195,11 +195,11 @@ cc.Class({
         this.telaFinalQuiz.setPositionX(0);
         if(this.respCer>= 3){
             this.buttonTryAgain.destroy();
-            this.gameOver.string = 'Parabens!\n'+
-            'Voce passou no Quiz!';
+            this.gameOver.string = 'Parabéns!\n'+
+            'Você passou no Quiz!';
         } else {
             this.gameOver.string = 'Ah! que pena!\n'+
-            'Voce nao passou no Quiz!\n'+ 
+            'Você não passou no Quiz!\n'+ 
             'tente novamente!';
         }
         
@@ -216,6 +216,10 @@ cc.Class({
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+    
+    goToCredits: function(){
+        cc.director.loadScene("credits");
     },
 
     // called every frame, uncomment this function to activate update callback

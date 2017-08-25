@@ -46,6 +46,11 @@ cc.Class({
         button4: {
             default: null,
             type: cc.Node
+        },
+
+        button5: {
+            default: null,
+            type: cc.Node
         }
     },
 
@@ -54,6 +59,7 @@ cc.Class({
         this.button2.setPosition(596, -244);
         this.button3.setPosition(596, -244);
         this.button4.setPosition(326, -244);
+        this.button5.setPosition(596, -244);
     },
 
     showProfButton: function showProfButton() {

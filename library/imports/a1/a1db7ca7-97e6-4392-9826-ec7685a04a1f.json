@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "thunderbird-256",
+    "texture": "a227cac3-ddfd-494d-b81d-4a774df0352a",
+    "atlas": "",
+    "rect": [
+      9,
+      1,
+      237,
+      255
+    ],
+    "offset": [
+      -0.5,
+      -0.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ]
+  }
+}

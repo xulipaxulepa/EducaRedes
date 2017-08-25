@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "porta",
+    "texture": "e750cade-5e11-430a-838f-7d263aedeca2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      610,
+      1104
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      610,
+      1104
+    ]
+  }
+}

@@ -119,7 +119,7 @@ cc.Class({
     perguntas: function(){
         if(this.contador === 0){
         this.someResposta();
-        this.pergunta.string = 'A camada de aplicação e responsável por...';
+        this.pergunta.string = 'A camada de aplicação é responsável por...';
         
         this.resposta1.string = 'Gerenciar os pacotes na rede';
         
@@ -131,7 +131,7 @@ cc.Class({
         } else if(this.contador == 1){
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Na camada de aplicação\n o protocolo HTTP e responsavel por...?';
+        this.pergunta.string = 'Na camada de aplicação\n o protocolo HTTP é responsavel por...?';
         
         this.resposta1.string = 'Exibir paginas web';
         
@@ -191,15 +191,19 @@ cc.Class({
         this.contador += 1;
     },
     
+    goToCredits: function(){
+        cc.director.loadScene("credits");
+    },
+    
     gameover: function(){
         this.telaFinalQuiz.setPositionX(0);
         if(this.respCer>= 3){
             this.buttonTryAgain.destroy();
-            this.gameOver.string = 'Parabens!\n'+
-            'Voce passou no Quiz!';
+            this.gameOver.string = 'Parabéns!\n'+
+            'Você passou no Quiz!';
         } else {
             this.gameOver.string = 'Ah! que pena!\n'+
-            'Voce nao passou no Quiz!\n'+ 
+            'Você não passou no Quiz!\n'+ 
             'tente novamente!';
         }
         

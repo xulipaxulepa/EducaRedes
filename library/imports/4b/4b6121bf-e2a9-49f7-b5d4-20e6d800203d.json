@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "MySQL-Logo",
+    "texture": "a2a898f2-7797-4f9b-ac9b-a5cd30ef3311",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      386,
+      200
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      386,
+      200
+    ]
+  }
+}

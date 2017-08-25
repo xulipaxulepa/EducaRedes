@@ -83,7 +83,7 @@ cc.Class({
         this.contTexto = 0;
         this.linhaGameOver.setOpacity(0);
         this.textoFase.string = "Como pode ser visto, a diferença entre os sinais\n"+ 
-            "e bem perceptivel";
+            "é bem perceptivel";
     },
     
     /*Funçoes usadas para chamar a açao de 
@@ -199,12 +199,12 @@ cc.Class({
     
     trocaTexto1: function(){
         if(this.contTexto === 0){
-            this.textoFase.string = "O sinal analogico e gerado como uma onda\n"+
-            "ja que os valores vao se alterando no intervalo de tempo";
+            this.textoFase.string = "O sinal analogico é gerado como uma onda\n"+
+            "já que os valores vão se alterando no intervalo de tempo";
             this.contTexto += 1;
         } else if(this.contTexto == 1){
-            this.textoFase.string = "Ja o sinal digital e gerado como uma reta\n"+
-            "ja que possui um conjunto de valores em um intervalo de tempo";
+            this.textoFase.string = "Já o sinal digital é gerado como uma reta\n"+
+            "já que possui um conjunto de valores em um intervalo de tempo";
             this.contTexto += 1;
         } else if(this.contTexto == 2){
             this.textoFase.string = "A camada de acesso a rede tambem fornece\n"+
@@ -213,7 +213,7 @@ cc.Class({
             this.contTexto += 1;
         } else if(this.contTexto == 3){
             this.textoFase.string = "Oferecendo enquadramento de bits\n"+
-            "verificaçao de erros e protocolos que garantam a correçao de erros";
+            "verificação de erros e protocolos que assegurem a correçao de erros";
             this.contTexto += 1;
         }else if(this.contTexto == 4){
             this.textoFase.string = "Visto os conteudos desta fase e em sala de aula\n"+

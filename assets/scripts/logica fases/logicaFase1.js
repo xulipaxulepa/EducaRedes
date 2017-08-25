@@ -218,8 +218,8 @@ cc.Class({
     
     trocaTexto2: function(){
         if(this.contTexto == 0){
-        this.textoFase.string = "O sinal digital e gerado como um conjunto de retas\n"+
-            "ja que possui um conjunto limitado de valores em um intervalo de tempo";
+        this.textoFase.string = "O sinal digital é gerado como um conjunto de retas\n"+
+            "já que possui um conjunto limitado de valores em um intervalo de tempo";
             this.contTexto += 1;
         } else if(this.contTexto == 1){
             this.textoFase.string = "Tente acertar 10 alvos para avançar\n"+

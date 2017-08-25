@@ -1,0 +1,20 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "xulipasoftworks.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "1": {
+      "__uuid__": "bed628fc-1228-4687-ac56-236ba5de77c2"
+    },
+    "2": {
+      "__uuid__": "f2c4e974-0d3b-46a0-9a37-e493798e82e8"
+    },
+    "3": {
+      "__uuid__": "24b1f18d-1577-447e-8e73-2126d2202a1a"
+    },
+    "4": {
+      "__uuid__": "6bf63bf9-a86d-40f5-8a19-edba81961567"
+    }
+  }
+}

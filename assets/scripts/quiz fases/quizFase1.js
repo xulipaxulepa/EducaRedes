@@ -119,7 +119,7 @@ cc.Class({
     perguntas: function(){
         if(this.contador === 0){
         this.someResposta();
-        this.pergunta.string = 'A camada de acesso a rede e responsável por...';
+        this.pergunta.string = 'A camada de acesso a rede é responsável por...';
         
         this.resposta1.string = 'Identificar os ips da rede';
         
@@ -143,7 +143,7 @@ cc.Class({
         } else if(this.contador == 2){
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'O sinal analógico e caracterizado por...:';
+        this.pergunta.string = 'O sinal analógico é caracterizado por...:';
         
         this.resposta1.string = 'Possuir apenas um\n conjunto limitado de valores';
         
@@ -155,7 +155,7 @@ cc.Class({
         } else if(this.contador == 3){
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'O sinal digital e caracterizado por...:';
+        this.pergunta.string = 'O sinal digital é caracterizado por...:';
         
         this.resposta1.string = 'Ser alterado em contínuo';
         
@@ -195,11 +195,11 @@ cc.Class({
         this.telaFinalQuiz.setPositionX(0);
         if(this.respCer>= 3){
             this.buttonTryAgain.destroy();
-            this.gameOver.string = 'Parabens!\n'+
-            'Voce passou no Quiz!';
+            this.gameOver.string = 'Parabéns!\n'+
+            'Você passou no Quiz!';
         } else {
             this.gameOver.string = 'Ah! que pena!\n'+
-            'Voce nao passou no Quiz!\n'+ 
+            'Você não passou no Quiz!\n'+ 
             'tente novamente!';
         }
         
@@ -216,6 +216,10 @@ cc.Class({
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+    
+    goToCredits: function(){
+        cc.director.loadScene("credits");
     },
 
     // called every frame, uncomment this function to activate update callback

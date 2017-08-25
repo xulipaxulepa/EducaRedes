@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tabrot",
+    "texture": "6eaf30e6-8416-4664-8508-a1a12205eea0",
+    "atlas": "",
+    "rect": [
+      33,
+      31,
+      537,
+      544
+    ],
+    "offset": [
+      1.5,
+      -3
+    ],
+    "originalSize": [
+      600,
+      600
+    ]
+  }
+}

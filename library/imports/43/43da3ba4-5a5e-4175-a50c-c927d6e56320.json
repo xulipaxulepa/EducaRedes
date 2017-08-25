@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "jogoFase3",
+    "_name": "jogoFase2",
     "_objFlags": 0,
     "_rawFiles": null,
     "scene": {
@@ -575,7 +575,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "trocaTexto1",
     "customEventData": ""
   },
@@ -666,7 +666,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "9fda031a-ba2f-476e-9576-ea2f06e9b61f"
+      "__uuid__": "25866e8b-8fe0-478d-abde-a395ce3091a0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -732,8 +732,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -240,
-      "y": -181
+      "x": -53,
+      "y": -27
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -901,7 +901,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonNo1",
     "customEventData": ""
   },
@@ -954,8 +954,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -181,
-      "y": -6
+      "x": 6,
+      "y": 148
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1123,7 +1123,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonNo2",
     "customEventData": ""
   },
@@ -1176,8 +1176,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -15,
-      "y": -181
+      "x": 172,
+      "y": -27
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1345,7 +1345,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonNo3",
     "customEventData": ""
   },
@@ -1398,8 +1398,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 12,
-      "y": -27
+      "x": 199,
+      "y": 127
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1567,7 +1567,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonNo4",
     "customEventData": ""
   },
@@ -1620,8 +1620,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -39,
-      "y": 103
+      "x": 148,
+      "y": 257
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1789,7 +1789,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonNo5",
     "customEventData": ""
   },
@@ -1842,8 +1842,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 193,
-      "y": 115
+      "x": 380,
+      "y": 269
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2011,7 +2011,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonNo6",
     "customEventData": ""
   },
@@ -2458,7 +2458,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonSalto1",
     "customEventData": ""
   },
@@ -2680,7 +2680,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonSalto2",
     "customEventData": ""
   },
@@ -2902,7 +2902,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonSalto3",
     "customEventData": ""
   },
@@ -3124,7 +3124,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonSalto4",
     "customEventData": ""
   },
@@ -3346,7 +3346,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonSalto5",
     "customEventData": ""
   },
@@ -3568,7 +3568,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "buttonSalto6",
     "customEventData": ""
   },
@@ -4107,7 +4107,7 @@
     "target": {
       "__id__": 2
     },
-    "component": "logicaFase3",
+    "component": "logicaFase2",
     "handler": "trocaTexto1",
     "customEventData": ""
   },
@@ -4198,7 +4198,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "9fda031a-ba2f-476e-9576-ea2f06e9b61f"
+      "__uuid__": "25866e8b-8fe0-478d-abde-a395ce3091a0"
     },
     "_type": 0,
     "_sizeMode": 0,

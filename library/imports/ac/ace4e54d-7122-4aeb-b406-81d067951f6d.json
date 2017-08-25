@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skype",
+    "texture": "4629a760-bc68-4dfd-90c4-8b9ffb16cbaf",
+    "atlas": "",
+    "rect": [
+      19,
+      19,
+      474,
+      474
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      512
+    ]
+  }
+}

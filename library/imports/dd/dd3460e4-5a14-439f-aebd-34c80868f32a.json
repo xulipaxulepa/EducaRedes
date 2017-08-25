@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Google_Chrome",
+    "texture": "f7772503-91cf-4517-92a4-684a6aa1c200",
+    "atlas": "",
+    "rect": [
+      18,
+      22,
+      476,
+      476
+    ],
+    "offset": [
+      0,
+      -4
+    ],
+    "originalSize": [
+      512,
+      512
+    ]
+  }
+}

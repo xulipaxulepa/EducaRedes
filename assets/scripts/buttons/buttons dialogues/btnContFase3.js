@@ -33,7 +33,7 @@ cc.Class({
             this.contador += 1;
         } else if(this.contador == 4){
             this.label.string = 'O proximo mini-jogo demonstra como\n'+ 
-            'a mensagem viaja entre varios nos ate chegar em seu destino';
+            'a mensagem viaja entre varios nós ate chegar em seu destino';
             this.contador += 1;
         } else if(this.contador == 5){
             cc.director.loadScene("jogoFase3");
@@ -45,7 +45,6 @@ cc.Class({
         this.contador = 0;
         this.label.string = 'Ola, eu sou o professor Portty!\n'+
         'Eu vou te ensinar sobre a camada Transporte';
-
     },
 
     // called every frame, uncomment this function to activate update callback

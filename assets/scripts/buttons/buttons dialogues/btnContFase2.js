@@ -56,7 +56,6 @@ cc.Class({
         this.contador = 0;
         this.label.string = 'Ola, eu sou a professora Anette!\n'+
         'Eu vou te ensinar sobre a camada Internet';
-
     },
 
     // called every frame, uncomment this function to activate update callback

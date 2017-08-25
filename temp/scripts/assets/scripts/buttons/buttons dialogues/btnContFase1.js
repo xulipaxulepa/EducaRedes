@@ -23,7 +23,7 @@ cc.Class({
 
     mudaTexto: function mudaTexto() {
         if (this.contador === 0) {
-            this.label.string = 'Rede de computadores e um conjunto de computadores\n' + 'autônomos interconectados por uma única tecnologia.';
+            this.label.string = 'Rede de computadores é um conjunto de computadores\n' + 'autônomos interconectados por uma única tecnologia.';
             this.contador += 1;
         } else if (this.contador == 1) {
             this.label.string = 'Em rede de computadores existem 2 modelos de protocolos\n' + 'O modelo logico OSI\n' + 'e a arquitetura TCP/IP';
@@ -32,7 +32,7 @@ cc.Class({
             this.label.string = 'O modelo OSI se baseia em uma proposta desenvolvida\n' + 'pela ISO (International Standards Organization)\n' + 'como um primeiro passo em direção à padronização\n' + 'internacional dos protocolos empregados nas diversas camadas';
             this.contador += 1;
         } else if (this.contador == 3) {
-            this.label.string = 'O modelo OSI possui 7 camadas, sao elas:\n' + 'Física\n' + 'Enlace\n' + 'Redes';
+            this.label.string = 'O modelo OSI possui 7 camadas, são elas:\n' + 'Física\n' + 'Enlace\n' + 'Redes';
             this.contador += 1;
         } else if (this.contador == 4) {
             this.label.string = 'Transporte\n' + 'Sessão\n' + 'Apresentação\n' + 'Aplicação';

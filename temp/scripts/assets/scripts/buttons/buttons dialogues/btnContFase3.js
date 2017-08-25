@@ -30,7 +30,7 @@ cc.Class({
             this.label.string = 'Esse protocolo fragmenta o fluxo de bytes de entrada\n' + 'em mensagens discretas. No destino, o processo TCP receptor\n' + 'volta a montar as mensagens recebidas no fluxo de saída.';
             this.contador += 1;
         } else if (this.contador == 4) {
-            this.label.string = 'O proximo mini-jogo demonstra como\n' + 'a mensagem viaja entre varios nos ate chegar em seu destino';
+            this.label.string = 'O proximo mini-jogo demonstra como\n' + 'a mensagem viaja entre varios nós ate chegar em seu destino';
             this.contador += 1;
         } else if (this.contador == 5) {
             cc.director.loadScene("jogoFase3");

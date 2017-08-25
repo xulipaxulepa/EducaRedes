@@ -1,667 +1,102 @@
 {
-  "e629cc0c-c538-460b-bcff-cd6549b3c5e7": {
-    "asset": 1497917342182,
-    "meta": 1497979642761,
-    "relativePath": "textures"
-  },
-  "500d0a93-fac0-40c8-86e5-8a616d58012f": {
-    "asset": 1486688992000,
-    "meta": 1491240950544,
-    "relativePath": "textures\\Buttons\\btnCamada1.png"
-  },
-  "a69e7d22-6702-4937-9050-3ac662c4daeb": {
-    "asset": 1486692582000,
-    "meta": 1491240950554,
-    "relativePath": "textures\\bg.jpg"
-  },
-  "70416bae-63c5-4b55-98f7-bc3c434a2092": {
-    "asset": 1486689064000,
-    "meta": 1491240950566,
-    "relativePath": "textures\\Buttons\\btnCamada2.png"
-  },
-  "f0b82286-7004-4234-b6d5-9d3bc688d3d0": {
-    "asset": 1486689424000,
-    "meta": 1491240950577,
-    "relativePath": "textures\\Buttons\\btnCamada3.png"
-  },
-  "531e584d-997b-44f5-9849-672c3a8ff1b5": {
-    "asset": 1486689500000,
-    "meta": 1491240950587,
-    "relativePath": "textures\\Buttons\\btnCamada4.png"
-  },
-  "6fc1bb39-bdff-4793-882e-8061199fa9a5": {
-    "asset": 1486688260000,
-    "meta": 1491240950597,
-    "relativePath": "textures\\Buttons\\btnCarregarJogo.png"
-  },
-  "398607a1-6017-4bb9-a22b-4a29c76f7061": {
-    "asset": 1486688210000,
-    "meta": 1491240950607,
-    "relativePath": "textures\\Buttons\\btnNovoJogo.png"
-  },
-  "4be3bd15-68c1-49d4-91e6-153fb5868c21": {
-    "asset": 1486688312000,
-    "meta": 1491240950617,
-    "relativePath": "textures\\Buttons\\btnOpcoes.png"
-  },
-  "60974865-db9f-478c-93e0-a09e868b9c5d": {
-    "asset": 1486693434000,
-    "meta": 1491240950493,
-    "relativePath": "textures\\educaredes.psd"
-  },
-  "aaebd9e3-2f2b-4da8-891a-52bcc09dd8a7": {
-    "asset": 1486688350000,
-    "meta": 1491240950628,
-    "relativePath": "textures\\Buttons\\btnSair.png"
-  },
-  "b29bd8aa-7537-4dbc-a38f-932362b7efc1": {
-    "asset": 1486687346000,
-    "meta": 1491240950666,
-    "relativePath": "textures\\logo.png"
-  },
-  "fb769655-3348-4f2d-9b71-f067492c6ea0": {
-    "asset": 1486768992479,
-    "meta": 1491240950729,
-    "relativePath": "textures\\Fase 1\\prof camada1 colorido.png"
-  },
-  "beea903e-b97d-4268-b6a4-51b41d755b07": {
-    "asset": 1486738952000,
-    "meta": 1491240950740,
-    "relativePath": "textures\\Fase 1\\prof camada1.png"
-  },
-  "a93c2f73-21d4-458c-bd83-fd9fc9fc2612": {
-    "asset": 1487513069360,
-    "meta": 1491240950828,
-    "relativePath": "textures\\Fase 2\\prof camada2.jpg"
-  },
-  "263c48a8-bb57-4a57-a153-6b7f1e2f2c19": {
-    "asset": 1487542268897,
-    "meta": 1491240950855,
-    "relativePath": "textures\\Fase 3\\prof camada3.jpg"
-  },
-  "79881cc2-4643-4f56-9815-23798c05cab4": {
-    "asset": 1487553731837,
-    "meta": 1491240950925,
-    "relativePath": "textures\\Fase 4\\prof camada4.jpg"
-  },
-  "afcad128-7f4f-40cd-9c8d-0374b7dcc8fb": {
-    "asset": 1495574909824,
-    "meta": 1495574909849,
-    "relativePath": "scenes\\main.fire"
-  },
-  "5f9d7401-1d4a-4dc0-a933-92c6d4c8bb36": {
-    "asset": 1493745495048,
-    "meta": 1493745495080,
-    "relativePath": "scenes\\selectFase.fire"
-  },
-  "667cef31-b41d-45cf-88ba-cd54a7c64802": {
-    "asset": 1491331490325,
-    "meta": 1491331499965,
-    "relativePath": "textures\\quadro.png"
-  },
-  "5f688aa6-61a8-43ba-9ba6-6fd97797aa45": {
-    "asset": 1496809946754,
-    "meta": 1496855435963,
-    "relativePath": "scripts"
-  },
-  "b94cb309-f16a-4334-a4b4-4a947ced6f4d": {
-    "asset": 1491417981136,
-    "meta": 1498261824088,
-    "relativePath": "scripts\\buttons\\btnNovoJogo.js"
-  },
-  "0623b345-30e7-4e15-8c25-fa8eeb0d8195": {
-    "asset": 1491418045950,
-    "meta": 1498261824043,
-    "relativePath": "scripts\\buttons\\btnCarregarJogo.js"
-  },
-  "f1922c75-d02f-4231-a0a7-8152cb42c727": {
-    "asset": 1491333980669,
-    "meta": 1491333980687,
-    "relativePath": "scenes\\opcoes.fire"
-  },
-  "a6892240-09b6-4f61-aaed-9d93a8968ff2": {
-    "asset": 1491418108725,
-    "meta": 1498261824157,
-    "relativePath": "scripts\\buttons\\btnOpcoes.js"
-  },
-  "d4e6899f-98ce-4eb0-bb8b-3fb2af2b02e7": {
-    "asset": 1493744883578,
-    "meta": 1493750067944,
-    "relativePath": "scenes"
-  },
-  "9efdc853-9b72-42e4-8862-8b9a0b9aef8d": {
-    "asset": 1491420799976,
-    "meta": 1491914841608,
-    "relativePath": "scenes\\fases"
-  },
-  "59d92acb-d873-43c6-8da9-3250cc79a965": {
-    "asset": 1497313775975,
-    "meta": 1497313775983,
-    "relativePath": "scenes\\fases\\fase1.fire"
-  },
-  "c835567d-6026-42b2-90e1-01b903e0975e": {
-    "asset": 1497408472226,
-    "meta": 1497408472238,
-    "relativePath": "scenes\\fases\\fase2.fire"
-  },
-  "a643934e-1b58-415c-9f9d-1eec6526e4e1": {
-    "asset": 1498279214410,
-    "meta": 1498279214422,
-    "relativePath": "scenes\\fases\\fase3.fire"
-  },
-  "b46ea76b-fef4-4fb0-9eca-90739ca00b5c": {
-    "asset": 1498887552732,
-    "meta": 1498887552743,
-    "relativePath": "scenes\\fases\\fase4.fire"
-  },
-  "c9918158-f62c-4ce6-b9b2-f70f18fee12b": {
-    "asset": 1492960659678,
-    "meta": 1498261824412,
-    "relativePath": "scripts\\buttons\\buttons camadas\\btnAcessoARede.js"
-  },
-  "fd4a6982-6ef7-4383-8dd8-620119b0b45e": {
-    "asset": 1492961788508,
-    "meta": 1498261824499,
-    "relativePath": "scripts\\buttons\\buttons camadas\\btnInternet.js"
-  },
-  "d7ebdcb7-dfe4-45bf-b0ec-b7e8baeb8773": {
-    "asset": 1492961892743,
-    "meta": 1498261824583,
-    "relativePath": "scripts\\buttons\\buttons camadas\\btnTransporte.js"
-  },
-  "00df6840-a788-4288-8a71-f86be97b31af": {
-    "asset": 1492961626269,
-    "meta": 1498261824453,
-    "relativePath": "scripts\\buttons\\buttons camadas\\btnAplicacao.js"
-  },
-  "6697e84f-18ad-4ab0-b961-b24957e74374": {
-    "asset": 1490616843035,
-    "meta": 1491914841619,
-    "relativePath": "textures\\Buttons\\buttonplay.jpg"
-  },
-  "6ec98b5a-becb-45e3-a7c2-e630858e6381": {
-    "asset": 1492514555469,
-    "meta": 1498261824189,
-    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada1.js"
-  },
-  "ebaf8ea5-acbf-4878-9bab-105bbbc6951d": {
-    "asset": 1492521208660,
-    "meta": 1492894252246,
-    "relativePath": "scripts\\buttons\\btnPlay"
-  },
-  "c8e9f1a6-d26d-4399-90f6-92907a8a4f37": {
-    "asset": 1491918398713,
-    "meta": 1492513860703,
-    "relativePath": "scripts\\profs"
-  },
-  "c5ddc184-9f57-430a-a2b1-0a1add8eb6a2": {
-    "asset": 1491916645821,
-    "meta": 1498261825177,
-    "relativePath": "scripts\\profs\\profCamada1.js"
-  },
-  "3ae0a731-9fff-4e53-b072-83f34881e479": {
-    "asset": 1492514801982,
-    "meta": 1498261824224,
-    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada2.js"
-  },
-  "d1625446-5d91-489a-8cbe-e5e463190f18": {
-    "asset": 1491918453363,
-    "meta": 1498261825182,
-    "relativePath": "scripts\\profs\\profCamada2.js"
-  },
-  "53932465-cef9-4d20-aa5f-eb35150b77c2": {
-    "asset": 1491918539266,
-    "meta": 1498261825190,
-    "relativePath": "scripts\\profs\\profCamada3.js"
-  },
-  "2b28e6b4-2f14-4191-8e57-12de2301dd0b": {
-    "asset": 1491918774305,
-    "meta": 1498261825253,
-    "relativePath": "scripts\\profs\\profCamada4.js"
-  },
-  "aadbd892-58f4-47d7-9dd3-b1b246645f2a": {
-    "asset": 1492516228991,
-    "meta": 1498261824251,
-    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada3.js"
-  },
-  "aa0b65c2-8879-41b3-ad9f-ae104e2de2b2": {
-    "asset": 1492521423918,
-    "meta": 1498261824284,
-    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada4.js"
-  },
-  "42199a1e-1e63-4de6-9780-e56517cde4f2": {
-    "asset": 1492894826349,
-    "meta": 1492894935735,
-    "relativePath": "textures\\textwrapper.png"
-  },
-  "2ef75b1b-aec3-4b44-b89b-0aba4308cb01": {
-    "asset": 1492896173206,
-    "meta": 1492896238748,
-    "relativePath": "textures\\Buttons\\btnContinuar.png"
-  },
-  "2b869036-d937-40e6-9084-edea2733661c": {
-    "asset": 1497313397686,
-    "meta": 1498261824625,
-    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase1.js"
-  },
-  "d3357bdf-69c5-494a-902b-9fc0af3e0820": {
-    "asset": 1496279792643,
-    "meta": 1496456219066,
-    "relativePath": "scenes\\jogos"
-  },
-  "d9ff7308-a36a-4aa9-8203-de228b2386d3": {
-    "asset": 1498880951592,
-    "meta": 1498880951602,
-    "relativePath": "scenes\\jogos\\jogoFase1.fire"
-  },
-  "a6a8ffe6-90a9-4034-bbb1-cc32a77df286": {
-    "asset": 1497408328835,
-    "meta": 1498261824666,
-    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase2.js"
-  },
-  "81f93381-97c0-4cff-8496-b4458ed2dbef": {
-    "asset": 1498279187756,
-    "meta": 1498279188019,
-    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase3.js"
-  },
-  "0d608320-3373-4130-b8d0-7f43b3a21bab": {
-    "asset": 1498887528650,
-    "meta": 1498887528838,
-    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase4.js"
-  },
-  "d11552cc-c397-4a86-ad0f-bee9c75c7dd3": {
-    "asset": 1498350704519,
-    "meta": 1498350704534,
-    "relativePath": "scenes\\jogos\\jogoFase2.fire"
-  },
-  "43da3ba4-5a5e-4175-a50c-c927d6e56320": {
-    "asset": 1498755446730,
-    "meta": 1498755446745,
-    "relativePath": "scenes\\jogos\\jogoFase3.fire"
-  },
-  "1c8cefff-0d61-4b74-adf6-8668d6f81c21": {
-    "asset": 1499223349206,
-    "meta": 1499223349219,
-    "relativePath": "scenes\\jogos\\jogoFase4.fire"
-  },
-  "81e92991-548c-4d78-a538-0ec5f7ceb692": {
-    "asset": 1493743527095,
-    "meta": 1493743527604,
-    "relativePath": "Music"
-  },
-  "8aa80989-e3ea-4bce-86e5-549c2fb00ab9": {
-    "asset": 1493484005235,
-    "meta": 1493743527095,
-    "relativePath": "Music\\music1.mp3"
-  },
-  "3945941e-1a1a-433c-9ba5-81e11ca4977c": {
-    "asset": 1493744571927,
-    "meta": 1493750067945,
-    "relativePath": "scenes\\quiz"
-  },
-  "56608ed1-bdf4-4826-91d8-e11f737bd775": {
-    "asset": 1494900473683,
-    "meta": 1494900473725,
-    "relativePath": "scenes\\quiz\\quizFase1.fire"
-  },
-  "fdcdd846-4a0b-4c96-bbf3-ff04e747a642": {
-    "asset": 1494900588480,
-    "meta": 1494900588503,
-    "relativePath": "scenes\\quiz\\quizFase2.fire"
-  },
-  "d3ab1b16-fe7b-4d53-b125-0cfd52459595": {
-    "asset": 1494912410480,
-    "meta": 1494912410836,
-    "relativePath": "scenes\\quiz\\quizFase3.fire"
-  },
-  "e032f4c8-448e-4c83-9b13-e0c877e67a19": {
-    "asset": 1494913357543,
-    "meta": 1494913357549,
-    "relativePath": "scenes\\quiz\\quizFase4.fire"
-  },
-  "d66a03df-8b06-4267-91b3-0233864b9b03": {
-    "asset": 1493575413645,
-    "meta": 1498261825169,
-    "relativePath": "scripts\\logo.js"
-  },
-  "d24c8a04-c532-41c1-8cd4-e300801091ca": {
-    "asset": 1493744945678,
-    "meta": 1493744945747,
-    "relativePath": "scenes\\logo.fire"
-  },
-  "53a3b402-2321-46cb-9b11-b0a0d0fa7885": {
-    "asset": 1493751651890,
-    "meta": 1493751699783,
-    "relativePath": "textures\\Quiz\\respostascorreta.png"
-  },
-  "99d47528-9bcc-4edb-a86f-0e77eeeb3998": {
-    "asset": 1493751586463,
-    "meta": 1493751699791,
-    "relativePath": "textures\\Quiz\\respostas.png"
-  },
-  "7284b34f-8244-4fd1-b2b2-39bc1b17602d": {
-    "asset": 1493751690633,
-    "meta": 1493751699804,
-    "relativePath": "textures\\Quiz\\respostaserrada.png"
-  },
-  "3c65834e-e127-4d58-9cb9-07a484f6aea6": {
-    "asset": 1494900355278,
-    "meta": 1498261825331,
-    "relativePath": "scripts\\quiz fases\\quizFase1.js"
-  },
-  "087e9f30-933f-4495-8adc-c5b6bab1206f": {
-    "asset": 1493589588718,
-    "meta": 1494360827659,
-    "relativePath": "textures\\Fase 1\\gameoverBG.jpg"
-  },
-  "84331cc2-6364-47cc-b669-6bf03be0130b": {
-    "asset": 1494362532701,
-    "meta": 1494362790465,
-    "relativePath": "textures\\Buttons\\btnTryAgain.jpg"
-  },
-  "dead893b-5230-4268-beb2-b2e30151185b": {
-    "asset": 1494362780598,
-    "meta": 1494362790724,
-    "relativePath": "textures\\Buttons\\btnSelectStage.jpg"
-  },
-  "778d4639-ac27-4b5c-a25d-0e8e11d24dc4": {
-    "asset": 1494363299081,
-    "meta": 1498261824308,
-    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz1.js"
-  },
-  "34dcb858-d458-4f81-93c0-3a0b46d67e67": {
-    "asset": 1494369208403,
-    "meta": 1498261824322,
-    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz2.js"
-  },
-  "79ad18eb-bb8b-4be8-b3de-f222f0df6895": {
-    "asset": 1494369156932,
-    "meta": 1498261824340,
-    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz3.js"
-  },
-  "5b423d6b-98bf-4ace-a6b0-a7684af7295c": {
-    "asset": 1494369136126,
-    "meta": 1498261824387,
-    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz4.js"
-  },
-  "da591fba-434d-4cee-badb-66141167f292": {
-    "asset": 1494911306684,
-    "meta": 1498261825383,
-    "relativePath": "scripts\\quiz fases\\quizFase2.js"
-  },
-  "f22e5686-1f8c-4dbe-a5d8-c7e825fa08f8": {
-    "asset": 1494912205995,
-    "meta": 1498261825471,
-    "relativePath": "scripts\\quiz fases\\quizFase3.js"
-  },
-  "be410fc3-43a3-4c51-ad85-44e31c6a6880": {
-    "asset": 1494913271802,
-    "meta": 1498261825471,
-    "relativePath": "scripts\\quiz fases\\quizFase4.js"
-  },
-  "d9aae62f-dcce-413e-a798-d666789b12a8": {
-    "asset": 1495328349560,
-    "meta": 1495329543734,
-    "relativePath": "textures\\Fase 1\\buttondown.png"
-  },
-  "2db30fac-6769-4bf0-a74b-af5d9a4064a8": {
-    "asset": 1495328374490,
-    "meta": 1495329543742,
-    "relativePath": "textures\\Fase 1\\buttonup.png"
-  },
-  "f1b2db37-5df4-4c7a-b066-4ad5de9a386b": {
-    "asset": 1495328732645,
-    "meta": 1495329543743,
-    "relativePath": "textures\\Fase 1\\bgfase1.jpg"
-  },
-  "ab026ec7-6ea2-4118-a91d-b647cbb58fb6": {
-    "asset": 1495329028123,
-    "meta": 1495329543751,
-    "relativePath": "textures\\Fase 1\\playerfase1.png"
-  },
-  "ad2dfb13-66c8-48ac-8308-94fe147f18db": {
-    "asset": 1498880872703,
-    "meta": 1498880873926,
-    "relativePath": "scripts\\logica fases\\logicaFase1.js"
-  },
-  "6097c3b4-5aec-46f0-a1a9-9ed1563cf443": {
-    "asset": 1495497420222,
-    "meta": 1495499278905,
-    "relativePath": "textures\\Fase 1\\linha.png"
-  },
-  "4a01c26b-dc94-40eb-8aa2-34013003ecc8": {
-    "asset": 1495499800353,
-    "meta": 1495499800363,
-    "relativePath": "textures\\Fase 1\\linha.prefab"
-  },
-  "7fe10eeb-a685-41f4-bf76-27e199d8054d": {
-    "asset": 1495501407171,
-    "meta": 1495501413014,
-    "relativePath": "textures\\Fase 1\\alvo.png"
-  },
-  "658ff45c-2b3e-4260-aaf0-172ff072e523": {
-    "asset": 1495501469171,
-    "meta": 1498261824797,
-    "relativePath": "scripts\\logica fases\\alvo.js"
-  },
-  "125163fa-349a-45df-bfbf-c92ef22f255e": {
-    "asset": 1494215357164,
-    "meta": 1495846584616,
-    "relativePath": "textures\\Fase 1\\buttontryagain.png"
-  },
-  "c2450dd6-b026-4a14-90d4-d7d9063f34d0": {
-    "asset": 1497504828746,
-    "meta": 1497504828752,
-    "relativePath": "scenes\\jogos\\jogoFase1-1.fire"
-  },
-  "4b39d0a8-942a-4e02-bab5-ca1343dfe0c3": {
-    "asset": 1497504756747,
-    "meta": 1498261824955,
-    "relativePath": "scripts\\logica fases\\logicaFase1-1.js"
-  },
-  "72dcead3-1529-42f2-b030-4e7f9fb7111f": {
-    "asset": 1496685735394,
-    "meta": 1496685744349,
-    "relativePath": "textures\\Fase 1\\linhagameover.jpg"
-  },
-  "a89dd709-6e18-4fab-bc10-f70e43ece313": {
-    "asset": 1496808158404,
-    "meta": 1496855435963,
-    "relativePath": "scripts\\buttons"
-  },
-  "7b39f410-dfea-464b-a634-0746910cefb3": {
-    "asset": 1496807249586,
-    "meta": 1496855435963,
-    "relativePath": "scripts\\buttons\\buttons camadas"
-  },
-  "94ab9479-1e26-44c0-9e58-e8488d085665": {
-    "asset": 1496807593894,
-    "meta": 1496855435963,
-    "relativePath": "scripts\\buttons\\buttons dialogues"
-  },
-  "b05ac6da-9293-41b6-92d8-cca14e55ae61": {
-    "asset": 1496808158404,
-    "meta": 1496855435963,
-    "relativePath": "scripts\\buttons\\button quiz"
-  },
-  "f1696aa5-033f-4ed0-a4e1-74c4aafff72e": {
-    "asset": 1498352354367,
-    "meta": 1498498159538,
-    "relativePath": "scripts\\logica fases"
-  },
-  "5b144ddb-4b73-47c3-a7cd-e6e91eb00eea": {
-    "asset": 1496809935144,
-    "meta": 1496855435973,
-    "relativePath": "scripts\\quiz fases"
-  },
-  "3fa8b7b5-27b3-4942-b5a3-9d6e45c946bc": {
-    "asset": 1485388882826,
-    "meta": 1497312675404,
-    "relativePath": "textures\\Fase 1\\art2.jpg"
-  },
-  "4b020b97-8c62-4ef9-a9cb-6be2b851fb7e": {
-    "asset": 1497504154131,
-    "meta": 1497504339926,
-    "relativePath": "textures\\Fase 1\\buttonfront.png"
-  },
-  "e0c0b5bf-a9a3-4173-a07b-506cefa5d287": {
-    "asset": 1498350633999,
-    "meta": 1498350634458,
-    "relativePath": "scripts\\logica fases\\logicaFase2.js"
-  },
-  "d1ffaf49-16d4-45ff-8944-3cbeba2a7013": {
-    "asset": 1497917154938,
-    "meta": 1497979642764,
-    "relativePath": "textures\\Fase 1"
-  },
-  "3f65d06c-c141-4b0b-9b67-7b765147b52d": {
-    "asset": 1498008255497,
-    "meta": 1498083757880,
-    "relativePath": "textures\\Fase 2"
-  },
-  "830f52f8-3e18-45ae-9d1b-e800bdcfb31f": {
-    "asset": 1497917179362,
-    "meta": 1497979642768,
-    "relativePath": "textures\\Quiz"
-  },
-  "f799be52-0eb0-4a08-b252-54af6f01265b": {
-    "asset": 1497917292207,
-    "meta": 1497979642762,
-    "relativePath": "textures\\Buttons"
-  },
-  "5900db88-31ee-493e-ae89-6ab8d2d8dc2f": {
-    "asset": 1498616669523,
-    "meta": 1498696598647,
-    "relativePath": "textures\\Fase 3"
-  },
-  "042c1e27-a112-4837-9bcb-22a574f40556": {
-    "asset": 1499130987391,
-    "meta": 1499213685951,
-    "relativePath": "textures\\Fase 4"
-  },
-  "60f5bfff-4af4-4859-a8c4-063da24f5457": {
-    "asset": 1497917879533,
-    "meta": 1497919143695,
-    "relativePath": "textures\\Fase 2\\black-35393_640.png"
-  },
-  "c5ed8c83-eca6-4ddb-9a52-ef417654b7c4": {
-    "asset": 1497918826175,
-    "meta": 1497919144012,
-    "relativePath": "textures\\Fase 2\\bgfase2.png"
-  },
-  "52f27e19-d09d-4009-a707-1293a19417be": {
-    "asset": 1497919031242,
-    "meta": 1497919144016,
-    "relativePath": "textures\\Fase 2\\cabo.png"
-  },
-  "0b3d16ba-ce7c-4941-af8b-ca2ffeba23cc": {
-    "asset": 1497918394876,
-    "meta": 1497919144070,
-    "relativePath": "textures\\Fase 2\\roteador-de-internet-sem-fio_318-39405.png"
-  },
-  "fcf72ebe-20cf-484b-a355-cd26aed12c47": {
-    "asset": 1497918263888,
-    "meta": 1497919144072,
-    "relativePath": "textures\\Fase 2\\computador-pc-com-monitor_318-50338.png"
-  },
   "f8e6b000-5643-4b86-9080-aa680ce1f599": {
     "asset": 1498245790030,
-    "meta": 1499129557668,
+    "meta": 1503082915278,
     "relativePath": "image"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
     "asset": 1497533854000,
-    "meta": 1499129558929,
+    "meta": 1503082915389,
     "relativePath": "image\\default_btn_disabled.png"
   },
   "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
     "asset": 1497533854000,
-    "meta": 1499129558934,
+    "meta": 1503082915392,
     "relativePath": "image\\default_btn_normal.png"
   },
   "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
     "asset": 1497533854000,
-    "meta": 1499129558944,
+    "meta": 1503082915398,
     "relativePath": "image\\default_btn_pressed.png"
   },
   "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
     "asset": 1497533854000,
-    "meta": 1499129558948,
+    "meta": 1503082915399,
     "relativePath": "image\\default_panel.png"
-  },
-  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
-    "asset": 1497533854000,
-    "meta": 1499129558955,
-    "relativePath": "image\\default_progressbar.png"
   },
   "99170b0b-d210-46f1-b213-7d9e3f23098a": {
     "asset": 1497533854000,
-    "meta": 1499129558953,
+    "meta": 1503082915404,
     "relativePath": "image\\default_progressbar_bg.png"
+  },
+  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
+    "asset": 1497533854000,
+    "meta": 1503082915405,
+    "relativePath": "image\\default_progressbar.png"
   },
   "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
     "asset": 1497533854000,
-    "meta": 1499129558977,
+    "meta": 1503082915414,
     "relativePath": "image\\default_radio_button_off.png"
   },
   "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
     "asset": 1497533854000,
-    "meta": 1499129558982,
+    "meta": 1503082915412,
     "relativePath": "image\\default_radio_button_on.png"
   },
   "4bab67cb-18e6-4099-b840-355f0473f890": {
     "asset": 1497533854000,
-    "meta": 1499129558981,
+    "meta": 1503082915419,
     "relativePath": "image\\default_scrollbar_bg.png"
   },
   "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
     "asset": 1497533854000,
-    "meta": 1499129558987,
+    "meta": 1503082915420,
     "relativePath": "image\\default_scrollbar_vertical_bg.png"
-  },
-  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
-    "asset": 1497533854000,
-    "meta": 1499129558990,
-    "relativePath": "image\\default_scrollbar_vertical.png"
   },
   "0291c134-b3da-4098-b7b5-e397edbe947f": {
     "asset": 1497533854000,
-    "meta": 1499129558993,
+    "meta": 1503082915429,
     "relativePath": "image\\default_scrollbar.png"
+  },
+  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
+    "asset": 1497533854000,
+    "meta": 1503082915428,
+    "relativePath": "image\\default_scrollbar_vertical.png"
+  },
+  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
+    "asset": 1497533854000,
+    "meta": 1503082915433,
+    "relativePath": "image\\default_sprite_splash.png"
   },
   "6e056173-d285-473c-b206-40a7fff5386e": {
     "asset": 1497533854000,
-    "meta": 1499129558998,
+    "meta": 1503082915435,
     "relativePath": "image\\default_sprite.png"
   },
   "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
     "asset": 1497533854000,
-    "meta": 1499129559002,
+    "meta": 1503082915441,
     "relativePath": "image\\default_toggle_checkmark.png"
-  },
-  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
-    "asset": 1497533854000,
-    "meta": 1499129558995,
-    "relativePath": "image\\default_sprite_splash.png"
-  },
-  "d29077ba-1627-4a72-9579-7b56a235340c": {
-    "asset": 1497533854000,
-    "meta": 1499129559017,
-    "relativePath": "image\\default_toggle_normal.png"
   },
   "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
     "asset": 1497533854000,
-    "meta": 1499129559008,
+    "meta": 1503082915443,
     "relativePath": "image\\default_toggle_disabled.png"
+  },
+  "d29077ba-1627-4a72-9579-7b56a235340c": {
+    "asset": 1497533854000,
+    "meta": 1503082915448,
+    "relativePath": "image\\default_toggle_normal.png"
   },
   "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
     "asset": 1497533854000,
-    "meta": 1499129559035,
+    "meta": 1503082915449,
     "relativePath": "image\\default_toggle_pressed.png"
   },
   "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
     "asset": 1498245756781,
-    "meta": 1499129559018,
+    "meta": 1503082915449,
     "relativePath": "misc"
   },
   "2be36297-9abb-4fee-8049-9ed5e271da8a": {
@@ -671,7 +106,7 @@
   },
   "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
     "asset": 1498245762708,
-    "meta": 1499129559018,
+    "meta": 1503082915451,
     "relativePath": "obsolete"
   },
   "b8223619-7e38-47c4-841f-9160c232495a": {
@@ -681,7 +116,7 @@
   },
   "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
     "asset": 1498245756798,
-    "meta": 1499129559019,
+    "meta": 1503082915451,
     "relativePath": "particle"
   },
   "b2687ac4-099e-403c-a192-ff477686f4f5": {
@@ -691,187 +126,852 @@
   },
   "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
     "asset": 1498245805249,
-    "meta": 1499129559020,
+    "meta": 1503082915453,
     "relativePath": "prefab"
   },
   "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
     "asset": 1497533854000,
-    "meta": 1499129559044,
+    "meta": 1503082915456,
     "relativePath": "prefab\\button.prefab"
   },
   "2c937608-2562-40ea-b264-7395df6f0cea": {
     "asset": 1497533854000,
-    "meta": 1499129559061,
+    "meta": 1503082915457,
     "relativePath": "prefab\\canvas.prefab"
   },
   "61aeb05b-3b32-452b-8eed-2b76deeed554": {
     "asset": 1497533854000,
-    "meta": 1499129559073,
+    "meta": 1503082915459,
     "relativePath": "prefab\\editbox.prefab"
   },
   "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
     "asset": 1497533854000,
-    "meta": 1499129559127,
+    "meta": 1503082915460,
     "relativePath": "prefab\\label.prefab"
   },
   "785a442c-3ceb-45be-a46e-7317f625f3b9": {
     "asset": 1497533854000,
-    "meta": 1499129559097,
+    "meta": 1503082915462,
     "relativePath": "prefab\\layout.prefab"
   },
   "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
     "asset": 1497533854000,
-    "meta": 1499129559143,
+    "meta": 1503082915469,
     "relativePath": "prefab\\pageview.prefab"
   },
   "cd33edea-55f5-46c2-958d-357a01384a36": {
     "asset": 1497533854000,
-    "meta": 1499129559151,
+    "meta": 1503082915472,
     "relativePath": "prefab\\particlesystem.prefab"
   },
   "5965ffac-69da-4b55-bcde-9225d0613c28": {
     "asset": 1497533856000,
-    "meta": 1499129559173,
+    "meta": 1503082915473,
     "relativePath": "prefab\\progressBar.prefab"
   },
   "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
     "asset": 1497533856000,
-    "meta": 1499129559177,
+    "meta": 1503082915475,
     "relativePath": "prefab\\richtext.prefab"
   },
   "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
     "asset": 1497533856000,
-    "meta": 1499129559245,
+    "meta": 1503082915477,
     "relativePath": "prefab\\scrollview.prefab"
   },
   "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
     "asset": 1497533856000,
-    "meta": 1499129559208,
+    "meta": 1503082915479,
     "relativePath": "prefab\\slider.prefab"
   },
   "1f55e3be-b89b-4b79-88de-47fd31018044": {
     "asset": 1497533856000,
-    "meta": 1499129559233,
+    "meta": 1503082915480,
     "relativePath": "prefab\\sprite_splash.prefab"
   },
   "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
     "asset": 1497533856000,
-    "meta": 1499129559272,
+    "meta": 1503082915481,
     "relativePath": "prefab\\sprite.prefab"
   },
   "7de03a80-4457-438d-95a7-3e7cdffd6086": {
     "asset": 1497533856000,
-    "meta": 1499129559278,
+    "meta": 1503082915482,
     "relativePath": "prefab\\tiledmap.prefab"
   },
   "0d784963-d024-4ea6-a7db-03be0ad63010": {
     "asset": 1497533856000,
-    "meta": 1499129559298,
+    "meta": 1503082915484,
     "relativePath": "prefab\\toggle.prefab"
   },
   "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
     "asset": 1497533856000,
-    "meta": 1499129559306,
+    "meta": 1503082915486,
     "relativePath": "prefab\\toggleGroup.prefab"
   },
   "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
     "asset": 1497533856000,
-    "meta": 1499129559319,
+    "meta": 1503082915487,
     "relativePath": "prefab\\videoplayer.prefab"
   },
   "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
     "asset": 1497533856000,
-    "meta": 1499129559324,
+    "meta": 1503082915488,
     "relativePath": "prefab\\webview.prefab"
   },
-  "c09f46bb-6fa8-4073-9cfa-ade9d8cbf848": {
-    "asset": 1498008246088,
-    "meta": 1498008255566,
-    "relativePath": "textures\\Fase 2\\ipstabela.png"
+  "81e92991-548c-4d78-a538-0ec5f7ceb692": {
+    "asset": 1501106664452,
+    "meta": 1501106673262,
+    "relativePath": "Music"
   },
-  "d9488ae6-7df8-4f6c-b084-62c1ccb5f726": {
-    "asset": 1498007898887,
-    "meta": 1498008255579,
-    "relativePath": "textures\\Fase 2\\tabela roteamento.png"
+  "8aa80989-e3ea-4bce-86e5-549c2fb00ab9": {
+    "asset": 1493484005235,
+    "meta": 1493743527095,
+    "relativePath": "Music\\music1.mp3"
   },
-  "47ed8b9e-b541-4091-9fab-312d7b17f205": {
-    "asset": 1498351581645,
-    "meta": 1498351586095,
-    "relativePath": "textures\\Fase 3\\bg.jpg"
+  "ba4accd9-799a-4e7a-acb9-864862bf15f9": {
+    "asset": 1499919220735,
+    "meta": 1500180800894,
+    "relativePath": "Music\\music2.mp3"
+  },
+  "c28df299-2ac4-412a-b7ff-ccd86d023c6c": {
+    "asset": 1499920279409,
+    "meta": 1500180800897,
+    "relativePath": "Music\\music3.mp3"
+  },
+  "c3500df7-5c93-42e6-9bb0-afdedd1b8556": {
+    "asset": 1499920994843,
+    "meta": 1500180800898,
+    "relativePath": "Music\\music4.mp3"
+  },
+  "d4e6899f-98ce-4eb0-bb8b-3fb2af2b02e7": {
+    "asset": 1501106665011,
+    "meta": 1501106673264,
+    "relativePath": "scenes"
+  },
+  "9efdc853-9b72-42e4-8862-8b9a0b9aef8d": {
+    "asset": 1503579560204,
+    "meta": 1503591263027,
+    "relativePath": "scenes\\fases"
+  },
+  "7eaf6153-f18e-4d1c-837c-5a1615737063": {
+    "asset": 1499304749412,
+    "meta": 1501106673267,
+    "relativePath": "scenes\\credits.fire"
+  },
+  "59d92acb-d873-43c6-8da9-3250cc79a965": {
+    "asset": 1497313775975,
+    "meta": 1501106673269,
+    "relativePath": "scenes\\fases\\fase1.fire"
+  },
+  "c835567d-6026-42b2-90e1-01b903e0975e": {
+    "asset": 1497408472226,
+    "meta": 1501106673271,
+    "relativePath": "scenes\\fases\\fase2.fire"
+  },
+  "a643934e-1b58-415c-9f9d-1eec6526e4e1": {
+    "asset": 1498279214410,
+    "meta": 1501106673273,
+    "relativePath": "scenes\\fases\\fase3.fire"
+  },
+  "d3357bdf-69c5-494a-902b-9fc0af3e0820": {
+    "asset": 1501106665007,
+    "meta": 1501106673273,
+    "relativePath": "scenes\\jogos"
+  },
+  "b46ea76b-fef4-4fb0-9eca-90739ca00b5c": {
+    "asset": 1498887552732,
+    "meta": 1501106673275,
+    "relativePath": "scenes\\fases\\fase4.fire"
+  },
+  "c2450dd6-b026-4a14-90d4-d7d9063f34d0": {
+    "asset": 1497504828746,
+    "meta": 1501106673277,
+    "relativePath": "scenes\\jogos\\jogoFase1-1.fire"
+  },
+  "d9ff7308-a36a-4aa9-8203-de228b2386d3": {
+    "asset": 1498880951592,
+    "meta": 1501106673279,
+    "relativePath": "scenes\\jogos\\jogoFase1.fire"
+  },
+  "43da3ba4-5a5e-4175-a50c-c927d6e56320": {
+    "asset": 1500251808125,
+    "meta": 1501106673304,
+    "relativePath": "scenes\\jogos\\jogoFase2.fire"
+  },
+  "4b29766e-d194-4982-b628-98daca6c59f3": {
+    "asset": 1503504700035,
+    "meta": 1503504700045,
+    "relativePath": "scenes\\jogos\\jogoFase3.fire"
+  },
+  "1c8cefff-0d61-4b74-adf6-8668d6f81c21": {
+    "asset": 1500184748937,
+    "meta": 1501106673310,
+    "relativePath": "scenes\\jogos\\jogoFase4.fire"
+  },
+  "d24c8a04-c532-41c1-8cd4-e300801091ca": {
+    "asset": 1501106711321,
+    "meta": 1501106711332,
+    "relativePath": "scenes\\logo.fire"
+  },
+  "afcad128-7f4f-40cd-9c8d-0374b7dcc8fb": {
+    "asset": 1495574909824,
+    "meta": 1501106673314,
+    "relativePath": "scenes\\main.fire"
+  },
+  "3945941e-1a1a-433c-9ba5-81e11ca4977c": {
+    "asset": 1503581691749,
+    "meta": 1503591263029,
+    "relativePath": "scenes\\quiz"
+  },
+  "f1922c75-d02f-4231-a0a7-8152cb42c727": {
+    "asset": 1491333980669,
+    "meta": 1501106673316,
+    "relativePath": "scenes\\opcoes.fire"
+  },
+  "56608ed1-bdf4-4826-91d8-e11f737bd775": {
+    "asset": 1499359522107,
+    "meta": 1501106673319,
+    "relativePath": "scenes\\quiz\\quizFase1.fire"
+  },
+  "fdcdd846-4a0b-4c96-bbf3-ff04e747a642": {
+    "asset": 1499360058734,
+    "meta": 1501106673322,
+    "relativePath": "scenes\\quiz\\quizFase2.fire"
+  },
+  "d3ab1b16-fe7b-4d53-b125-0cfd52459595": {
+    "asset": 1499361158577,
+    "meta": 1501106673325,
+    "relativePath": "scenes\\quiz\\quizFase3.fire"
+  },
+  "e032f4c8-448e-4c83-9b13-e0c877e67a19": {
+    "asset": 1499305449216,
+    "meta": 1501106673327,
+    "relativePath": "scenes\\quiz\\quizFase4.fire"
+  },
+  "5f688aa6-61a8-43ba-9ba6-6fd97797aa45": {
+    "asset": 1501106666594,
+    "meta": 1501106673328,
+    "relativePath": "scripts"
+  },
+  "a89dd709-6e18-4fab-bc10-f70e43ece313": {
+    "asset": 1501106665833,
+    "meta": 1501106673331,
+    "relativePath": "scripts\\buttons"
+  },
+  "5f9d7401-1d4a-4dc0-a933-92c6d4c8bb36": {
+    "asset": 1503579657778,
+    "meta": 1503579657796,
+    "relativePath": "scenes\\selectFase.fire"
+  },
+  "0623b345-30e7-4e15-8c25-fa8eeb0d8195": {
+    "asset": 1491418045950,
+    "meta": 1501106673709,
+    "relativePath": "scripts\\buttons\\btnCarregarJogo.js"
+  },
+  "b94cb309-f16a-4334-a4b4-4a947ced6f4d": {
+    "asset": 1491417981136,
+    "meta": 1501106673726,
+    "relativePath": "scripts\\buttons\\btnNovoJogo.js"
+  },
+  "ebaf8ea5-acbf-4878-9bab-105bbbc6951d": {
+    "asset": 1503577343960,
+    "meta": 1503591263029,
+    "relativePath": "scripts\\buttons\\btnPlay"
+  },
+  "a6892240-09b6-4f61-aaed-9d93a8968ff2": {
+    "asset": 1491418108725,
+    "meta": 1501106673745,
+    "relativePath": "scripts\\buttons\\btnOpcoes.js"
+  },
+  "6ec98b5a-becb-45e3-a7c2-e630858e6381": {
+    "asset": 1492514555469,
+    "meta": 1501106673769,
+    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada1.js"
+  },
+  "3ae0a731-9fff-4e53-b072-83f34881e479": {
+    "asset": 1492514801982,
+    "meta": 1501106673781,
+    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada2.js"
+  },
+  "aadbd892-58f4-47d7-9dd3-b1b246645f2a": {
+    "asset": 1492516228991,
+    "meta": 1501106673791,
+    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada3.js"
+  },
+  "aa0b65c2-8879-41b3-ad9f-ae104e2de2b2": {
+    "asset": 1492521423918,
+    "meta": 1501106673792,
+    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada4.js"
+  },
+  "b05ac6da-9293-41b6-92d8-cca14e55ae61": {
+    "asset": 1503582966127,
+    "meta": 1503591263030,
+    "relativePath": "scripts\\buttons\\button quiz"
+  },
+  "778d4639-ac27-4b5c-a25d-0e8e11d24dc4": {
+    "asset": 1494363299081,
+    "meta": 1501106673900,
+    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz1.js"
+  },
+  "34dcb858-d458-4f81-93c0-3a0b46d67e67": {
+    "asset": 1494369208403,
+    "meta": 1501106673916,
+    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz2.js"
+  },
+  "79ad18eb-bb8b-4be8-b3de-f222f0df6895": {
+    "asset": 1494369156932,
+    "meta": 1501106674160,
+    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz3.js"
+  },
+  "5b423d6b-98bf-4ace-a6b0-a7684af7295c": {
+    "asset": 1494369136126,
+    "meta": 1501106674162,
+    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz4.js"
+  },
+  "7b39f410-dfea-464b-a634-0746910cefb3": {
+    "asset": 1503576745936,
+    "meta": 1503591263031,
+    "relativePath": "scripts\\buttons\\buttons camadas"
+  },
+  "c9918158-f62c-4ce6-b9b2-f70f18fee12b": {
+    "asset": 1503578971243,
+    "meta": 1503578971404,
+    "relativePath": "scripts\\buttons\\buttons camadas\\btnAcessoARede.js"
+  },
+  "00df6840-a788-4288-8a71-f86be97b31af": {
+    "asset": 1503579203463,
+    "meta": 1503579203630,
+    "relativePath": "scripts\\buttons\\buttons camadas\\btnAplicacao.js"
+  },
+  "fd4a6982-6ef7-4383-8dd8-620119b0b45e": {
+    "asset": 1503579332540,
+    "meta": 1503579332669,
+    "relativePath": "scripts\\buttons\\buttons camadas\\btnInternet.js"
+  },
+  "d7ebdcb7-dfe4-45bf-b0ec-b7e8baeb8773": {
+    "asset": 1503579477284,
+    "meta": 1503579477407,
+    "relativePath": "scripts\\buttons\\buttons camadas\\btnTransporte.js"
+  },
+  "94ab9479-1e26-44c0-9e58-e8488d085665": {
+    "asset": 1503579889185,
+    "meta": 1503591263031,
+    "relativePath": "scripts\\buttons\\buttons dialogues"
+  },
+  "2b869036-d937-40e6-9084-edea2733661c": {
+    "asset": 1499267944436,
+    "meta": 1501106674618,
+    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase1.js"
+  },
+  "a6a8ffe6-90a9-4034-bbb1-cc32a77df286": {
+    "asset": 1499268419000,
+    "meta": 1501106674634,
+    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase2.js"
+  },
+  "81f93381-97c0-4cff-8496-b4458ed2dbef": {
+    "asset": 1499268517382,
+    "meta": 1501106674667,
+    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase3.js"
+  },
+  "0d608320-3373-4130-b8d0-7f43b3a21bab": {
+    "asset": 1499268794073,
+    "meta": 1501106674685,
+    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase4.js"
+  },
+  "f1696aa5-033f-4ed0-a4e1-74c4aafff72e": {
+    "asset": 1501106666263,
+    "meta": 1501106674690,
+    "relativePath": "scripts\\logica fases"
+  },
+  "c76ab577-7368-41f5-b61c-f00ee9cc798e": {
+    "asset": 1499304419699,
+    "meta": 1501106674702,
+    "relativePath": "scripts\\creditroll.js"
+  },
+  "658ff45c-2b3e-4260-aaf0-172ff072e523": {
+    "asset": 1495501469171,
+    "meta": 1501106674791,
+    "relativePath": "scripts\\logica fases\\alvo.js"
+  },
+  "4b39d0a8-942a-4e02-bab5-ca1343dfe0c3": {
+    "asset": 1499269081205,
+    "meta": 1501106674881,
+    "relativePath": "scripts\\logica fases\\logicaFase1-1.js"
+  },
+  "ad2dfb13-66c8-48ac-8308-94fe147f18db": {
+    "asset": 1499268969501,
+    "meta": 1501106675011,
+    "relativePath": "scripts\\logica fases\\logicaFase1.js"
   },
   "a3a26178-2f4d-4a0c-8541-b66335517138": {
-    "asset": 1498701692433,
-    "meta": 1498701692694,
+    "asset": 1500251763773,
+    "meta": 1501106675133,
+    "relativePath": "scripts\\logica fases\\logicaFase2.js"
+  },
+  "8efd8835-0ec0-4c75-88e3-0b157c58834f": {
+    "asset": 1503504244996,
+    "meta": 1503504245560,
     "relativePath": "scripts\\logica fases\\logicaFase3.js"
   },
   "cef6de86-2637-4071-b367-e2036c7b5ecd": {
-    "asset": 1499223208152,
-    "meta": 1499223208431,
+    "asset": 1500184688278,
+    "meta": 1501106675218,
     "relativePath": "scripts\\logica fases\\logicaFase4.js"
   },
-  "a4f3b178-05e9-41c5-9931-68abbf537454": {
-    "asset": 1498498705908,
-    "meta": 1498498713574,
-    "relativePath": "textures\\Fase 3\\nos.png"
+  "c8e9f1a6-d26d-4399-90f6-92907a8a4f37": {
+    "asset": 1501106666589,
+    "meta": 1501106675219,
+    "relativePath": "scripts\\profs"
+  },
+  "d66a03df-8b06-4267-91b3-0233864b9b03": {
+    "asset": 1493575413645,
+    "meta": 1501106675224,
+    "relativePath": "scripts\\logo.js"
+  },
+  "c5ddc184-9f57-430a-a2b1-0a1add8eb6a2": {
+    "asset": 1491916645821,
+    "meta": 1501106675235,
+    "relativePath": "scripts\\profs\\profCamada1.js"
+  },
+  "d1625446-5d91-489a-8cbe-e5e463190f18": {
+    "asset": 1491918453363,
+    "meta": 1501106675239,
+    "relativePath": "scripts\\profs\\profCamada2.js"
+  },
+  "53932465-cef9-4d20-aa5f-eb35150b77c2": {
+    "asset": 1491918539266,
+    "meta": 1501106675246,
+    "relativePath": "scripts\\profs\\profCamada3.js"
+  },
+  "2b28e6b4-2f14-4191-8e57-12de2301dd0b": {
+    "asset": 1491918774305,
+    "meta": 1501106675247,
+    "relativePath": "scripts\\profs\\profCamada4.js"
+  },
+  "5b144ddb-4b73-47c3-a7cd-e6e91eb00eea": {
+    "asset": 1503582494508,
+    "meta": 1503591263031,
+    "relativePath": "scripts\\quiz fases"
+  },
+  "3c65834e-e127-4d58-9cb9-07a484f6aea6": {
+    "asset": 1499359087692,
+    "meta": 1501106675327,
+    "relativePath": "scripts\\quiz fases\\quizFase1.js"
+  },
+  "da591fba-434d-4cee-badb-66141167f292": {
+    "asset": 1499359738958,
+    "meta": 1501106675361,
+    "relativePath": "scripts\\quiz fases\\quizFase2.js"
+  },
+  "f22e5686-1f8c-4dbe-a5d8-c7e825fa08f8": {
+    "asset": 1499360888504,
+    "meta": 1501106675405,
+    "relativePath": "scripts\\quiz fases\\quizFase3.js"
+  },
+  "be410fc3-43a3-4c51-ad85-44e31c6a6880": {
+    "asset": 1499305329531,
+    "meta": 1501106675406,
+    "relativePath": "scripts\\quiz fases\\quizFase4.js"
+  },
+  "e629cc0c-c538-460b-bcff-cd6549b3c5e7": {
+    "asset": 1501106669788,
+    "meta": 1501106675407,
+    "relativePath": "textures"
+  },
+  "f799be52-0eb0-4a08-b252-54af6f01265b": {
+    "asset": 1503536097745,
+    "meta": 1503576518249,
+    "relativePath": "textures\\Buttons"
+  },
+  "500d0a93-fac0-40c8-86e5-8a616d58012f": {
+    "asset": 1486688992000,
+    "meta": 1501106675432,
+    "relativePath": "textures\\Buttons\\btnCamada1.png"
+  },
+  "a69e7d22-6702-4937-9050-3ac662c4daeb": {
+    "asset": 1486692582000,
+    "meta": 1501106675441,
+    "relativePath": "textures\\bg.jpg"
+  },
+  "70416bae-63c5-4b55-98f7-bc3c434a2092": {
+    "asset": 1486689064000,
+    "meta": 1501106675449,
+    "relativePath": "textures\\Buttons\\btnCamada2.png"
+  },
+  "f0b82286-7004-4234-b6d5-9d3bc688d3d0": {
+    "asset": 1486689424000,
+    "meta": 1501106675462,
+    "relativePath": "textures\\Buttons\\btnCamada3.png"
+  },
+  "531e584d-997b-44f5-9849-672c3a8ff1b5": {
+    "asset": 1486689500000,
+    "meta": 1501106675469,
+    "relativePath": "textures\\Buttons\\btnCamada4.png"
+  },
+  "2ef75b1b-aec3-4b44-b89b-0aba4308cb01": {
+    "asset": 1492896173206,
+    "meta": 1501106675477,
+    "relativePath": "textures\\Buttons\\btnContinuar.png"
+  },
+  "6fc1bb39-bdff-4793-882e-8061199fa9a5": {
+    "asset": 1486688260000,
+    "meta": 1501106675485,
+    "relativePath": "textures\\Buttons\\btnCarregarJogo.png"
+  },
+  "398607a1-6017-4bb9-a22b-4a29c76f7061": {
+    "asset": 1486688210000,
+    "meta": 1501106675497,
+    "relativePath": "textures\\Buttons\\btnNovoJogo.png"
+  },
+  "4be3bd15-68c1-49d4-91e6-153fb5868c21": {
+    "asset": 1486688312000,
+    "meta": 1501106675504,
+    "relativePath": "textures\\Buttons\\btnOpcoes.png"
+  },
+  "aaebd9e3-2f2b-4da8-891a-52bcc09dd8a7": {
+    "asset": 1486688350000,
+    "meta": 1501106675516,
+    "relativePath": "textures\\Buttons\\btnSair.png"
+  },
+  "dead893b-5230-4268-beb2-b2e30151185b": {
+    "asset": 1494362780598,
+    "meta": 1501106675517,
+    "relativePath": "textures\\Buttons\\btnSelectStage.jpg"
+  },
+  "6697e84f-18ad-4ab0-b961-b24957e74374": {
+    "asset": 1490616843035,
+    "meta": 1501106675526,
+    "relativePath": "textures\\Buttons\\buttonplay.jpg"
+  },
+  "84331cc2-6364-47cc-b669-6bf03be0130b": {
+    "asset": 1494362532701,
+    "meta": 1501106675528,
+    "relativePath": "textures\\Buttons\\btnTryAgain.jpg"
+  },
+  "60974865-db9f-478c-93e0-a09e868b9c5d": {
+    "asset": 1486693434000,
+    "meta": 1491240950493,
+    "relativePath": "textures\\educaredes.psd"
+  },
+  "d1ffaf49-16d4-45ff-8944-3cbeba2a7013": {
+    "asset": 1501106668077,
+    "meta": 1501106675530,
+    "relativePath": "textures\\Fase 1"
+  },
+  "3fa8b7b5-27b3-4942-b5a3-9d6e45c946bc": {
+    "asset": 1485388882826,
+    "meta": 1501106675537,
+    "relativePath": "textures\\Fase 1\\art2.jpg"
+  },
+  "7fe10eeb-a685-41f4-bf76-27e199d8054d": {
+    "asset": 1495501407171,
+    "meta": 1501106675541,
+    "relativePath": "textures\\Fase 1\\alvo.png"
+  },
+  "d9aae62f-dcce-413e-a798-d666789b12a8": {
+    "asset": 1495328349560,
+    "meta": 1501106675548,
+    "relativePath": "textures\\Fase 1\\buttondown.png"
+  },
+  "f1b2db37-5df4-4c7a-b066-4ad5de9a386b": {
+    "asset": 1495328732645,
+    "meta": 1501106675558,
+    "relativePath": "textures\\Fase 1\\bgfase1.jpg"
+  },
+  "125163fa-349a-45df-bfbf-c92ef22f255e": {
+    "asset": 1494215357164,
+    "meta": 1501106675563,
+    "relativePath": "textures\\Fase 1\\buttontryagain.png"
+  },
+  "2db30fac-6769-4bf0-a74b-af5d9a4064a8": {
+    "asset": 1495328374490,
+    "meta": 1501106675569,
+    "relativePath": "textures\\Fase 1\\buttonup.png"
+  },
+  "4b020b97-8c62-4ef9-a9cb-6be2b851fb7e": {
+    "asset": 1497504154131,
+    "meta": 1501106675575,
+    "relativePath": "textures\\Fase 1\\buttonfront.png"
+  },
+  "087e9f30-933f-4495-8adc-c5b6bab1206f": {
+    "asset": 1493589588718,
+    "meta": 1501106675580,
+    "relativePath": "textures\\Fase 1\\gameoverBG.jpg"
+  },
+  "6097c3b4-5aec-46f0-a1a9-9ed1563cf443": {
+    "asset": 1495497420222,
+    "meta": 1501106675583,
+    "relativePath": "textures\\Fase 1\\linha.png"
+  },
+  "4a01c26b-dc94-40eb-8aa2-34013003ecc8": {
+    "asset": 1495499800353,
+    "meta": 1501106675585,
+    "relativePath": "textures\\Fase 1\\linha.prefab"
+  },
+  "ab026ec7-6ea2-4118-a91d-b647cbb58fb6": {
+    "asset": 1495329028123,
+    "meta": 1501106675591,
+    "relativePath": "textures\\Fase 1\\playerfase1.png"
+  },
+  "72dcead3-1529-42f2-b030-4e7f9fb7111f": {
+    "asset": 1496685735394,
+    "meta": 1501106675593,
+    "relativePath": "textures\\Fase 1\\linhagameover.jpg"
+  },
+  "beea903e-b97d-4268-b6a4-51b41d755b07": {
+    "asset": 1486738952000,
+    "meta": 1501106675654,
+    "relativePath": "textures\\Fase 1\\prof camada1.png"
+  },
+  "3f65d06c-c141-4b0b-9b67-7b765147b52d": {
+    "asset": 1501106668525,
+    "meta": 1501106675656,
+    "relativePath": "textures\\Fase 2"
+  },
+  "fb769655-3348-4f2d-9b71-f067492c6ea0": {
+    "asset": 1486768992479,
+    "meta": 1501106675693,
+    "relativePath": "textures\\Fase 1\\prof camada1 colorido.png"
+  },
+  "c5ed8c83-eca6-4ddb-9a52-ef417654b7c4": {
+    "asset": 1497918826175,
+    "meta": 1501106675706,
+    "relativePath": "textures\\Fase 2\\bgfase2.png"
+  },
+  "60f5bfff-4af4-4859-a8c4-063da24f5457": {
+    "asset": 1497917879533,
+    "meta": 1501106675719,
+    "relativePath": "textures\\Fase 2\\black-35393_640.png"
+  },
+  "52f27e19-d09d-4009-a707-1293a19417be": {
+    "asset": 1497919031242,
+    "meta": 1501106675733,
+    "relativePath": "textures\\Fase 2\\cabo.png"
+  },
+  "fcf72ebe-20cf-484b-a355-cd26aed12c47": {
+    "asset": 1497918263888,
+    "meta": 1501106675759,
+    "relativePath": "textures\\Fase 2\\computador-pc-com-monitor_318-50338.png"
+  },
+  "c09f46bb-6fa8-4073-9cfa-ade9d8cbf848": {
+    "asset": 1498008246088,
+    "meta": 1501106675761,
+    "relativePath": "textures\\Fase 2\\ipstabela.png"
+  },
+  "0b3d16ba-ce7c-4941-af8b-ca2ffeba23cc": {
+    "asset": 1497918394876,
+    "meta": 1501106675802,
+    "relativePath": "textures\\Fase 2\\roteador-de-internet-sem-fio_318-39405.png"
+  },
+  "a93c2f73-21d4-458c-bd83-fd9fc9fc2612": {
+    "asset": 1487513069360,
+    "meta": 1501106675853,
+    "relativePath": "textures\\Fase 2\\prof camada2.jpg"
+  },
+  "d9488ae6-7df8-4f6c-b084-62c1ccb5f726": {
+    "asset": 1498007898887,
+    "meta": 1501106675855,
+    "relativePath": "textures\\Fase 2\\tabela roteamento.png"
+  },
+  "5900db88-31ee-493e-ae89-6ab8d2d8dc2f": {
+    "asset": 1501106669323,
+    "meta": 1501106675856,
+    "relativePath": "textures\\Fase 3"
   },
   "2a2ef6e6-728d-4879-bb28-7e05c1dc1319": {
     "asset": 1495328732645,
-    "meta": 1498499085704,
+    "meta": 1501106675874,
     "relativePath": "textures\\Fase 3\\bgfase1.jpg"
   },
-  "6eaf30e6-8416-4664-8508-a1a12205eea0": {
-    "asset": 1498525331576,
-    "meta": 1498525515933,
-    "relativePath": "textures\\Fase 3\\tabrot.png"
+  "47ed8b9e-b541-4091-9fab-312d7b17f205": {
+    "asset": 1498351581645,
+    "meta": 1501106675894,
+    "relativePath": "textures\\Fase 3\\bg.jpg"
   },
   "eb83e9cd-0a11-40f7-bde5-50dc43cee6f0": {
     "asset": 1498527330753,
-    "meta": 1498527338077,
+    "meta": 1501106675903,
     "relativePath": "textures\\Fase 3\\btnrealizarsalto.png"
+  },
+  "e4541fff-9930-4e1a-8d19-aff995c871df": {
+    "asset": 1498616669517,
+    "meta": 1501106675905,
+    "relativePath": "textures\\Fase 3\\linha.prefab"
   },
   "000846cc-9816-41cb-b542-19e1a84d2700": {
     "asset": 1498614616087,
-    "meta": 1498614828796,
+    "meta": 1501106675916,
     "relativePath": "textures\\Fase 3\\linha.png"
   },
   "1e4cdad5-c153-4570-91e1-66dddbec9700": {
     "asset": 1498614542475,
-    "meta": 1498614828809,
+    "meta": 1501106675927,
     "relativePath": "textures\\Fase 3\\mensagem.png"
   },
-  "e4541fff-9930-4e1a-8d19-aff995c871df": {
-    "asset": 1498616669517,
-    "meta": 1498616669525,
-    "relativePath": "textures\\Fase 3\\linha.prefab"
+  "a4f3b178-05e9-41c5-9931-68abbf537454": {
+    "asset": 1498498705908,
+    "meta": 1501106675943,
+    "relativePath": "textures\\Fase 3\\nos.png"
+  },
+  "324cf9c9-327f-474b-8636-d1446aa9c384": {
+    "asset": 1500525782561,
+    "meta": 1501106675953,
+    "relativePath": "textures\\Fase 3\\pacote1.png"
+  },
+  "a881d4cd-970b-4487-9a0e-d5b2e03f7fed": {
+    "asset": 1500525833700,
+    "meta": 1501106675977,
+    "relativePath": "textures\\Fase 3\\pacote2.png"
+  },
+  "0c6db405-5a5a-4228-b4bb-2f6473ac5624": {
+    "asset": 1500525932037,
+    "meta": 1501106675986,
+    "relativePath": "textures\\Fase 3\\pacote3.png"
+  },
+  "6eaf30e6-8416-4664-8508-a1a12205eea0": {
+    "asset": 1500677043776,
+    "meta": 1501106676026,
+    "relativePath": "textures\\Fase 3\\tabrot.png"
+  },
+  "042c1e27-a112-4837-9bcb-22a574f40556": {
+    "asset": 1501106669771,
+    "meta": 1501106676027,
+    "relativePath": "textures\\Fase 4"
   },
   "75a20a1d-8d1c-4270-aaf8-76854357a85c": {
     "asset": 1497918826175,
-    "meta": 1499020392530,
+    "meta": 1501106676082,
     "relativePath": "textures\\Fase 4\\bgfase2.png"
   },
-  "5af5bcdd-1954-43e6-94b0-4e0c083a7c68": {
-    "asset": 1499024848967,
-    "meta": 1499024897200,
-    "relativePath": "textures\\Fase 4\\filezilla.png"
+  "263c48a8-bb57-4a57-a153-6b7f1e2f2c19": {
+    "asset": 1487542268897,
+    "meta": 1501106676086,
+    "relativePath": "textures\\Fase 3\\prof camada3.jpg"
   },
   "b2f26bea-f28d-4d6e-876b-72d5b2a1e12c": {
     "asset": 1499024782942,
-    "meta": 1499024897207,
+    "meta": 1501106676106,
     "relativePath": "textures\\Fase 4\\firefox.png"
+  },
+  "5af5bcdd-1954-43e6-94b0-4e0c083a7c68": {
+    "asset": 1499024848967,
+    "meta": 1501106676116,
+    "relativePath": "textures\\Fase 4\\filezilla.png"
+  },
+  "a2a898f2-7797-4f9b-ac9b-a5cd30ef3311": {
+    "asset": 1500183121910,
+    "meta": 1501106676125,
+    "relativePath": "textures\\Fase 4\\MySQL-Logo.png"
   },
   "f7772503-91cf-4517-92a4-684a6aa1c200": {
     "asset": 1499024822806,
-    "meta": 1499024897257,
+    "meta": 1501106676150,
     "relativePath": "textures\\Fase 4\\Google_Chrome.png"
-  },
-  "4629a760-bc68-4dfd-90c4-8b9ffb16cbaf": {
-    "asset": 1499024756917,
-    "meta": 1499024897281,
-    "relativePath": "textures\\Fase 4\\skype.png"
   },
   "e750cade-5e11-430a-838f-7d263aedeca2": {
     "asset": 1499130322515,
-    "meta": 1499130987477,
+    "meta": 1501106676183,
     "relativePath": "textures\\Fase 4\\porta.png"
+  },
+  "4629a760-bc68-4dfd-90c4-8b9ffb16cbaf": {
+    "asset": 1499024756917,
+    "meta": 1501106676233,
+    "relativePath": "textures\\Fase 4\\skype.png"
+  },
+  "79881cc2-4643-4f56-9815-23798c05cab4": {
+    "asset": 1487553731837,
+    "meta": 1501106676257,
+    "relativePath": "textures\\Fase 4\\prof camada4.jpg"
+  },
+  "a227cac3-ddfd-494d-b81d-4a774df0352a": {
+    "asset": 1500184051589,
+    "meta": 1501106676267,
+    "relativePath": "textures\\Fase 4\\thunderbird-256.e5af8f2b33f3.png"
+  },
+  "667cef31-b41d-45cf-88ba-cd54a7c64802": {
+    "asset": 1491331490325,
+    "meta": 1501106676283,
+    "relativePath": "textures\\quadro.png"
+  },
+  "830f52f8-3e18-45ae-9d1b-e800bdcfb31f": {
+    "asset": 1501106669962,
+    "meta": 1501106676285,
+    "relativePath": "textures\\Quiz"
+  },
+  "b29bd8aa-7537-4dbc-a38f-932362b7efc1": {
+    "asset": 1486687346000,
+    "meta": 1501106676301,
+    "relativePath": "textures\\logo.png"
+  },
+  "99d47528-9bcc-4edb-a86f-0e77eeeb3998": {
+    "asset": 1493751586463,
+    "meta": 1501106676304,
+    "relativePath": "textures\\Quiz\\respostas.png"
+  },
+  "53a3b402-2321-46cb-9b11-b0a0d0fa7885": {
+    "asset": 1493751651890,
+    "meta": 1501106676321,
+    "relativePath": "textures\\Quiz\\respostascorreta.png"
+  },
+  "7284b34f-8244-4fd1-b2b2-39bc1b17602d": {
+    "asset": 1493751690633,
+    "meta": 1501106676321,
+    "relativePath": "textures\\Quiz\\respostaserrada.png"
+  },
+  "1f0d6748-45a0-49f8-befb-91187758bc27": {
+    "asset": 1498239706956,
+    "meta": 1501106676427,
+    "relativePath": "textures\\xulipasoftworks.plist"
+  },
+  "42199a1e-1e63-4de6-9780-e56517cde4f2": {
+    "asset": 1492894826349,
+    "meta": 1501106676343,
+    "relativePath": "textures\\textwrapper.png"
+  },
+  "69c9446c-aeab-4997-90d0-091f437f108e": {
+    "asset": 1498239706954,
+    "meta": 1501106676377,
+    "relativePath": "textures\\xulipasoftworks.png"
+  },
+  "aba4e8ca-dfb6-43c6-b479-270623087966": {
+    "asset": 1503536092207,
+    "meta": 1503536101770,
+    "relativePath": "textures\\Buttons\\btnCamada5.png"
+  },
+  "b0fcc136-f9ac-4df2-b608-237cbd3d3f6f": {
+    "asset": 1503578559834,
+    "meta": 1503578560214,
+    "relativePath": "scripts\\buttons\\buttons camadas\\btnTesteFinal.js"
+  },
+  "5a1c45f3-0925-476e-9e87-b78faa83b683": {
+    "asset": 1503577387410,
+    "meta": 1503577387479,
+    "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada5.js"
+  },
+  "10fd56bb-a147-45ab-aaa0-f0abbfe83eed": {
+    "asset": 1503581699764,
+    "meta": 1503581699776,
+    "relativePath": "scenes\\fases\\fase5.fire"
+  },
+  "50dd6117-4387-4ad5-a6cc-b7fdf73e848e": {
+    "asset": 1503581235574,
+    "meta": 1503581235714,
+    "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase5.js"
+  },
+  "22be01d4-b9d7-4036-aad9-de270d52c60e": {
+    "asset": 1503666900273,
+    "meta": 1503666900281,
+    "relativePath": "scenes\\quiz\\quizFase5.fire"
+  },
+  "3082e38a-81b5-4661-b52a-0d62b19745e1": {
+    "asset": 1503666624587,
+    "meta": 1503666624848,
+    "relativePath": "scripts\\quiz fases\\quizFase5.js"
+  },
+  "bf6ef539-61ec-4378-bde8-17553ef78aa9": {
+    "asset": 1503582987451,
+    "meta": 1503582987776,
+    "relativePath": "scripts\\buttons\\button quiz\\btnQuiz5.js"
   }
 }

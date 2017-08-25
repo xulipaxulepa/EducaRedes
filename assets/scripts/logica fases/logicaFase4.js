@@ -22,6 +22,16 @@ cc.Class({
             type: cc.Node
         },
         
+        porta4: {
+            default: null,
+            type: cc.Node
+        },
+        
+        porta5: {
+            default: null,
+            type: cc.Node
+        },
+        
         chrome: {
             default: null,
             type: cc.Node
@@ -38,6 +48,16 @@ cc.Class({
         },
         
         skype: {
+            default: null,
+            type: cc.Node
+        },
+        
+        thunderbird: {
+            default: null,
+            type: cc.Node
+        },
+        
+        mysql: {
             default: null,
             type: cc.Node
         },
@@ -72,15 +92,19 @@ cc.Class({
     },
     
     aparecePortas: function(){
-        this.porta1.setPosition(-349, 172);
-        this.porta2.setPosition(-2, 172);
-        this.porta3.setPosition(321, 172);
+        this.porta1.setPosition(-392, 172);
+        this.porta2.setPosition(-213, 172);
+        this.porta3.setPosition(-41, 172);
+        this.porta4.setPosition(150, 172);
+        this.porta5.setPosition(356, 172);
     },
     
     somePortas: function(){
         this.porta1.setPosition(-1349, 0);
         this.porta2.setPosition(-1349, 0);
         this.porta3.setPosition(-1349, 0);
+        this.porta4.setPosition(-1349, 0);
+        this.porta5.setPosition(-1349, 0);
     },
     
     someIcones: function(){
@@ -88,6 +112,8 @@ cc.Class({
         this.firefox.setPosition(-1360, 0);
         this.chrome.setPosition(-1360, 0);
         this.filezilla.setPosition(-1360, 0);
+        this.thunderbird.setPosition(-1360, 0);
+        this.mysql.setPosition(-1360, 0);
     },
     
     trocaTexto1: function(){
@@ -128,26 +154,26 @@ cc.Class({
             "as portas protocoladas TCP e UDP";
             this.contTexto += 1;
         } else if(this.contTexto == 8){
-            this.textoFase.string = "Algumas portas frequentemente usadas sao:\n"+
+            this.textoFase.string = "Algumas portas frequentemente usadas são:\n"+
             "Porta 80: para protocolos HTTP\n"+
             "Porta 81: Skype";
             this.contTexto += 1;
         } else if(this.contTexto == 9){
             this.textoFase.string = "Porta 20: para protocolos FTP\n"+
-            "Porta 22: para serviços SSH\n"+
-            "Porta 53: para o DNS, entre varios outras";
+            "Porta 110: para serviços POP3(E-Mail)\n"+
+            "Porta 118: para o SQL, entre vários outras";
             this.contTexto += 1;
         } else if(this.contTexto == 10){
-            this.textoFase.string = "Com essa informaçao em maos\n"+
+            this.textoFase.string = "Com essa informação em mãos\n"+
             "vamos ao mini-jogo";
             this.contTexto += 1;
         } else if(this.contTexto == 11){
-            this.textoFase.string = "Com os conhecimentos de portas passados ate entao\n"+
+            this.textoFase.string = "Com os conhecimentos de portas passados até entao\n"+
             "direcione o icone da aplicaçao para a porta correta\n"+
             "para isso, clique na porta para qual ele deve seguir";
             this.contTexto += 1;
         } else if(this.contTexto == 12){
-            this.textoFase.string = "Faça a associaçao certa 5 vezes\n"+
+            this.textoFase.string = "Faça a associação certa 5 vezes\n"+
             "para avançar para o quiz!\n"+
             "clique em continuar e boa sorte!";
             this.contTexto += 1;
@@ -157,9 +183,9 @@ cc.Class({
             this.skype.setPosition(0, -237);
             this.contTexto = 19;
         } else if(this.contTexto == 19){
-            this.textoFase.string = "Parabens!!\n"+
-            "Voce acertou as portas corretas!\n"+
-            "clique em continuar e va para o quiz!";
+            this.textoFase.string = "Parabéns!!\n"+
+            "Você acertou as portas corretas!\n"+
+            "clique em continuar e vá para o quiz!";
             this.contTexto += 1;
         } else if(this.contTexto == 20){
             cc.director.loadScene("quizFase4");
@@ -202,6 +228,30 @@ cc.Class({
         }
     },
     
+    porta110: function(){
+        var valorporta = "110";
+        if(this.porta == valorporta){
+            this.pontuacao += 1;
+            this.pergunta += 1;
+            this.someIcones();
+        } else {
+            this.pergunta += 1;
+            this.someIcones();
+        }
+    },
+    
+    porta118: function(){
+        var valorporta = "118";
+        if(this.porta == valorporta){
+            this.pontuacao += 1;
+            this.pergunta += 1;
+            this.someIcones();
+        } else {
+            this.pergunta += 1;
+            this.someIcones();
+        }
+    },
+    
     mudaPergunta: function(){
         if(this.pergunta === 0){
             this.porta = "81";
@@ -209,8 +259,8 @@ cc.Class({
             this.porta = "80";
             this.chrome.setPosition(0, -237);
         } else if(this.pergunta == 2){
-            this.porta = "80";
-            this.firefox.setPosition(0, -237);
+            this.porta = "110";
+            this.thunderbird.setPosition(0, -237);
         } else if(this.pergunta == 3){
             this.porta = "20";
             this.filezilla.setPosition(0, -237);
@@ -221,8 +271,8 @@ cc.Class({
             this.porta = "80";
             this.firefox.setPosition(0, -237);
         } else if(this.pergunta == 6){
-            this.porta = "20";
-            this.filezilla.setPosition(0, -237);
+            this.porta = "118";
+            this.mysql.setPosition(0, -237);
         } else if(this.pergunta == 7){
             this.porta = "81";
             this.filezilla.setPosition(0, -237);
@@ -230,11 +280,11 @@ cc.Class({
             this.porta = "80";
             this.chrome.setPosition(0, -237);
         } else if(this.pergunta == 9){
-            this.porta = "20";
-            this.filezilla.setPosition(0, -237);
+            this.porta = "81";
+            this.skype.setPosition(0, -237);
         } else if(this.pergunta == 10){
-            this.porta = "80";
-            this.chrome.setPosition(0, -237);
+            this.porta = "110";
+            this.thunderbird.setPosition(0, -237);
             this.pergunta = 0;
         } 
     },

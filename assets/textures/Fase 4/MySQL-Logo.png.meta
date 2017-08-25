@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "a2a898f2-7797-4f9b-ac9b-a5cd30ef3311",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "MySQL-Logo": {
+      "ver": "1.0.3",
+      "uuid": "4b6121bf-e2a9-49f7-b5d4-20e6d800203d",
+      "rawTextureUuid": "a2a898f2-7797-4f9b-ac9b-a5cd30ef3311",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 386,
+      "height": 200,
+      "rawWidth": 386,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
