@@ -1,0 +1,73 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "falaProfessor2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.4166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cd32cc91-4753-45db-8b6d-04c7f29ebf9a"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "1f2e2f64-21bf-4f42-88ef-bb7c5bec0050"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "c4a3dc7a-85ff-4857-a88c-5e34d809908e"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "0dc6955e-edb0-417f-8751-38a5100f5aeb"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "af3da909-a37b-4dc2-a192-d665d6c7acbe"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "0dc6955e-edb0-417f-8751-38a5100f5aeb"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "c4a3dc7a-85ff-4857-a88c-5e34d809908e"
+            }
+          },
+          {
+            "frame": 0.35,
+            "value": {
+              "__uuid__": "1f2e2f64-21bf-4f42-88ef-bb7c5bec0050"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "cd32cc91-4753-45db-8b6d-04c7f29ebf9a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -7,7 +7,7 @@
       "windowType": "dockable",
       "x": -8,
       "y": -8,
-      "width": 1382,
+      "width": 1378,
       "height": 744,
       "layout": {
         "children": [
@@ -20,7 +20,7 @@
                 ],
                 "height": 311.984375,
                 "type": "panel",
-                "width": 221
+                "width": 220.34375
               },
               {
                 "active": 0,
@@ -29,12 +29,12 @@
                 ],
                 "height": 302,
                 "type": "panel",
-                "width": 221
+                "width": 220.34375
               }
             ],
             "height": 617,
             "type": "dock-v",
-            "width": 221
+            "width": 220.34375
           },
           {
             "children": [
@@ -47,7 +47,7 @@
                     ],
                     "height": 302,
                     "type": "panel",
-                    "width": 579.984375
+                    "width": 576.28125
                   },
                   {
                     "active": 0,
@@ -56,27 +56,27 @@
                     ],
                     "height": 302,
                     "type": "panel",
-                    "width": 221
+                    "width": 222.328125
                   }
                 ],
                 "height": 302,
                 "type": "dock-h",
-                "width": 803.984375
+                "width": 801.609375
               },
               {
-                "active": 0,
+                "active": 1,
                 "children": [
                   "console",
                   "timeline"
                 ],
                 "height": 311.984375,
                 "type": "panel",
-                "width": 803.984375
+                "width": 801.609375
               }
             ],
             "height": 617,
             "type": "dock-v",
-            "width": 803.984375
+            "width": 801.609375
           },
           {
             "active": 0,
@@ -85,7 +85,7 @@
             ],
             "height": 617,
             "type": "panel",
-            "width": 329
+            "width": 328.03125
           }
         ],
         "type": "dock-h"
@@ -99,25 +99,12 @@
         "node-library",
         "timeline"
       ]
-    },
-    "window-1503663692433": {
-      "main": false,
-      "url": "packages://code-editor/panel/index.html",
-      "windowType": "simple",
-      "x": 491,
-      "y": 43,
-      "width": 816,
-      "height": 638,
-      "layout": null,
-      "panels": [
-        "code-editor"
-      ]
     }
   },
   "panels": {
     "code-editor": {
-      "x": 491,
-      "y": 43,
+      "x": 262,
+      "y": 51,
       "width": 816,
       "height": 638
     }

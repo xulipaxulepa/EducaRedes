@@ -8,6 +8,12 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+
+        logoSong: {
+            default: null,
+            url: cc.AudioClip
+        },
+
         timer: 0,
 
         duracaoLogo: 0
@@ -16,6 +22,7 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {
         this.timer = 0;
+        cc.audioEngine.playEffect(this.logoSong, false);
     },
 
     vaiPraMain: function vaiPraMain() {

@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "animaProfessor2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.18333333333333332,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "8067f3d5-0711-49bc-a51d-b17640490849"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "6cba789c-3015-4fb4-b69d-a7b30f344166"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "d972a34a-ba65-491e-94dd-ebbc9a972a11"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "be82ebbb-0b2e-4373-b230-8a67f62e76e2"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "6c0951a6-228d-469a-bf90-2ad431f4062d"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "2f493c37-db15-4538-94eb-3cecf9787b11"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

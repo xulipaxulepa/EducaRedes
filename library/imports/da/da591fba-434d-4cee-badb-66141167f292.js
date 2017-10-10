@@ -127,11 +127,11 @@ cc.Class({
             this.someResposta();
             this.pergunta.string = 'A camada Internet é responsável por...';
 
-            this.resposta1.string = 'Controlar o acesso a rede';
+            this.resposta1.string = 'Controlar de forma física o acesso a rede';
 
             this.resposta2.string = 'Gerar e transmitir o sinal pelo meio';
 
-            this.resposta3.string = 'Gerenciar os pacotes na rede';
+            this.resposta3.string = 'Definir e tratar os endereços lógicos\n de origem/destino na rede';
 
             this.resposta4.string = 'Acessar a rede em aplicações Web';
         } else if (this.contador == 1) {
@@ -139,7 +139,7 @@ cc.Class({
             this.trocaRespostas();
             this.pergunta.string = 'Qual dos seguintes não é verdadeiro\n sobre um endereço IP?';
 
-            this.resposta1.string = 'Um endereço IP\n geralmente é representado no formato\n hexadecimal para o usuário';
+            this.resposta1.string = 'Um endereço IPv4\n geralmente é representado no formato\n hexadecimal para o usuário';
 
             this.resposta2.string = 'Um endereço IP é um endereço lógico';
 
@@ -149,7 +149,7 @@ cc.Class({
         } else if (this.contador == 2) {
             this.someResposta();
             this.trocaRespostas();
-            this.pergunta.string = 'Qual das seguintes máscaras padrão\n para os principais\n números de classe está incorreta?';
+            this.pergunta.string = 'Qual das seguintes máscaras padrão\n está incorreta?';
 
             this.resposta1.string = 'Máscara Classe A 255.0.0.0 ou /8';
 
@@ -163,13 +163,13 @@ cc.Class({
             this.trocaRespostas();
             this.pergunta.string = 'O que faz o ARP (Address Resolution Protocol)?';
 
-            this.resposta1.string = 'Resolve o endereço IP\n para endereço MAC';
+            this.resposta1.string = 'Resolve endereços MAC\n para endereços IP';
 
             this.resposta2.string = 'Resolve o campo TYPE\n para o endereço MAC';
 
             this.resposta3.string = 'Resolve o endereço MAC\n para o campo TYPE';
 
-            this.resposta4.string = 'Resolve endereços MAC\n para endereços IP';
+            this.resposta4.string = 'Resolve o endereço IP\n para endereço MAC';
         } else if (this.contador == 4) {
             this.someResposta();
             this.trocaRespostas();

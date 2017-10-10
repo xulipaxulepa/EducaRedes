@@ -22,6 +22,10 @@ cc.Class({
     onLoad: function () {
 
     },
+    
+    onDestroy: function () {
+        cc.audioEngine.pauseAll();
+    },
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {

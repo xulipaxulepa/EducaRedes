@@ -58,7 +58,17 @@ cc.Class({
             type: cc.Node
         },
 
+        face: {
+            default: null,
+            type: cc.Node
+        },
+
         btnContinuar1: {
+            default: null,
+            type: cc.Node
+        },
+
+        textWrapper: {
             default: null,
             type: cc.Node
         },
@@ -73,6 +83,11 @@ cc.Class({
             type: cc.Node
         },
 
+        tutorial: {
+            default: null,
+            type: cc.Node
+        },
+
         fase: 0,
 
         pontuacao: 0,
@@ -82,13 +97,74 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
-        this.frentePlayer();
         this.criaAlvo();
         this.pontuacao = 0;
-        this.fase = 0;
+        this.fase = 9;
         this.contTexto = 0;
         this.linhaGameOver.setOpacity(0);
+        this.accUp = false;
+        this.accDown = false;
+        this.accRight = false;
+        this.setInputControl();
         this.textoFase.string = "Como pode ser visto, a diferença entre os sinais\n" + "é bem perceptivel";
+    },
+
+    //movimentar via teclado
+    setInputControl: function setInputControl() {
+        var self = this;
+        // add keyboard event listener
+        cc.eventManager.addListener({
+            event: cc.EventListener.KEYBOARD,
+            // When there is a key being pressed down, judge if it's the designated directional button and set up acceleration in the corresponding direction
+            onKeyPressed: function onKeyPressed(keyCode, event) {
+                switch (keyCode) {
+                    case cc.KEY.up:
+                        self.accUp = true;
+                        self.accDown = false;
+                        break;
+                    case cc.KEY.down:
+                        self.accUp = false;
+                        self.accDown = true;
+                        break;
+                    case cc.KEY.right:
+                        self.accUp = false;
+                        self.accDown = false;
+                        self.accRight = true;
+                        break;
+                }
+            },
+
+            onKeyReleased: function onKeyReleased(keyCode, event) {
+                switch (keyCode) {
+                    case cc.KEY.up:
+                        self.accUp = false;
+                        break;
+                    case cc.KEY.down:
+                        self.accDown = false;
+                        break;
+                    case cc.KEY.right:
+                        self.accRight = false;
+                        break;
+                }
+            }
+        }, self.node);
+    },
+
+    movimentar: function movimentar() {
+        if (this.accUp) {
+            this.sobePlayer();
+        } else if (this.accDown) {
+            this.descePlayer();
+        } else if (this.accRight) {
+            this.vaiFrentePlayer();
+        }
+    },
+
+    jogar: function jogar() {
+        this.fase = 0;
+        this.frentePlayer();
+        var tutorial = this.tutorial.getComponent(cc.Animation);
+        tutorial.play("someTutorial");
     },
 
     /*Funçoes usadas para chamar a açao de 
@@ -203,19 +279,35 @@ cc.Class({
     },
 
     trocaTexto1: function trocaTexto1() {
+        var texto = this.textoFase.getComponent(cc.Animation);
+        var professor = this.professor.getComponent(cc.Animation);
+        var face = this.face.getComponent(cc.Animation);
+        var animaFace = face.play("falaProfessor1");
+        animaFace.speed = 0.5;
+        animaFace.repeatCount = Infinity;
         if (this.contTexto === 0) {
+            texto.playAdditive('ApareceTexto');
+            professor.playAdditive('animaProfessor1');
             this.textoFase.string = "O sinal analogico é gerado como uma onda\n" + "já que os valores vão se alterando no intervalo de tempo";
             this.contTexto += 1;
         } else if (this.contTexto == 1) {
+            texto.playAdditive('ApareceTexto');
+            professor.playAdditive('animaProfessor2');
             this.textoFase.string = "Já o sinal digital é gerado como uma reta\n" + "já que possui um conjunto de valores em um intervalo de tempo";
             this.contTexto += 1;
         } else if (this.contTexto == 2) {
+            texto.playAdditive('ApareceTexto');
+            professor.playAdditive('animaProfessor1');
             this.textoFase.string = "A camada de acesso a rede tambem fornece\n" + "o serviço de  transformar  um  canal  de transmissão  bruta\n" + "em  uma  linha  que  pareça  livre  de  erros  de  transmissão";
             this.contTexto += 1;
         } else if (this.contTexto == 3) {
+            texto.playAdditive('ApareceTexto');
+            professor.playAdditive('animaProfessor2');
             this.textoFase.string = "Oferecendo enquadramento de bits\n" + "verificação de erros e protocolos que assegurem a correçao de erros";
             this.contTexto += 1;
         } else if (this.contTexto == 4) {
+            texto.playAdditive('ApareceTexto');
+            professor.playAdditive('animaProfessor1');
             this.textoFase.string = "Visto os conteudos desta fase e em sala de aula\n" + "responda agora o Quiz";
             this.contTexto += 1;
         } else if (this.contTexto == 5) {
@@ -228,6 +320,9 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     update: function update(dt) {
+
+        this.movimentar();
+
         if (this.fase === 0) {
             this.professor.setPosition(1306, -222);
             this.limitaPlayer();
@@ -238,6 +333,7 @@ cc.Class({
         } else if (this.fase == 1) {
             this.player.setOpacity(0);
             this.professor.setPosition(0, -222);
+            this.textWrapper.setPosition(0, -220);
         } else if (this.fase == 2) {
             cc.director.loadScene("quizFase1");
         }

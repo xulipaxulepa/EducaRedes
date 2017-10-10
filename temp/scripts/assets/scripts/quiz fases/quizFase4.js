@@ -131,7 +131,7 @@ cc.Class({
 
             this.resposta2.string = 'Estabelecer uma conexão fim a fim\n (conexão confiável)entre a origem e o destino\n dos dados.';
 
-            this.resposta3.string = 'Protocolos de comunicação\n com as diferentes aplicações';
+            this.resposta3.string = 'Gerenciar os diversos protocolos\n de comunicação das suas aplicações';
 
             this.resposta4.string = 'Acessar a rede em aplicações Web';
         } else if (this.contador == 1) {
@@ -139,11 +139,11 @@ cc.Class({
             this.trocaRespostas();
             this.pergunta.string = 'Na camada de aplicação\n o protocolo HTTP é responsavel por...?';
 
-            this.resposta1.string = 'Exibir paginas web';
+            this.resposta1.string = 'Transferir hipertextos';
 
             this.resposta2.string = 'Receber arquvos de video da internet ';
 
-            this.resposta3.string = 'Estabelecer uma conexão segura';
+            this.resposta3.string = 'Exibir paginas web';
 
             this.resposta4.string = 'Baixar arquivos Torrent';
         } else if (this.contador == 2) {
@@ -165,7 +165,7 @@ cc.Class({
 
             this.resposta1.string = 'TCP';
 
-            this.resposta2.string = 'DHCP';
+            this.resposta2.string = 'IP';
 
             this.resposta3.string = 'Ethernet';
 

@@ -48,6 +48,26 @@ cc.Class({
             type: cc.Node
         },
 
+        respostaErrada1b: {
+            default: null,
+            type: cc.Node
+        },
+
+        respostaErrada2b: {
+            default: null,
+            type: cc.Node
+        },
+
+        respostaErrada3b: {
+            default: null,
+            type: cc.Node
+        },
+
+        respostaErrada4b: {
+            default: null,
+            type: cc.Node
+        },
+
         respostaCerta: {
             default: null,
             type: cc.Node
@@ -83,6 +103,21 @@ cc.Class({
             type: cc.Node
         },
 
+        professor: {
+            default: null,
+            type: cc.Node
+        },
+
+        face: {
+            default: null,
+            type: cc.Node
+        },
+
+        falaquizprof: {
+            default: null,
+            type: cc.Node
+        },
+
         resp: 0,
 
         contador: 0,
@@ -91,7 +126,9 @@ cc.Class({
 
         respCer: 0,
 
-        respErr: 0
+        respErr: 0,
+
+        saiAnimacao: 0
     },
 
     someResposta: function someResposta() {
@@ -124,41 +161,45 @@ cc.Class({
 
     perguntas: function perguntas() {
         if (this.contador === 0) {
+            this.apareceRespostas();
             this.someResposta();
-            this.pergunta.string = 'A camada de acesso a rede é responsável por...';
+            this.pergunta.string = 'Quais os PDUs(Unidades de \n' + 'dados de protocolos) usados\n' + 'na camada de acesso a rede?';
 
-            this.resposta1.string = 'Identificar os ips da rede';
+            this.resposta1.string = 'Segmento';
 
-            this.resposta2.string = 'Controlar o acesso a rede';
+            this.resposta2.string = 'Datagrama';
 
-            this.resposta3.string = 'estabeleça efetivamente um link físico\n com os meios físicos da rede.';
+            this.resposta3.string = 'Bit e Quadros(Frames)';
 
-            this.resposta4.string = 'Acessar a rede em aplicações Web.';
+            this.resposta4.string = 'Pacotes';
         } else if (this.contador == 1) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
-            this.pergunta.string = 'Qual desses dispositivos não atua\n na camada de acesso a rede?';
+            this.pergunta.string = 'A onda senoidal é a representação\n' + 'fundamental de um sinal analógico.\n' + ' Marque a alternativa abaixo que NÃO\n' + 'apresenta uma característica\n' + 'de onda senoidal.';
 
-            this.resposta1.string = 'Roteador';
+            this.resposta1.string = 'Sinalização';
 
-            this.resposta2.string = 'HUB';
+            this.resposta2.string = 'Amplitude ';
 
-            this.resposta3.string = 'Switch';
+            this.resposta3.string = 'Frequencia/Periodo';
 
-            this.resposta4.string = 'Nenhuma das opções';
+            this.resposta4.string = 'Fase';
         } else if (this.contador == 2) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
-            this.pergunta.string = 'O sinal analógico é caracterizado por...:';
+            this.pergunta.string = 'Em uma transmissão digital \n' + 'ao informar que existem\n' + '4 níveis de sinalização quantos bits\n' + 'estão sendo trafegados por sinal?';
 
-            this.resposta1.string = 'Possuir apenas um\n conjunto limitado de valores';
+            this.resposta1.string = '3';
 
-            this.resposta2.string = 'Ter um conjunto infinito de valores\n num intervalo de tempo qualquer';
+            this.resposta2.string = '2';
 
-            this.resposta3.string = 'Ser alterado em contínuo';
+            this.resposta3.string = '4';
 
-            this.resposta4.string = 'Ser um sinal que não possui falhas';
+            this.resposta4.string = '1';
         } else if (this.contador == 3) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
             this.pergunta.string = 'O sinal digital é caracterizado por...:';
@@ -171,28 +212,31 @@ cc.Class({
 
             this.resposta4.string = 'Possuir apenas um\n conjunto limitado de valores';
         } else if (this.contador == 4) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
-            this.pergunta.string = 'Quais desses elementos\n compõem o básico de uma rede?';
+            this.pergunta.string = 'A latência é calculada\n' + 'através da soma de 4 atrasos.\n' + 'Marque a alternativa que apresenta\n' + 'os 4 atrasos que formam a latência:';
 
-            this.resposta1.string = 'transmissores, receptores e o meio';
+            this.resposta1.string = 'Atraso de transmissão, atraso de propagação\n' + 'atraso de fila, atraso de processamento.';
 
-            this.resposta2.string = 'protocolos e serviços';
+            this.resposta2.string = 'Atraso de sinais, atraso de propagação\n' + 'atraso de fila, atraso de processamento';
 
-            this.resposta3.string = 'informações e usuários';
+            this.resposta3.string = 'Atraso de transmissão, atraso de propagação\n' + 'atraso de recepção, atraso de processamento';
 
-            this.resposta4.string = 'computador e cabo de rede';
+            this.resposta4.string = 'Atraso de mensagem, atraso de propagação\n' + 'atraso de recepção, atraso de processamento.';
         }
     },
 
     buttonRespCerto: function buttonRespCerto() {
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respCer += 1;
         this.contador += 1;
     },
 
     buttonRespErrado: function buttonRespErrado() {
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respErr += 1;
         this.contador += 1;
     },
@@ -216,9 +260,42 @@ cc.Class({
         this.someResposta();
         this.timer = 100000;
         this.contador = 0;
+        this.saiAnimacao = 0;
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+
+    apareceRespostas: function apareceRespostas() {
+        if (this.saiAnimacao == 1) {
+            this.saiAnimacao = 0;
+            var respErrada1 = this.respostaErrada1b.getComponent(cc.Animation);
+            var respErrada2 = this.respostaErrada2b.getComponent(cc.Animation);
+            var respErrada3 = this.respostaErrada3b.getComponent(cc.Animation);
+            var respErrada4 = this.respostaErrada4b.getComponent(cc.Animation);
+            var resp1 = this.resposta1.getComponent(cc.Animation);
+            var resp2 = this.resposta2.getComponent(cc.Animation);
+            var resp3 = this.resposta3.getComponent(cc.Animation);
+            var resp4 = this.resposta4.getComponent(cc.Animation);
+            var respCerta = this.respostaCerta.getComponent(cc.Animation);
+            var respExtra = this.respostaExtra.getComponent(cc.Animation);
+            var fala = this.falaquizprof.getComponent(cc.Animation);
+            var face = this.face.getComponent(cc.Animation);
+            var professor = this.professor.getComponent(cc.Animation);
+            respErrada1.playAdditive('apareceResposta1');
+            respErrada2.playAdditive('apareceResposta2');
+            respErrada3.playAdditive('apareceResposta3');
+            respErrada4.playAdditive('apareceResposta4');
+            resp1.playAdditive('apareceResposta1');
+            resp2.playAdditive('apareceResposta2');
+            resp3.playAdditive('apareceResposta3');
+            resp4.playAdditive('apareceResposta4');
+            fala.playAdditive('apareceFalaProfessor');
+            var animaFace = face.play("falaProfessor1");
+            animaFace.speed = 0.5;
+            animaFace.repeatCount = Infinity;
+            professor.playAdditive('animaProfessor1');
+        } else if (this.saiAnimacao === 0) {}
     },
 
     goToCredits: function goToCredits() {

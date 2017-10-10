@@ -25,7 +25,11 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function onLoad() {}
+    onLoad: function onLoad() {},
+
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
+    }
 
 });
 

@@ -2,7 +2,7 @@
 cc._RF.push(module, 'ad2dfsTZshIrIMIlP4Ufxjb', 'logicaFase1');
 // scripts/logica fases/logicaFase1.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -58,6 +58,11 @@ cc.Class({
             type: cc.Node
         },
 
+        face: {
+            default: null,
+            type: cc.Node
+        },
+
         btnContinuar1: {
             default: null,
             type: cc.Node
@@ -78,11 +83,24 @@ cc.Class({
             type: cc.Node
         },
 
+        textwrapper: {
+            default: null,
+            type: cc.Node
+        },
+
+        tutorial: {
+            default: null,
+            type: cc.Node
+        },
+
         fase: 0,
 
         pontuacao: 0,
 
-        contTexto: 0
+        contTexto: 0,
+
+        saiLoop: 0
+
     },
 
     // use this for initialization
@@ -94,21 +112,80 @@ cc.Class({
         this.pontuacao = 0;
         this.fase = 0;
         this.contTexto = 0;
+        this.accUp = false;
+        this.accDown = false;
+        this.saiLoop = 0;
+        this.setInputControl();
+        var texto = this.textoFase.getComponent(cc.Animation);
+        var professor = this.professor.getComponent(cc.Animation);
+        var face = this.face.getComponent(cc.Animation);
+        var animaFace = face.play("falaProfessor1");
+        animaFace.speed = 0.5;
+        animaFace.repeatCount = Infinity;
+        texto.playAdditive('ApareceTexto');
+        professor.playAdditive('Aparece');
         this.textoFase.string = "Nesse Mini-Jogo, voce aprendera a diferença\n" + "entre o sinal analogico e o sinal digital";
+    },
+
+    //movimentar via teclado
+    setInputControl: function setInputControl() {
+        var self = this;
+        // add keyboard event listener
+        cc.eventManager.addListener({
+            event: cc.EventListener.KEYBOARD,
+            // When there is a key being pressed down, judge if it's the designated directional button and set up acceleration in the corresponding direction
+            onKeyPressed: function onKeyPressed(keyCode, event) {
+                switch (keyCode) {
+                    case cc.KEY.up:
+                        self.accUp = true;
+                        self.accDown = false;
+                        break;
+                    case cc.KEY.down:
+                        self.accUp = false;
+                        self.accDown = true;
+                        break;
+                }
+            },
+
+            onKeyReleased: function onKeyReleased(keyCode, event) {
+                switch (keyCode) {
+                    case cc.KEY.up:
+                        self.accUp = false;
+                        break;
+                    case cc.KEY.down:
+                        self.accDown = false;
+                        break;
+                }
+            }
+        }, self.node);
+    },
+
+    movimentar: function movimentar() {
+        if (this.accUp) {
+            this.sobePlayer();
+        } else if (this.accDown) {
+            this.descePlayer();
+        }
     },
 
     /*Funçoes usadas para chamar a açao de 
     movimentar a corda para cima em diversas velocidades*/
     sobePlayer: function sobePlayer() {
-        var sobe = cc.moveBy(3, cc.p(0, 300)).easing(cc.easeCubicActionInOut());
-        this.player.runAction(sobe);
+        if (this.saiLoop === 0) {
+            var sobe = cc.moveBy(3, cc.p(0, 300)).easing(cc.easeCubicActionInOut());
+            this.player.runAction(sobe);
+            this.saiLoop = 1;
+        } else if (this.saiLoop == 1) {}
     },
 
     /*Funçoes usadas para chamar a açao de 
     movimentar a corda para baixo em diversas velocidades*/
     descePlayer: function descePlayer() {
-        var desce = cc.moveBy(3, cc.p(0, -300)).easing(cc.easeCubicActionInOut());
-        this.player.runAction(desce);
+        if (this.saiLoop == 1) {
+            var desce = cc.moveBy(3, cc.p(0, -300)).easing(cc.easeCubicActionInOut());
+            this.player.runAction(desce);
+            this.saiLoop = 0;
+        } else if (this.saiLoop === 0) {}
     },
 
     vaiPraFrente: function vaiPraFrente() {
@@ -200,34 +277,59 @@ cc.Class({
     },
 
     trocaTexto1: function trocaTexto1() {
+        var texto = this.textoFase.getComponent(cc.Animation);
+        var professor = this.professor.getComponent(cc.Animation);
+        var face = this.face.getComponent(cc.Animation);
+
         if (this.contTexto === 0) {
-            this.textoFase.string = "um  sinal  analógico  é  caracterizado por\n" + "uma equação matemática continua. Quando a entrada muda de um valor para o próximo\n" + "faz isso movendo se através de todos os valores intermediários.";
+            professor.playAdditive('moveProfessorJF1');
+            texto.playAdditive('ApareceTexto');
+            var animaFace = face.play("falaProfessor2");
+            animaFace.speed = 0.5;
+            animaFace.repeatCount = Infinity;
+            this.textoFase.string = "um  sinal  analógico  é  caracterizado por\n" + "uma equação matemática continua.\n" + "Quando a entrada muda";
             this.contTexto += 1;
         } else if (this.contTexto == 1) {
-            this.textoFase.string = "Tente acertar 10 alvos para avançar\n" + "para a proxima etapa";
+            texto.playAdditive('ApareceTexto');
+            this.textoFase.string = "de um valor para o próximo\n" + "faz isso movendo se através\n" + "de todos os valores intermediários.";
             this.contTexto += 1;
         } else if (this.contTexto == 2) {
-            this.textoFase.string = "Evite subir demais ou descer demais\n" + "caso isso aconteça, sera Game Over";
+            texto.playAdditive('ApareceTexto');
+            this.textoFase.string = "Tente acertar 10 alvos para avançar\n" + "para a proxima etapa";
             this.contTexto += 1;
         } else if (this.contTexto == 3) {
-            this.textoFase.string = "";
-            this.contTexto = 0;
-            this.fase = 1;
-            this.player.setPosition(-418, 0);
+            texto.playAdditive('ApareceTexto');
+            this.textoFase.string = "Evite subir demais ou descer demais\n" + "caso isso aconteça, sera Game Over";
+            this.contTexto += 1;
+        } else if (this.contTexto == 4) {
+            texto.playAdditive('ApareceTexto');
+            var tw = this.textwrapper.getComponent(cc.Animation);
+            tw.play("someTWJF1");
+            var tutorial = this.tutorial.getComponent(cc.Animation);
+            tutorial.play("apareceTutorial");
         }
     },
 
+    jogar: function jogar() {
+        this.textoFase.string = "Como pode ser visto o sinal analogico é gerado como\n" + "um conjunto de ondas, já que o sinal passa por todos os valores\n" + "naquele intervalo de tempo";
+        this.contTexto = 7;
+        this.fase = 1;
+        this.player.setPosition(-418, 0);
+        var tutorial = this.tutorial.getComponent(cc.Animation);
+        tutorial.play("someTutorial");
+    },
+
     trocaTexto2: function trocaTexto2() {
-        if (this.contTexto == 0) {
-            this.textoFase.string = "O sinal digital é gerado como um conjunto de retas\n" + "já que possui um conjunto limitado de valores em um intervalo de tempo";
+        if (this.contTexto == 7) {
+            this.textoFase.string = "Já o sinal digital é gerado como um conjunto de retas\n" + "já que possui um conjunto limitado\n" + "de valores em um intervalo de tempo";
             this.contTexto += 1;
-        } else if (this.contTexto == 1) {
+        } else if (this.contTexto == 8) {
             this.textoFase.string = "Tente acertar 10 alvos para avançar\n" + "para a proxima etapa";
             this.contTexto += 1;
-        } else if (this.contTexto == 2) {
+        } else if (this.contTexto == 9) {
             this.textoFase.string = "Evite subir demais ou descer demais\n" + "caso isso aconteça, sera Game Over";
             this.contTexto += 1;
-        } else if (this.contTexto == 3) {
+        } else if (this.contTexto == 10) {
             this.textoFase.string = "Boa Sorte!";
             this.contTexto = 0;
             this.fase = 3;
@@ -237,12 +339,18 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     update: function update(dt) {
+
+        this.movimentar();
+
         if (this.fase === 0) {
             this.professor.setPosition(0, -222);
             this.player.setOpacity(0);
         } else if (this.fase == 1) {
             this.player.setOpacity(255);
             this.professor.setPosition(1306, -222);
+            this.textwrapper.setPosition(1306, -222);
+            this.btnContinuar1.setPosition(1306, -222);
+            this.btnContinuar2.setPosition(1306, -222);
             this.limitaPlayer();
             this.criaLinha();
             this.pegaAlvo();
@@ -250,6 +358,8 @@ cc.Class({
             this.score.string = 'Alvos: ' + this.pontuacao;
         } else if (this.fase == 2) {
             this.professor.setPosition(0, -222);
+            this.textwrapper.setPosition(0, -229);
+            this.btnContinuar2.setPosition(747, -99);
             this.player.setOpacity(0);
             this.btnContinuar1.setPosition(3000, 0);
             this.btnContinuar2.setOpacity(255);

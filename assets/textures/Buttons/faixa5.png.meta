@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "23a100f5-6d35-415f-811b-1a467f129278",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "faixa5": {
+      "ver": "1.0.3",
+      "uuid": "27dd6aa9-db7a-4b94-a8fe-151f8c9304b2",
+      "rawTextureUuid": "23a100f5-6d35-415f-811b-1a467f129278",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 8.5,
+      "trimX": 0,
+      "trimY": 49,
+      "width": 650,
+      "height": 185,
+      "rawWidth": 650,
+      "rawHeight": 300,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

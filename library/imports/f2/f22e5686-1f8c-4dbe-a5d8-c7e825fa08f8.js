@@ -131,7 +131,7 @@ cc.Class({
 
             this.resposta2.string = 'Gerar e transmitir o sinal pelo meio';
 
-            this.resposta3.string = 'Estabelecer uma conexão fim a fim\n (conexão confiável)entre a origem e o destino\n dos dados';
+            this.resposta3.string = 'Estabelecer uma conexão fim a fim\n (conexão confiável)entre duas aplicações';
 
             this.resposta4.string = 'Acessar a rede em aplicações Web';
         } else if (this.contador == 1) {
@@ -143,21 +143,21 @@ cc.Class({
 
             this.resposta2.string = 'TCP';
 
-            this.resposta3.string = 'IP';
+            this.resposta3.string = 'UDP';
 
-            this.resposta4.string = 'FTP';
+            this.resposta4.string = 'SCTP';
         } else if (this.contador == 2) {
             this.someResposta();
             this.trocaRespostas();
-            this.pergunta.string = 'Qual destes dispositivos\n atua na camada de transporte?';
+            this.pergunta.string = 'Qual a ordem correta\n do protocolo Three Way Handshake\n do TCP/IP?';
 
-            this.resposta1.string = 'Switch';
+            this.resposta1.string = 'SYN, SYN-SYN, ACK-ACK';
 
-            this.resposta2.string = 'Roteador';
+            this.resposta2.string = 'SYN, SYN-ACK, ACK';
 
-            this.resposta3.string = 'HUB';
+            this.resposta3.string = 'ACK, ACK-SYN, SYN';
 
-            this.resposta4.string = 'Nenhuma das opções acima';
+            this.resposta4.string = 'SYN, ACK-SYN, ACK';
         } else if (this.contador == 3) {
             this.someResposta();
             this.trocaRespostas();

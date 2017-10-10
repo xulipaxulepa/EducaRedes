@@ -62,20 +62,20 @@
         "__id__": 5
       },
       {
-        "__id__": 7
+        "__id__": 8
       },
       {
-        "__id__": 9
+        "__id__": 11
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 11
+        "__id__": 14
       },
       {
-        "__id__": 12
+        "__id__": 15
       }
     ],
     "_prefab": null,
@@ -208,6 +208,9 @@
     "_components": [
       {
         "__id__": 6
+      },
+      {
+        "__id__": 7
       }
     ],
     "_prefab": null,
@@ -276,6 +279,24 @@
     }
   },
   {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "546ac1a6-bb81-4522-ac4b-73f4e3ee66fd"
+    },
+    "_clips": [
+      {
+        "__uuid__": "546ac1a6-bb81-4522-ac4b-73f4e3ee66fd"
+      }
+    ],
+    "playOnLoad": true
+  },
+  {
     "__type__": "cc.Node",
     "_name": "soft",
     "_objFlags": 0,
@@ -287,7 +308,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 8
+        "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -332,7 +356,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 7
+      "__id__": 8
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -356,6 +380,24 @@
     }
   },
   {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 8
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "992e1d96-0903-477f-8caa-711ac811315b"
+    },
+    "_clips": [
+      {
+        "__uuid__": "992e1d96-0903-477f-8caa-711ac811315b"
+      }
+    ],
+    "playOnLoad": true
+  },
+  {
     "__type__": "cc.Node",
     "_name": "works",
     "_objFlags": 0,
@@ -367,7 +409,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 10
+        "__id__": 12
+      },
+      {
+        "__id__": 13
       }
     ],
     "_prefab": null,
@@ -412,7 +457,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 9
+      "__id__": 11
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -434,6 +479,24 @@
     "_atlas": {
       "__uuid__": "1f0d6748-45a0-49f8-befb-91187758bc27"
     }
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "aa92cbb4-ffc0-4920-95d6-8f9b9d1e520d"
+    },
+    "_clips": [
+      {
+        "__uuid__": "aa92cbb4-ffc0-4920-95d6-8f9b9d1e520d"
+      }
+    ],
+    "playOnLoad": true
   },
   {
     "__type__": "cc.Canvas",
@@ -459,6 +522,9 @@
       "__id__": 2
     },
     "_enabled": true,
+    "logoSong": {
+      "__uuid__": "f1677b4a-3f5a-4cf7-b055-19cb6927acdb"
+    },
     "timer": 0,
     "duracaoLogo": 4
   }
