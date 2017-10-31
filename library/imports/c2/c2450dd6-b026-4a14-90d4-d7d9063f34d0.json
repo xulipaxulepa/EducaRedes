@@ -1762,8 +1762,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 95.16,
-      "height": 40
+      "width": 118.95,
+      "height": 50
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1790,9 +1790,9 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 40,
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_actualFontSize": 50,
+    "_fontSize": 50,
+    "_lineHeight": 50,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "96f1f0ad-9c12-4f2f-8640-31fcbfff80d2"
@@ -2271,7 +2271,7 @@
       "width": 960,
       "height": 640
     },
-    "_fitWidth": false,
+    "_fitWidth": true,
     "_fitHeight": true
   },
   {

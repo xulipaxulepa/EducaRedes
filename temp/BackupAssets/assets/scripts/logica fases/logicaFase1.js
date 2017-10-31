@@ -87,6 +87,21 @@ cc.Class({
             type: cc.Node
         },
         
+        AmpMax: {
+            default: null,
+            type: cc.Label
+        },
+        
+        Frequencia: {
+            default: null,
+            type: cc.Label
+        },
+        
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        
         fase: 0,
         
         pontuacao: 0,
@@ -99,6 +114,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        cc.audioEngine.play(this.gameAudio, true);
         this.frentePlayer();
         this.criaAlvo();
         this.btnContinuar2.setOpacity(0);
@@ -204,11 +220,15 @@ cc.Class({
     },
     
     criaAlvo: function(){
-        var y = Math.floor((Math.random() * 300) + 0);
-        var x = this.player.x + 100;
-        var xlinha = x + 200;
-        this.alvo.setPosition(x, y);
-        this.linhaGameOver.setPosition(xlinha, 0);
+        if(this.pontuacao === 0){
+            this.alvo.setPosition(-320, 272);
+        } else {
+            var y = Math.floor((Math.random() * 300) + 0);
+            var x = this.player.x + 100;
+            var xlinha = x + 200;
+            this.alvo.setPosition(x, y);
+            this.linhaGameOver.setPosition(xlinha, 0);
+        }
     },
     
     getPlayerDistance: function () {
@@ -296,17 +316,23 @@ cc.Class({
             "faz isso movendo se através\n"+
             "de todos os valores intermediários.";
             this.contTexto += 1;
-        }else if(this.contTexto == 2){
+        } else if(this.contTexto == 2){
+            texto.playAdditive('ApareceTexto');
+            this.textoFase.string = "Perceba que a fase descreve a posição\n"+ 
+                                    "da onda no instante de tempo igual a zero.\n"+ 
+                                    "A fase é medida em graus";
+            this.contTexto += 1;
+        }else if(this.contTexto == 3){
             texto.playAdditive('ApareceTexto');
             this.textoFase.string = "Tente acertar 10 alvos para avançar\n"+
             "para a proxima etapa";
             this.contTexto += 1;
-        } else if(this.contTexto == 3){
+        } else if(this.contTexto == 4){
             texto.playAdditive('ApareceTexto');
             this.textoFase.string = "Evite subir demais ou descer demais\n"+
             "caso isso aconteça, sera Game Over";
             this.contTexto += 1;
-        } else if(this.contTexto == 4){
+        } else if(this.contTexto == 5){
             texto.playAdditive('ApareceTexto');
             var tw = this.textwrapper.getComponent(cc.Animation);
             tw.play("someTWJF1");
@@ -347,6 +373,16 @@ cc.Class({
             this.player.setPosition(-418,0);
         }
     },
+    
+    explicaAmplitudeFrequencia: function(){
+        if(this.pontuacao == 1){
+           var amp = this.AmpMax.getComponent(cc.Animation);
+           amp.play("Aparece");
+        } else if(this.pontuacao == 2){
+            var frequen = this.Frequencia.getComponent(cc.Animation);
+           frequen.play("Aparece");
+        }
+    },
 
     // called every frame, uncomment this function to activate update callback
     update: function (dt) {
@@ -367,6 +403,7 @@ cc.Class({
             this.pegaAlvo();
             this.passaLinha();
             this.score.string = 'Alvos: '+ this.pontuacao;
+            this.explicaAmplitudeFrequencia();
         } else if(this.fase == 2){
             this.professor.setPosition(0,-222);
             this.textwrapper.setPosition(0,-229);

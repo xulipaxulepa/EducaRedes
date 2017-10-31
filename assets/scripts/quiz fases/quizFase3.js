@@ -139,7 +139,7 @@ cc.Class({
         
         this.resposta3.string = 'UDP';
         
-        this.resposta4.string = 'SCTP';
+        this.resposta4.string = 'RTP';
         } else if(this.contador == 2){
         this.someResposta();
         this.trocaRespostas();
@@ -155,7 +155,7 @@ cc.Class({
         } else if(this.contador == 3){
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Na camada de transporte\n o protocolo para garantir\n a confiabilidade e...?';
+        this.pergunta.string = 'Na camada de transporte\n o protocolo para garantir\n a confiabilidade é...?';
         
         this.resposta1.string = 'IP';
         

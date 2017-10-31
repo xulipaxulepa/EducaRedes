@@ -47,17 +47,23 @@ cc.Class({
             animaFace.speed = 0.5;
             animaFace.repeatCount = Infinity;
             this.label.string = 'Rede de computadores \n'+
-            'é um conjunto de computadores\n'+ 
-            'autônomos interconectados por uma única tecnologia.'; 
+            'é Sistema de comunicação de dados \n'+ 
+            'constituído através da interligação entre\n'+ 
+            'computadores e outros dispositivos';
             this.contador += 1;
         } else if(this.contador == 1){
             texto.playAdditive('ApareceTexto');
-            this.label.string = 'Em rede de computadores\n'+
-            'existem 2 modelos de protocolos\n'+ 
+            this.label.string = 'distribuídos geograficamente, com a finalidade\n'+ 
+                                'de trocar informações e compartilhar recursos';
+            this.contador += 1;
+        } else if(this.contador == 2){
+            texto.playAdditive('ApareceTexto');
+            this.label.string = 'Para entendermos melhor a rede de computadores\n'+
+            'precisamos conhecer\n'+ 
             'O modelo logico OSI\n'+ 
             'e a arquitetura TCP/IP';
             this.contador += 1;
-        } else if(this.contador == 2){
+        } else if(this.contador == 3){
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor1');
             animaFace = face.play("falaProfessor3");
@@ -69,21 +75,21 @@ cc.Class({
             'internacional dos protocolos empregados \n'+
             'nas diversas camadas';
             this.contador += 1;
-        } else if(this.contador == 3){
+        } else if(this.contador == 4){
             texto.playAdditive('ApareceTexto');
             this.label.string = 'O modelo OSI possui 7 camadas, são elas:\n'+ 
             'Física\n'+
             'Enlace\n'+ 
             'Redes';
             this.contador += 1;
-        } else if(this.contador == 4){
+        } else if(this.contador == 5){
             texto.playAdditive('ApareceTexto');
             this.label.string = 'Transporte\n'+ 
             'Sessão\n'+
             'Apresentação\n'+ 
             'Aplicação';
             this.contador += 1;
-        } else if(this.contador == 5){
+        } else if(this.contador == 6){
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor2');
             animaFace = face.play("falaProfessor1");
@@ -93,20 +99,20 @@ cc.Class({
             'O modelo TCP/IP descreve um conjunto de orientações\n'+
             'gerais para a concepção e implementação';
             this.contador += 1;
-        } else if(this.contador == 6){
+        } else if(this.contador == 7){
             texto.playAdditive('ApareceTexto');
             this.label.string = 'de protocolos de rede específicos\n'+
             'para permitir que haja\n'+
             'comunicação através de uma rede.';
             this.contador += 1;
-        }else if(this.contador == 7){
+        }else if(this.contador == 8){
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor1');
             this.label.string = 'A imagem acima demonstra as peculiaridades\n'+ 
             'de um modelo para o outro';
             this.quadro.setPosition(222,139);
             this.contador += 1;
-        } else if(this.contador == 8){
+        } else if(this.contador == 9){
             texto.playAdditive('ApareceTexto');
             animaFace = face.play("falaProfessor2");
             animaFace.speed = 0.5;
@@ -114,7 +120,7 @@ cc.Class({
             this.label.string = 'Como pode ser visto, a arquitetura TCP/IP\n'+ 
             'Possui 4 camadas e eu irei explicar sobre a primeira';
             this.contador += 1;
-        } else if(this.contador == 9){
+        } else if(this.contador == 10){
             texto.playAdditive('ApareceTexto');
             this.quadro.setPosition(1360,139);
             professor.playAdditive('animaProfessor2');
@@ -123,7 +129,7 @@ cc.Class({
             'gerar e transmitir o sinal pelo meio. Seja a tecnologia\n'+ 
             'Ethernet, Wi-fi, Bluetooth, entre outros.';
             this.contador += 1;
-        } else if(this.contador == 10){
+        } else if(this.contador == 11){
             texto.playAdditive('ApareceTexto');
             animaFace = face.play("falaProfessor3");
             animaFace.speed = 0.5;
@@ -132,7 +138,7 @@ cc.Class({
             'da informação através de um sinal\n'+
             'analógico ou digital';
             this.contador += 1;
-        } else if(this.contador == 11){
+        } else if(this.contador == 12){
             texto.playAdditive('ApareceTexto');
             animaFace = face.play("falaProfessor1");
             animaFace.speed = 0.5;
@@ -141,7 +147,7 @@ cc.Class({
             this.label.string = 'O mini-jogo a seguir, demonstra melhor\n'+
             'a diferença entre os sinais e os seus conceitos';
             this.contador += 1;
-        } else if(this.contador == 12){
+        } else if(this.contador == 13){
             cc.director.loadScene("jogoFase1");
         } 
     },

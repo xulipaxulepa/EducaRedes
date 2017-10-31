@@ -125,9 +125,9 @@ cc.Class({
         
         this.resposta2.string = 'Estabelecer uma conexão fim a fim\n (conexão confiável)entre a origem e o destino\n dos dados.';
         
-        this.resposta3.string = 'Gerenciar os diversos protocolos\n de comunicação das suas aplicações';
+        this.resposta3.string = 'Gerenciar os diversos protocolos\n de comunicação das suas aplicações';//permitir a criptografia de dados para garantia de segurança. Oferecer a interface de usabilidade para os clientes. 
         
-        this.resposta4.string = 'Acessar a rede em aplicações Web';
+        this.resposta4.string = '';
         } else if(this.contador == 1){
         this.someResposta();
         this.trocaRespostas();
@@ -135,9 +135,9 @@ cc.Class({
         
         this.resposta1.string = 'Transferir hipertextos';
         
-        this.resposta2.string = 'Receber arquvos de video da internet ';
+        this.resposta2.string = 'Receber arquivos de vídeo da Internet ';
         
-        this.resposta3.string = 'Exibir paginas web';
+        this.resposta3.string = 'Exibir páginas web';
         
         this.resposta4.string = 'Baixar arquivos Torrent';
         } else if(this.contador == 2){
@@ -149,7 +149,7 @@ cc.Class({
         
         this.resposta2.string = 'Transferencia de arquivos';
         
-        this.resposta3.string = 'Armazenamento em nuvem';
+        this.resposta3.string = 'Armazenamento em nuvem';// trocar resposta 
         
         this.resposta4.string = 'Criptografia de dados';
         } else if(this.contador == 3){
@@ -167,6 +167,8 @@ cc.Class({
         } else if(this.contador == 4){
         this.someResposta();
         this.trocaRespostas();
+        //modificar a pergunta
+        //pra que que serve o protocolo DNS.
         this.pergunta.string = 'O que significa\n um código de status HTTP de "404"?';
         
         this.resposta1.string = 'Erro de protocolo ';

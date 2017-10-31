@@ -109,6 +109,10 @@ cc.Class({
         this.textoFase.string = "Como pode ser visto, a diferença entre os sinais\n" + "é bem perceptivel";
     },
 
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
+    },
+
     //movimentar via teclado
     setInputControl: function setInputControl() {
         var self = this;

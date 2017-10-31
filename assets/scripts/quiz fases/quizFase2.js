@@ -42,6 +42,26 @@ cc.Class({
             type: cc.Node
         },
         
+        respostaErrada1b: {
+            default: null,
+            type: cc.Node
+        },
+        
+        respostaErrada2b: {
+            default: null,
+            type: cc.Node
+        },
+        
+        respostaErrada3b: {
+            default: null,
+            type: cc.Node
+        },
+        
+        respostaErrada4b: {
+            default: null,
+            type: cc.Node
+        },
+        
         respostaCerta: {
             default: null,
             type: cc.Node
@@ -77,6 +97,21 @@ cc.Class({
             type: cc.Node
         },
         
+        professor: {
+            default: null,
+            type: cc.Node
+        },
+        
+        face: {
+            default: null,
+            type: cc.Node
+        },
+        
+        falaquizprof: {
+            default: null,
+            type: cc.Node
+        },
+        
         resp: 0,
         
         contador: 0,
@@ -86,6 +121,8 @@ cc.Class({
         respCer: 0,
         
         respErr: 0,
+        
+        saiAnimacao: 0,
     },
     
     someResposta: function(){
@@ -118,8 +155,9 @@ cc.Class({
     
     perguntas: function(){
         if(this.contador === 0){
+        this.apareceRespostas();
         this.someResposta();
-        this.pergunta.string = 'A camada Internet é responsável por...';
+        this.pergunta.string = 'A camada Internet\n é responsável por...';
         
         this.resposta1.string = 'Controlar de forma física o acesso a rede';
         
@@ -127,11 +165,12 @@ cc.Class({
         
         this.resposta3.string = 'Definir e tratar os endereços lógicos\n de origem/destino na rede';
         
-        this.resposta4.string = 'Acessar a rede em aplicações Web';
+        this.resposta4.string = 'Fazer a comunicaçã entre os processos'; 
         } else if(this.contador == 1){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Qual dos seguintes não é verdadeiro\n sobre um endereço IP?';
+        this.pergunta.string = 'Qual dos seguintes\n NÃO é verdadeiro\n sobre um endereço IP?';
         
         this.resposta1.string = 'Um endereço IPv4\n geralmente é representado no formato\n hexadecimal para o usuário';
         
@@ -141,9 +180,10 @@ cc.Class({
         
         this.resposta4.string = 'Um endereço IP pode ser considerado\n como consistindo de\n uma parte de rede e uma parte de host';
         } else if(this.contador == 2){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Qual das seguintes máscaras padrão\n está incorreta?';
+        this.pergunta.string = 'Qual das seguintes\n máscaras padrão está\n incorreta?';
         
         this.resposta1.string = 'Máscara Classe A 255.0.0.0 ou /8';
         
@@ -153,9 +193,10 @@ cc.Class({
         
         this.resposta4.string = 'Máscara classe C 255.255.255.0 ou /24';
         } else if(this.contador == 3){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'O que faz o ARP (Address Resolution Protocol)?';
+        this.pergunta.string = 'O que faz o ARP\n (Address Resolution Protocol)?';
         
         this.resposta1.string = 'Resolve endereços MAC\n para endereços IP';
         
@@ -165,9 +206,10 @@ cc.Class({
         
         this.resposta4.string = 'Resolve o endereço IP\n para endereço MAC';
         } else if(this.contador == 4){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Qual o numero máximo de hosts possíveis\n em uma rede classe C?';
+        this.pergunta.string = 'Qual o numero máximo\n de hosts possíveis em\n uma rede classe C?';
         
         this.resposta1.string = '254';
         
@@ -181,12 +223,14 @@ cc.Class({
     
     buttonRespCerto: function(){
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respCer += 1;
         this.contador += 1;
     },
     
     buttonRespErrado: function(){
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respErr += 1;
         this.contador += 1;
     },
@@ -213,9 +257,42 @@ cc.Class({
         this.someResposta();
         this.timer = 100000;
         this.contador = 0;
+        this.saiAnimacao = 0;
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+    
+    apareceRespostas: function(){
+        if(this.saiAnimacao == 1){
+            this.saiAnimacao = 0;
+            var respErrada1 = this.respostaErrada1b.getComponent(cc.Animation);
+            var respErrada2 = this.respostaErrada2b.getComponent(cc.Animation);
+            var respErrada3 = this.respostaErrada3b.getComponent(cc.Animation);
+            var respErrada4 = this.respostaErrada4b.getComponent(cc.Animation);
+            var resp1 = this.resposta1.getComponent(cc.Animation);
+            var resp2 = this.resposta2.getComponent(cc.Animation);
+            var resp3 = this.resposta3.getComponent(cc.Animation);
+            var resp4 = this.resposta4.getComponent(cc.Animation);
+            var respCerta = this.respostaCerta.getComponent(cc.Animation);
+            var respExtra = this.respostaExtra.getComponent(cc.Animation);
+            var fala = this.falaquizprof.getComponent(cc.Animation);
+            var face = this.face.getComponent(cc.Animation);
+            var professor = this.professor.getComponent(cc.Animation);
+            respErrada1.playAdditive('apareceResposta1');
+            respErrada2.playAdditive('apareceResposta2');
+            respErrada3.playAdditive('apareceResposta3');
+            respErrada4.playAdditive('apareceResposta4');
+            resp1.playAdditive('apareceResposta1');
+            resp2.playAdditive('apareceResposta2');
+            resp3.playAdditive('apareceResposta3');
+            resp4.playAdditive('apareceResposta4');
+            fala.playAdditive('apareceFalaProfessor');
+            face.play("falaProfessor2");
+            professor.playAdditive('animaProfessora2-1');
+        } else if(this.saiAnimacao === 0){
+            
+        }
     },
     
     goToCredits: function(){

@@ -2,17 +2,12 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        bg: {
-            default: null,
-            type: cc.Node
-        },
-        
-        bgFase2: {
-            default: null,
-            type: cc.Node
-        },
-        
         professor: {
+            default: null,
+            type: cc.Node
+        },
+        
+        face: {
             default: null,
             type: cc.Node
         },
@@ -22,473 +17,531 @@ cc.Class({
             type: cc.Label
         },
         
-        computador1: {
+        bg: {
             default: null,
             type: cc.Node
         },
         
-        computador2: {
+        no1: {
             default: null,
             type: cc.Node
         },
         
-        computador3: {
+        no2: {
             default: null,
             type: cc.Node
         },
         
-        computador4: {
+        no3: {
             default: null,
             type: cc.Node
         },
         
-        computador5: {
+        no4: {
             default: null,
             type: cc.Node
         },
         
-        computador6: {
+        no5: {
             default: null,
             type: cc.Node
         },
         
-        ip1: {
+        no6: {
             default: null,
             type: cc.Node
         },
         
-        ip2: {
+        no1a: {
             default: null,
             type: cc.Node
         },
         
-        ip3: {
+        no2a: {
             default: null,
             type: cc.Node
         },
         
-        ip4: {
+        no3a: {
             default: null,
             type: cc.Node
         },
         
-        ip5: {
+        no4a: {
             default: null,
             type: cc.Node
         },
         
-        ip6: {
+        no5a: {
             default: null,
             type: cc.Node
         },
         
-        ip7: {
+        no6a: {
             default: null,
             type: cc.Node
         },
         
-        ip8: {
+        tabRot: {
             default: null,
             type: cc.Node
         },
         
-        tabRoteamento: {
-            default: null,
-            type: cc.Node
-        },
-        
-        roteador1: {
-            default: null,
-            type: cc.Node
-        },
-        
-        roteador2: {
-            default: null,
-            type: cc.Node
-        },
-        
-        roteador3: {
-            default: null,
-            type: cc.Node
-        },
-        
-        cabo1: {
-            default: null,
-            type: cc.Node
-        },
-        
-        cabo2: {
-            default: null,
-            type: cc.Node
-        },
-        
-        twBG: {
-            default: null,
-            type: cc.Node
-        },
-        
-        ipTabela1: {
+        lblNo1: {
             default: null,
             type: cc.Label
         },
         
-        ipTabela2: {
-            default: null,
-            type: cc.Label
-        },
-        
-        pacote: {
+        btnRealizarSalto1: {
             default: null,
             type: cc.Node
         },
         
-        ipPacote: {
+        btnRealizarSalto2: {
+            default: null,
+            type: cc.Node
+        },
+        
+        btnRealizarSalto3: {
+            default: null,
+            type: cc.Node
+        },
+        
+        btnRealizarSalto4: {
+            default: null,
+            type: cc.Node
+        },
+        
+        btnRealizarSalto5: {
+            default: null,
+            type: cc.Node
+        },
+        
+        btnRealizarSalto6: {
+            default: null,
+            type: cc.Node
+        },
+        
+        player: {
+            default: null,
+            type: cc.Node
+        },
+        
+        linha: {
+            default: null,
+            type: cc.Prefab
+        },
+        
+        score: {
             default: null,
             type: cc.Label
         },
         
-        resultado: {
+        professorFrente: {
+            default: null,
+            type: cc.Node
+        },
+        
+        textWrapperFrente: {
+            default: null,
+            type: cc.Node
+        },
+        
+        modeloRede: {
+            default: null,
+            type: cc.Node
+        },
+        
+        textoFase1: {
             default: null,
             type: cc.Label
         },
+        
+        tutorial1: {
+            default: null,
+            type: cc.Node
+        },
+        
+        tutorial2: {
+            default: null,
+            type: cc.Node
+        },
+        
+        tutorial3: {
+            default: null,
+            type: cc.Node
+        },
+        
+        btnJogar: {
+            default: null,
+            type: cc.Node
+        },
+        
+        saltos: 0,
         
         pontuacao: 0,
         
-        certo: 0,
-        
-        errado: 0,
-        
         contTexto: 0,
         
-        buttonCont1: 0,
+        tuto: 0,
         
-        buttonCont2: 0,
-        
-        ip: 0,
     },
 
     // use this for initialization
     onLoad: function () {
-        this.ip = "192.168.10.6";
+        this.player.setPosition(1360, 0);
         this.pontuacao = 0;
-        this.certo = 0;
-        this.errado = 0;
         this.contTexto = 0;
-        this.buttonCont1 = 0;
-        this.buttonCont2 = 0;
+        this.saltos = 5;
+        this.tuto = 1;
+        this.btnJogar.setPosition(1300, -206);
+        this.score.string = this.saltos;
+        this.someNos();
+        var face = this.face.getComponent(cc.Animation);
+        face.play("falaProfessor2");
+        var professora = this.professor.getComponent(cc.Animation);
+        professora.play("Aparece");
+        var texto = this.textoFase.getComponent(cc.Animation);
+        texto.playAdditive('ApareceTexto');
         this.textoFase.string = "Nesse Mini-Jogo, voce aprendera a rotear\n"+ 
             "pacotes IPs";
     },
     
-    button1: function(){
-        if(this.buttonCont1 === 0){
-            this.ipTabela1.string = "192.168.10.0    255.255.255.0        200.100.50.1";
-            this.buttonCont1 += 1;
-        } else if(this.buttonCont1 == 1){
-            var ipbutton = "192.168.10.6";
-            this.verificaButton11(ipbutton);
-        } else if(this.buttonCont1 == 2){
-            ipbutton = "192.168.10.6";
-            this.verificaButton11(ipbutton);
-            this.errado += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.50.2";
-            this.ipPacote.string = "IP:192.168.50.2\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont1 == 3){
-            ipbutton = "192.168.10.6";
-            this.verificaButton11(ipbutton);
-            this.errado += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.10.10";
-            this.ipPacote.string = "IP:192.168.10.10\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont1 == 4){
-            ipbutton = "192.168.10.10";
-            this.verificaButton11(ipbutton);
-            this.certo += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.10.50";
-            this.ipPacote.string = "IP:192.168.10.50\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont1 == 5){
-            ipbutton = "192.168.10.50";
-            this.verificaButton11(ipbutton);
-            this.certo += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.50.50";
-            this.ipPacote.string = "IP:192.168.50.50\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont1 == 6){
-            ipbutton = "192.168.10.50";
-            this.verificaButton11(ipbutton);
-            this.errado += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.50.44";
-            this.ipPacote.string = "IP:192.168.50.44\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont1 == 7){
-            ipbutton = "192.168.10.50";
-            this.verificaButton11(ipbutton);
-            this.errado += 1;
-            this.pontuacao += 1;
-            this.ip = "";
-            this.ipPacote.string = "";
-        } 
+    someNos: function(){
+        this.no1.setPosition(1360, 0);
+        this.no2.setPosition(1360, 0);
+        this.no3.setPosition(1360, 0);
+        this.no4.setPosition(1360, 0);
+        this.no5.setPosition(1360, 0);
+        this.no6.setPosition(1360, 0);
     },
     
-    verificaButton11: function(ipbutton){
-        if(this.ip == ipbutton){
-            this.resultado.string = "acertou";
-            this.buttonCont1 += 1;
-            this.buttonCont2 += 1;
-        } else {
-            this.resultado.string = "errou!!";
-            this.buttonCont1 += 1;
-            this.buttonCont2 += 1;
+    someRealizaSalto: function(){
+        this.btnRealizarSalto1.setPosition(895, -108);
+        this.btnRealizarSalto2.setPosition(895, -108);
+        this.btnRealizarSalto3.setPosition(895, -108);
+        this.btnRealizarSalto4.setPosition(895, -108);
+        this.btnRealizarSalto5.setPosition(895, -108);
+        this.btnRealizarSalto6.setPosition(895, -108);
+    },
+    
+    apareceNos: function(){
+        this.no1a.setPosition(-240, -181);
+        this.no2a.setPosition(-181, -6);
+        this.no3a.setPosition(-15, -181);
+        this.no4a.setPosition(12, -27);
+        this.no5a.setPosition(-39, 103);
+        this.no6a.setPosition(193, 115);
+    },
+    
+    movePlayer: function (x, y){
+        var move = cc.moveTo(3, cc.p(x, y));
+        //this.player.runAction(move);
+        return move;
+    },
+    
+    criaLinha: function() {
+        var novaLinha = cc.instantiate(this.linha);
+        this.bg.addChild(novaLinha);
+        novaLinha.setPosition(this.player.getPosition());
+    },
+    
+    jogar: function(){
+        if(this.tuto == 1){
+            this.tutorial1.setOpacity(0);
+            this.tutorial2.setOpacity(255);
+            this.tuto += 1;
+        } else if(this.tuto == 2){
+            this.tutorial2.setOpacity(0);
+            this.tutorial3.setOpacity(255);
+            this.tuto += 1;
+            var score = this.score.getComponent(cc.Animation);
+            score.play("apareceScore");
+            this.no1.setPosition(-240, -181);
+            this.player.setPosition(-210, -154);
+        } else if(this.tuto == 3){
+            this.btnJogar.setPosition(1300, -206);
+            this.tutorial3.setOpacity(0);
+            this.apareceNos();
         }
-    },
-    
-    button2: function(){
-        if(this.buttonCont2 === 0){
-            this.ipTabela2.string = "192.168.50.0    255.255.255.0        200.100.50.2";
-            this.buttonCont2 += 1;
-        } else if(this.buttonCont2 == 1){
-            var ipbutton = "192.168.50.5";
-            this.verificaButton21(ipbutton);
-        } else if(this.buttonCont2 == 2){
-            ipbutton = "192.168.50.5";
-            this.verificaButton21(ipbutton);
-            this.certo += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.50.2";
-            this.ipPacote.string = "IP:192.168.50.2\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont2 == 3){
-            ipbutton = "192.168.50.2";
-            this.verificaButton21(ipbutton);
-            this.certo += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.10.10";
-            this.ipPacote.string = "IP:192.168.10.10\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont2 == 4){
-            ipbutton = "192.168.50.2";
-            this.verificaButton21(ipbutton);
-            this.errado += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.10.50";
-            this.ipPacote.string = "IP:192.168.10.50\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont2 == 5){
-            ipbutton = "192.168.50.2";
-            this.verificaButton21(ipbutton);
-            this.errado += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.50.50";
-            this.ipPacote.string = "IP:192.168.50.50\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont2 == 6){
-            ipbutton = "192.168.50.50";
-            this.verificaButton21(ipbutton);
-            this.certo += 1;
-            this.pontuacao += 1;
-            this.ip = "192.168.50.44";
-            this.ipPacote.string = "IP:192.168.50.44\n"+
-            "Mask:255.255.255.0";
-        } else if(this.buttonCont2 == 7){
-            ipbutton = "192.168.50.44";
-            this.verificaButton21(ipbutton);
-            this.certo += 1;
-            this.pontuacao += 1;
-            this.ip = "";
-            this.ipPacote.string = "";
-        } 
-    },
-    
-    verificaButton21: function(ipbutton){
-        if(this.ip == ipbutton){
-            this.resultado.string = "acertou";
-            this.buttonCont1 += 1;
-            this.buttonCont2 += 1;
-        } else {
-            this.resultado.string = "errou!!";
-            this.buttonCont1 += 1;
-            this.buttonCont2 += 1;
-        }
-    },
-    
-    someCenario: function(){
-        this.computador1.setPosition(1360, 0);
-        this.computador2.setPosition(1360, 0);
-        this.computador3.setPosition(1360, 0);
-        this.computador4.setPosition(1360, 0);
-        this.computador5.setPosition(1360, 0);
-        this.computador6.setPosition(1360, 0);
-        this.ip1.setPosition(1360, 0);
-        this.ip2.setPosition(1360, 0);
-        this.ip3.setPosition(1360, 0);
-        this.ip4.setPosition(1360, 0);
-        this.ip5.setPosition(1360, 0);
-        this.ip6.setPosition(1360, 0);
-        this.ip7.setPosition(1360, 0);
-        this.ip8.setPosition(1360, 0);
-        this.roteador1.setPosition(1360, 0);
-        this.roteador2.setPosition(1360, 0);
-        this.roteador3.setPosition(1360, 0);
-        this.cabo1.setPosition(1360, 0);
-        this.cabo2.setPosition(1360, 0);
-    },
-    
-    apareceCenario: function(){
-        this.computador1.setPosition(-379, 9);
-        this.computador2.setPosition(-379, 107);
-        this.computador3.setPosition(-379, 217);
-        this.computador4.setPosition(391, 217);
-        this.computador5.setPosition(391, 107);
-        this.computador6.setPosition(391, 9);
-        this.ip1.setPosition(187, -590);
-        this.ip2.setPosition(-363, 60);
-        this.ip3.setPosition(-354, 163);
-        this.ip4.setPosition(365, 163);
-        this.ip5.setPosition(365, -50);
-        this.ip6.setPosition(365, 60);
-        this.ip7.setPosition(127, 375);
-        this.ip8.setPosition(203, 208);
-        this.roteador1.setPosition(-166, 133);
-        this.roteador2.setPosition(33, 207);
-        this.roteador3.setPosition(201, 133);
-        this.cabo1.setPosition(-70, 149);
-        this.cabo2.setPosition(140, 142);
     },
     
     trocaTexto1: function(){
+        var professora = this.professor.getComponent(cc.Animation);
+        var texto = this.textoFase.getComponent(cc.Animation);
         if(this.contTexto === 0){
+            texto.playAdditive('ApareceTexto');
+            professora.play("animaProfessora2-1");
             this.textoFase.string = "Os roteadores são utilizados para interligar\n"+
             "as redes físicas entre si. Eles oferecem\n"+
-            "múltiplos caminhos para interconectar as redes físicas.";
+            "múltiplos caminhos para interconectar\n"+ 
+            "as redes físicas."; 
             this.contTexto += 1;
         } else if(this.contTexto == 1){
+            texto.playAdditive('ApareceTexto');
+            professora.play("animaProfessora2-2");
             this.textoFase.string = "As tabelas de roteamento indicam para cada roteador\n"+
             "como ele deve encaminhar um pacote a fim de que\n"+
             "este chegue a uma certa rede física de destino.";
             this.contTexto += 1;
         } else if(this.contTexto == 2){
+            texto.playAdditive('ApareceTexto');
+            professora.play("moveProfessora2-3");
             this.textoFase.string = "As tabelas de roteamento são preenchidas\n"+
-            "automaticamente, através de protocolos de roteamento\n"+
-            "padronizados, como o BGP (Border Gateway Protocol)";
+            "automaticamente, através de protocolos\n"+
+            "de roteamento padronizados\n"+ 
+            "como o BGP (Border Gateway Protocol)";
             this.contTexto += 1;
         } else if(this.contTexto == 3){
+            texto.playAdditive('ApareceTexto');
+            professora.play("animaProfessora2-1");
             this.textoFase.string = "Veja agora um exemplo de rede!";
+            this.modeloRede.setOpacity(255);
             this.contTexto += 1;
         } else if(this.contTexto == 4){
-            this.bgFase2.setPosition(0, 0);
+            texto.playAdditive('ApareceTexto');
             this.textoFase.string = "O cenario acima demonstra uma rede\n"+
-            "com 6 maquinas e 3 roteadores, vamos obersava-la por partes";
+            "com 6 roteadores, cada um deles com sua tabela\n"+
+            "de roteamento";
             this.contTexto += 1;
         } else if(this.contTexto == 5){
-            this.computador1.setPosition(0, 80);
-            this.computador1.setScale(0.2, 0.2);
-            this.textoFase.string = "Perceba que esta maquina possui\n"+
-            "um endereço de IP utilizado para redes privadas\n"+
-            "tambem possui uma mascara de rede, representado pela /";
+            texto.playAdditive('ApareceTexto');
+            professora.play("animaProfessora2-2");
+            this.textoFase.string = "No papel de um pacote, voce tera\n"+
+            "5 saltos para sair do nó 1 e chegar ao nó 6!\n"+
+            "caso contrario, a mensagem sera perdida";
+            this.modeloRede.setOpacity(0);
             this.contTexto += 1;
         } else if(this.contTexto == 6){
-            this.textoFase.string = "A mascara de rede identifica\n"+
-            "quantos bits sao de rede e quantos estao\n"+
-            "reservados para host!";
+            texto.playAdditive('ApareceTexto');
+            professora.play("animaProfessora2-1");
+            this.textoFase.string = "Cada salto possui um custo\n"+
+            "Usaremos nesse exemplo, o numero de saltos\n"+
+            "para se alcançar determinado nó";
+            this.modeloRede.setOpacity(0);
             this.contTexto += 1;
         } else if(this.contTexto == 7){
-            this.computador1.setPosition(-379, 9);
-            this.computador1.setScale(0.1, 0.1);
-            this.roteador1.setScale(0.3, 0.3);
-            this.roteador1.setPosition(0, 100);
-            this.textoFase.string = "O roteador neste cenario interliga\n"+
-            "a rede local com a rede externa, para que isso ocorra\n"+
-            "o roteador possui uma tabela de roteamento";
+            texto.playAdditive('ApareceTexto');
+            professora.play("animaProfessora2-2");
+            this.textoFase.string = "Tente chegar ao nó 6\n"+
+            "com o menor custo possível\n"+
+            "atente-se aos saltos necessários";
+            this.modeloRede.setOpacity(0);
             this.contTexto += 1;
-        } else if(this.contTexto == 8){
-            this.textoFase.string = "A tabela de roteamento possui\n"+
-            "o endereço da rede, a sua mascara e a qual interface\n"+
-            "ela esta conectada";
+        }else if(this.contTexto == 8){
+            texto.playAdditive('ApareceTexto');
+            this.textoFase.string = "clique em continuar e boa sorte!!";
             this.contTexto += 1;
-        } else if(this.contTexto == 9){
-            this.textoFase.string = "Vamos ver isso na pratica";
-            this.contTexto += 1;
-        } else if(this.contTexto == 10){
-            this.tabRoteamento.setPosition(312, 24);
-            this.textoFase.string = "A tabela de roteamento e preenchida\n"+
-            "a medida que os pacotes de informaçao\n"+
-            "vao chegando ao roteador";
-            this.contTexto += 1;
-        } else if(this.contTexto == 11){
-            this.textoFase.string = "O mini-jogo a seguir, te coloca na pele\n"+
-            "do roteador, tendo que preencher a tabela de roteamento\n"+ 
-            "e entregar os pacotes";
-            this.contTexto += 1;
-        } else if(this.contTexto == 12){
-            this.someCenario();
-            this.roteador2.setPosition(33, 260);
-            this.tabRoteamento.setPosition(0, 60);
-            this.textoFase.string = "A tabela de roteamento do roteador\n"+
-            "começa vazia, porem, o mesmo envia uma mensagem para\n"+
-            "suas interfaces, a fim de identificar as redes";
-            this.contTexto += 1;
-        } else if(this.contTexto == 13){
-            this.textoFase.string = "Clique nos botoes para\n"+
-            "identificar as redes e depois clique em continuar!";
-            this.ipTabela1.string = "Clique para identificar rede";
-            this.ipTabela2.string = "Clique para identificar rede";
-            this.contTexto += 1;
-        } else if(this.contTexto == 14 && this.buttonCont1 == 1 && this.buttonCont2 == 1){
-            this.textoFase.string = "Com a tabela montada o roteador pode\n"+
-            "começar a distribuir os pacotes, clique na rede\n"+
-            "para onde o pacote deve ir,depois clique em continuar";
-            this.pacote.setPosition(300, 50);
-            this.ipPacote.string = "IP:192.168.10.6\n"+
-            "Mask:255.255.255.0";
-            this.contTexto += 1;
-        } else if(this.contTexto == 15){
-            this.textoFase.string = "A rede correta para o envio do pacote era\n"+
-            "a rede 192.168.10.0, o seu erro ou acerto pode ser visto\n"+
-            "em cima do pacote";
-            this.contTexto += 1;
-        } else if(this.contTexto == 16){
-            this.textoFase.string = "Faça o roteamento para os proximos 5 pacotes\n"+
-            "acerte pelo menos 3 para avançar para o quiz!\n"+
-            "clique em continuar para começar!";
-            this.contTexto += 1;
-        } else if(this.contTexto == 17){
-            this.ipPacote.string = "IP:192.168.50.5\n"+
-            "Mask:255.255.255.0";
-            this.ip = "192.168.50.5";
-            this.twBG.setPosition(0, -1360);
+        }else if(this.contTexto == 9){
+            this.tutorial1.setOpacity(255);
+            this.btnJogar.setPosition(0, -206);
+            this.bg.setOpacity(255);
+            this.textoFase1.string = "Parabéns, voce chegou ao nó 6!\n"+
+            "apesar de bastante simplificado\n"+ 
+            "o mini-jogo demonstrou como uma \n"+
+            "informação trafega em diversas redes!";
             this.contTexto += 1;
         } else if(this.contTexto == 20){
-            cc.director.loadScene("quizFase2");
+            texto.playAdditive('ApareceTexto');
+            this.textoFase1.string = "Com as informações passadas nesta fase\n"+
+            "responda agora o Quiz!\n"+
+            "clique em continuar e boa sorte!";
+            this.contTexto += 1;
         } else if(this.contTexto == 21){
+            cc.director.loadScene("quizFase2");
+        } else if(this.contTexto == 10){
+            this.contTexto += 1;
+        } else if(this.contTexto == 11){
             cc.director.loadScene("jogoFase2");
-        } 
-    },
-    
-    passouFase: function(){
-        if(this.pontuacao == 6 && this.certo >= 3){
-            this.contTexto = 20;
-            this.twBG.setPosition(-3, -210);
-            this.textoFase.string = "Parabens! voce passou de fase\n"+
-            "responda agora as questoes do quiz!\n"+
-            "clique em continuar para prosseguir";
-        } else if(this.pontuacao == 6 && this.errado >= 3){
-            this.contTexto = 21;
-            this.twBG.setPosition(-3, -210);
-            this.textoFase.string = "Que pena! voce nao passou de fase\n"+
-            "reveja a explicaçao e tente novamente!\n"+
-            "clique em continuar para prosseguir";
         }
     },
     
+    buttonNo1: function(){
+        this.tabRot.setPosition(320, -130);
+        this.lblNo1.string = "No 6         6\n"+
+        "\n"+
+        "\n"+
+        "No 3         1";
+        this.someRealizaSalto();
+        this.btnRealizarSalto6.setPosition(0, -108);
+        this.btnRealizarSalto3.setPosition(0, -202);
+    },
+    
+    buttonNo2: function(){
+        this.tabRot.setPosition(320, -130);
+        this.lblNo1.string = "No 5         2\n"+
+        "\n"+
+        "\n"+
+        "No 6         1";
+        this.someRealizaSalto();
+        this.btnRealizarSalto5.setPosition(0, -108);
+        this.btnRealizarSalto6.setPosition(0, -202);
+    },
+    
+    buttonNo3: function(){
+        this.tabRot.setPosition(320, -130);
+        this.lblNo1.string = "No 5         1\n"+
+        "\n"+
+        "\n"+
+        "No 2         2";
+        this.someRealizaSalto();
+        this.btnRealizarSalto5.setPosition(0, -108);
+        this.btnRealizarSalto2.setPosition(0, -202);
+    },
+    
+    buttonNo4: function(){
+        this.tabRot.setPosition(320, -130);
+        this.lblNo1.string = "No 5         1\n"+
+        "\n"+
+        "\n"+
+        "No 2         1";
+        this.someRealizaSalto();
+        this.btnRealizarSalto5.setPosition(0, -108);
+        this.btnRealizarSalto2.setPosition(0, -202);
+    },
+    
+    buttonNo5: function(){
+        this.tabRot.setPosition(320, -130);
+        this.lblNo1.string = "No 4         1\n"+
+        "\n"+
+        "\n"+
+        "No 6         2";
+        this.someRealizaSalto();
+        this.btnRealizarSalto4.setPosition(0, -108);
+        this.btnRealizarSalto6.setPosition(0, -202);
+    },
+    
+    buttonNo6: function(){
+        this.tabRot.setPosition(320, -130);
+        this.lblNo1.string = "No 5         70%\n"+
+        "\n"+
+        "\n"+
+        "";
+        this.someRealizaSalto();
+        this.btnRealizarSalto5.setPosition(0, -108);
+        
+    },
+    
+    buttonSalto1: function(){
+        this.someNos();
+        this.tabRot.setPosition(1320, -130);
+        this.no1.setPosition(-240, -181);
+        this.saltos -= 1;
+        this.movePlayer(-240, -181);
+    },
+    
+    buttonSalto2: function(){
+        this.someNos();
+        this.tabRot.setPosition(1320, -130);
+        this.no2.setPosition(-181, -6);
+        if(this.player.x == 12){
+        this.saltos -= 1;
+        var move2 = this.movePlayer(-181, -6);
+        this.player.runAction(move2);    
+        } else{
+        this.saltos -= 2;
+        var move1 = this.movePlayer(12, -27);
+        var move2 = this.movePlayer(-181, -6);
+        this.player.runAction(cc.sequence(move1,move2));
+        }
+    },
+    
+    buttonSalto3: function(){
+        this.someNos();
+        this.tabRot.setPosition(1320, -130);
+        this.no3.setPosition(-15, -181);
+        this.saltos -= 1;
+        var move = this.movePlayer(-15, -181);
+        this.player.runAction(move);
+    },
+    
+    buttonSalto4: function(){
+        this.someNos();
+        this.tabRot.setPosition(1320, -130);
+        this.no4.setPosition(12, -27);
+        this.saltos -= 1;
+        var move = this.movePlayer(12, -27);
+        this.player.runAction(move);
+    },
+    
+    buttonSalto5: function(){
+        this.someNos();
+        this.tabRot.setPosition(1320, -130);
+        this.no5.setPosition(-39, 103);
+        if(this.player.x == -15){
+        this.saltos -= 1;
+        var move1 = this.movePlayer(-39, 103);
+        this.player.runAction(move1);
+        } else if(this.player.x == 12){
+        this.saltos -= 1;
+        var move2 = this.movePlayer(-39, 103);
+        this.player.runAction(move2);    
+        } else {
+            this.saltos -= 2;
+        move1 = this.movePlayer(12, -27);
+        var move2 = this.movePlayer(-39, 103);
+        this.player.runAction(cc.sequence(move1,move2));
+        }
+    },
+    
+    buttonSalto6: function(){
+        this.someNos();
+        this.tabRot.setPosition(1320, -130);
+        this.no6.setPosition(193, 115);
+        if(this.player.x == -210){
+        this.saltos -= 5;
+        var move1 = this.movePlayer(-181, -6);
+        var move2 = this.movePlayer(-15, -181);
+        var move3 = this.movePlayer(12, -27);
+        var move5 = this.movePlayer(-39, 103);
+        var move6 = this.movePlayer(193, 115);
+        this.player.runAction(cc.sequence(move1,move2,move3,move5,move6));
+        } else if(this.player.x == -39){
+        this.saltos -= 2;
+        var move1 = this.movePlayer(12, -27);
+        var move2 = this.movePlayer(193, 115);
+        this.player.runAction(cc.sequence(move1,move2));
+        } else {
+            this.saltos -= 1;
+            var move6 = this.movePlayer(193, 115);
+            this.player.runAction(move6);
+        } 
+        if(this.saltos > 0){
+        var profFrente = this.professorFrente.getComponent(cc.Animation);
+        profFrente.play("moveProfessorFrente");
+        var twfrente = this.textWrapperFrente.getComponent(cc.Animation);
+        twfrente.play("moveTWFrente");
+        this.contTexto = 20;
+        }
+    },
+     
+    gameOver: function(){
+        this.saltos = 1;
+        var score = this.score.getComponent(cc.Animation);
+        score.play("someScore");
+        var profFrente = this.professorFrente.getComponent(cc.Animation);
+        profFrente.play("moveProfessorFrente");
+        var twfrente = this.textWrapperFrente.getComponent(cc.Animation);
+        twfrente.play("moveTWFrente");
+        //this.contTexto = 20;
+        this.someNos();
+        this.textoFase1.string = "Infelizmente a mensagem se perdeu\n"+
+            "Saltos insuficientes para chegar ao destino\n"+
+            'clique em continuar e tente novamente!';
+        if(this.contTexto == 9){
+            cc.director.loadScene("jogoFase2");
+        }
+    },
+    
+    
     // called every frame, uncomment this function to activate update callback
     update: function (dt) {
-        this.passouFase();
+        this.criaLinha();
+        
+        if(this.saltos <= 0){
+            this.gameOver();
+        }
+        
+        this.score.string = "Saltos: "+ this.saltos;
     },
 });

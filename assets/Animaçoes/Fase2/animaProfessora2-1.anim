@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "animaProfessora2-1",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.1,
+  "sample": 60,
+  "speed": 0.2,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "37492a4e-5ba6-41fa-8f23-d44c4d27d153"
+            }
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": {
+              "__uuid__": "f7d4cf7c-6804-44da-b5a8-3ba4296b5b46"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "90dadcc6-2562-4c2c-ac27-c422202c8fb2"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "33d1dde7-875d-4144-b9ec-f51ad4cbf439"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "05c7a069-b5a7-492d-8274-3d85f75af5ac"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "57e1005f-5a78-498a-8db5-38ca18dc3bba"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -104,6 +104,10 @@ cc.Class({
             "é bem perceptivel";
     },
     
+    onDestroy: function () {
+        cc.audioEngine.pauseAll();
+    },
+    
     //movimentar via teclado
     setInputControl: function () {
         var self = this;
