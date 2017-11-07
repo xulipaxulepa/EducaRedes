@@ -13,6 +13,11 @@ cc.Class({
             type: cc.Node
         },
 
+        face1: {
+            default: null,
+            type: cc.Node
+        },
+
         textoFase: {
             default: null,
             type: cc.Label
@@ -64,6 +69,11 @@ cc.Class({
         },
 
         professorFrente: {
+            default: null,
+            type: cc.Node
+        },
+
+        face2: {
             default: null,
             type: cc.Node
         },
@@ -138,6 +148,16 @@ cc.Class({
             type: cc.Label
         },
 
+        tutorial: {
+            default: null,
+            type: cc.Node
+        },
+
+        textWrapper: {
+            default: null,
+            type: cc.Node
+        },
+
         acertos: 0,
 
         erros: 0,
@@ -173,6 +193,12 @@ cc.Class({
         this.azul = 0;
         this.verde = 0;
         this.someNos();
+        var face = this.face1.getComponent(cc.Animation);
+        face.play("falaProfessor3-1");
+        var professor = this.professor.getComponent(cc.Animation);
+        professor.play("Aparece");
+        var texto = this.textoFase.getComponent(cc.Animation);
+        texto.playAdditive('ApareceTexto');
         this.textoFase.string = "Nesse Mini-Jogo, voce aprendera como o pacote\n" + "trafega na rede, atraves do TCP";
     },
 
@@ -196,65 +222,65 @@ cc.Class({
 
     aparecePacotes1: function aparecePacotes1() {
         if (this.pacote1.x == 213 && this.pacote1.y == 115) {
-            this.pacoteA.setPosition(159, 57);
+            this.pacoteA.setPosition(159, 3);
             this.pacote1.setPosition(215, 117);
         } else if (this.pacote3.x == 203 && this.pacote3.y == 115) {
-            this.pacoteC.setPosition(-3, 57);
+            this.pacoteC.setPosition(-3, 3);
             this.pacote3.setPosition(205, 117);
         } else if (this.pacote2.x == 193 && this.pacote2.y == 115) {
-            this.pacoteB.setPosition(-165, 57);
+            this.pacoteB.setPosition(-165, 3);
             this.pacote2.setPosition(195, 117);
         }
     },
 
     aparecePacotes2: function aparecePacotes2() {
         if (this.pacote3.x == 213 && this.pacote3.y == 115) {
-            this.pacoteC.setPosition(159, 57);
+            this.pacoteC.setPosition(159, 3);
             this.pacote3.setPosition(215, 117);
         } else if (this.pacote2.x == 203 && this.pacote2.y == 115) {
-            this.pacoteB.setPosition(-3, 57);
+            this.pacoteB.setPosition(-3, 3);
             this.pacote2.setPosition(205, 117);
         } else if (this.pacote1.x == 193 && this.pacote1.y == 115) {
-            this.pacoteA.setPosition(-165, 57);
+            this.pacoteA.setPosition(-165, 3);
             this.pacote1.setPosition(195, 117);
         }
     },
 
     aparecePacotes3: function aparecePacotes3() {
         if (this.pacote1.x == 213 && this.pacote1.y == 115) {
-            this.pacoteA.setPosition(159, 57);
+            this.pacoteA.setPosition(159, 3);
             this.pacote1.setPosition(215, 117);
         } else if (this.pacote2.x == 203 && this.pacote2.y == 115) {
-            this.pacoteB.setPosition(-3, 57);
+            this.pacoteB.setPosition(-3, 3);
             this.pacote2.setPosition(205, 117);
         } else if (this.pacote3.x == 193 && this.pacote3.y == 115) {
-            this.pacoteC.setPosition(-165, 57);
+            this.pacoteC.setPosition(-165, 3);
             this.pacote3.setPosition(195, 117);
         }
     },
 
     aparecePacotes4: function aparecePacotes4() {
         if (this.pacote2.x == 213 && this.pacote2.y == 115) {
-            this.pacoteB.setPosition(159, 57);
+            this.pacoteB.setPosition(159, 3);
             this.pacote2.setPosition(215, 117);
         } else if (this.pacote3.x == 203 && this.pacote3.y == 115) {
-            this.pacoteC.setPosition(-3, 57);
+            this.pacoteC.setPosition(-3, 3);
             this.pacote3.setPosition(205, 117);
         } else if (this.pacote1.x == 193 && this.pacote1.y == 115) {
-            this.pacoteA.setPosition(-165, 57);
+            this.pacoteA.setPosition(-165, 3);
             this.pacote1.setPosition(195, 117);
         }
     },
 
     aparecePacotes5: function aparecePacotes5() {
         if (this.pacote1.x == 213 && this.pacote1.y == 115) {
-            this.pacoteA.setPosition(159, 57);
+            this.pacoteA.setPosition(159, 3);
             this.pacote1.setPosition(215, 117);
         } else if (this.pacote3.x == 203 && this.pacote3.y == 115) {
-            this.pacoteC.setPosition(-3, 57);
+            this.pacoteC.setPosition(-3, 3);
             this.pacote3.setPosition(205, 117);
         } else if (this.pacote2.x == 193 && this.pacote2.y == 115) {
-            this.pacoteB.setPosition(-165, 57);
+            this.pacoteB.setPosition(-165, 3);
             this.pacote2.setPosition(195, 117);
         }
     },
@@ -330,55 +356,97 @@ cc.Class({
         }
     },
 
+    jogar: function jogar() {
+        this.apareceNos();
+        this.tabrot.setPosition(321, -130);
+        this.pacote1.setPosition(-240, -181);
+        this.pacote2.setPosition(-230, -181);
+        this.pacote3.setPosition(-220, -181);
+        this.movePacote1();
+        this.tutorial.setPosition(2000, 0);
+    },
+
     trocaTexto1: function trocaTexto1() {
+        var texto = this.textoFase.getComponent(cc.Animation);
+        var professor = this.professor.getComponent(cc.Animation);
+        var face = this.face1.getComponent(cc.Animation);
+        var texto1 = this.textoFase1.getComponent(cc.Animation);
         if (this.contTexto === 0) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-2");
             this.textoFase.string = "O TCP é um protocolo de nível\n" + "da camada de transporte. O Protocolo de controle de\n" + "transmissão provê confiabilidade, entrega na sequencia";
             this.contTexto += 1;
         } else if (this.contTexto == 1) {
-            this.textoFase.string = "correta e verificação de erros pacotes\n" + "de dados, entre os diferentes nós da rede";
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.textoFase.string = "correta e verificação de erros nos pacotes\n" + "de dados, entre os diferentes nós da rede";
             this.contTexto += 1;
         } else if (this.contTexto == 2) {
-            this.textoFase.string = "No mini jogo a seguir, cada bolinha verde\n" + "representa um nó na rede, o objetivo do jogo é\n" + "organizar o pacote que sai da sua origem e chega ao seu destino";
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-1");
+            this.textoFase.string = "No mini jogo a seguir, cada roteador\n" + "representa um nó na rede, o objetivo do jogo é\n" + "organizar o pacote que sai da sua origem\n" + "e chega ao seu destino";
             this.contTexto += 1;
         } else if (this.contTexto == 3) {
-            this.textoFase.string = "Para isso existe o RIP\n" + "(Routing Information Protocol) que é um padrão para\n" + "troca de informações entre os gateways e hosts de roteamento.";
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-2");
+            this.textoFase.string = "As informações trafegarão através do RIP\n" + "(Routing Information Protocol) que é um padrão para\n" + "troca de informações entre os gateways\n" + "e hosts de roteamento.";
             this.contTexto += 1;
         } else if (this.contTexto == 4) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
             this.textoFase.string = "A rede mundial de computadores é organizada\n" + "como um conjunto de sistemas autônomos.";
             this.contTexto += 1;
         } else if (this.contTexto == 5) {
-            this.textoFase.string = "O RIP emite mensagens de atualização\n" + "das suas rotas (Tabelas de Roteamento) em intervalos regulares\n" + "(a cada 30 segundos) e quando a topologia da rede mudar.";
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-1");
+            this.textoFase.string = "O RIP emite mensagens de atualização\n" + "das suas rotas (Tabelas de Roteamento)\n" + "em intervalos regulares(a cada 30 segundos)\n" + "e quando a topologia da rede mudar.";
             this.contTexto += 1;
         } else if (this.contTexto == 6) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-2");
             this.textoFase.string = "Os roteadores do RIP mantêm somente\n" + "a melhor rota à um destino.\n" + "com essas informações em mente, vamos ao mini-jogo";
             this.contTexto += 1;
         } else if (this.contTexto == 7) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
             this.textoFase.string = "Nesse cenario, a informaçao viajara\n" + "do roteador 1 ao roteador 6, nesse mini-jogo\n" + "o seu objetivo e colocar os pacotes na ordem correta";
             this.contTexto += 1;
         } else if (this.contTexto == 8) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-1");
             this.textoFase.string = "visualize a ordem de chegada dos pacotes\n" + "e os organize, clicando neles, na ordem correta\n" + "demonstrada no canto superior da tela";
             this.contTexto += 1;
         } else if (this.contTexto == 9) {
-            this.textoFase.string = "Tambem deve ser observado\n" + "a melhor rota a ser utilizada\n" + "clique em continuar para começar";
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.textoFase.string = "clique em continuar para começar";
             this.contTexto += 1;
         } else if (this.contTexto == 10) {
             this.bg.setOpacity(255);
-            this.apareceNos();
-            this.tabrot.setPosition(321, -130);
-            this.pacote1.setPosition(-240, -181);
-            this.pacote2.setPosition(-230, -181);
-            this.pacote3.setPosition(-220, -181);
-            this.movePacote1();
+            this.tutorial.setPosition(0, 0);
+            this.textoFase1.string = "Parabéns, voce roteou os 5 pacotes\n" + "fazendo " + this.acertos + " acertos e " + this.erros + " erros\n";
             this.contTexto = 20;
         } else if (this.contTexto == 20) {
-            this.textoFase1.string = "Parabéns, voce chegou roteou os 5 pacotes\n" + "fazendo " + this.acertos + " acertos e " + this.erros + " erros\n";
+            texto1.playAdditive('ApareceTexto');
             this.contTexto += 1;
         } else if (this.contTexto == 21 && this.acertos >= 3) {
+            texto1.playAdditive('ApareceTexto');
             this.textoFase1.string = "Voce obteve 3 ou mais acertos\n" + "Com as informações passadas nesta fase\n" + "responda agora o Quiz!\n" + "clique em continuar e boa sorte!";
             this.contTexto += 1;
         } else if (this.contTexto == 22 && this.acertos >= 3) {
             cc.director.loadScene("quizFase3");
         } else if (this.contTexto == 21 && this.erros >= 3) {
+            texto1.playAdditive('ApareceTexto');
             this.textoFase1.string = "Voce obteve 3 ou mais erros\n" + "tente acertar pelo menos 3 roteamentos\n" + "jogue novamente!\n" + "clique em continuar e boa sorte!";
             this.contTexto += 1;
         } else if (this.contTexto == 22 && this.erros >= 3) {
@@ -388,13 +456,19 @@ cc.Class({
 
     gameOver: function gameOver() {
         if (this.roteamentos == 5) {
+            this.roteamentos = 6;
             this.pacoteA.setPosition(1390, -150);
             this.pacoteB.setPosition(1390, -150);
             this.pacoteC.setPosition(1390, -150);
             this.pacote1.setPosition(-1240, -181);
             this.pacote2.setPosition(-1230, -181);
             this.pacote3.setPosition(-1220, -181);
-            this.professorFrente.setPosition(-199, 0);
+            var professor = this.professorFrente.getComponent(cc.Animation);
+            var face = this.face2.getComponent(cc.Animation);
+            var tw = this.textWrapper.getComponent(cc.Animation);
+            tw.play("apareceTW!");
+            professor.play("Aparece");
+            face.play("falaProfessor3-1");
             //this.someNos();
         }
     },

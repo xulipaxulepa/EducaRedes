@@ -64,7 +64,7 @@
                 "width": 781
               },
               {
-                "active": 0,
+                "active": 1,
                 "children": [
                   "console",
                   "timeline"
@@ -99,25 +99,12 @@
         "node-library",
         "timeline"
       ]
-    },
-    "window-1509406245523": {
-      "main": false,
-      "url": "packages://code-editor/panel/index.html",
-      "windowType": "simple",
-      "x": 272,
-      "y": 63,
-      "width": 1029,
-      "height": 638,
-      "layout": null,
-      "panels": [
-        "code-editor"
-      ]
     }
   },
   "panels": {
     "code-editor": {
-      "x": 272,
-      "y": 63,
+      "x": 315,
+      "y": 49,
       "width": 1029,
       "height": 638
     },

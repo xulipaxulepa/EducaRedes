@@ -48,6 +48,26 @@ cc.Class({
             type: cc.Node
         },
 
+        respostaErrada1b: {
+            default: null,
+            type: cc.Node
+        },
+
+        respostaErrada2b: {
+            default: null,
+            type: cc.Node
+        },
+
+        respostaErrada3b: {
+            default: null,
+            type: cc.Node
+        },
+
+        respostaErrada4b: {
+            default: null,
+            type: cc.Node
+        },
+
         respostaCerta: {
             default: null,
             type: cc.Node
@@ -83,6 +103,21 @@ cc.Class({
             type: cc.Node
         },
 
+        professor: {
+            default: null,
+            type: cc.Node
+        },
+
+        face: {
+            default: null,
+            type: cc.Node
+        },
+
+        falaquizprof: {
+            default: null,
+            type: cc.Node
+        },
+
         resp: 0,
 
         contador: 0,
@@ -91,7 +126,9 @@ cc.Class({
 
         respCer: 0,
 
-        respErr: 0
+        respErr: 0,
+
+        saiAnimacao: 0
     },
 
     someResposta: function someResposta() {
@@ -124,6 +161,7 @@ cc.Class({
 
     perguntas: function perguntas() {
         if (this.contador === 0) {
+            this.apareceRespostas();
             this.someResposta();
             this.pergunta.string = 'A camada transporte é responsável por...';
 
@@ -135,6 +173,7 @@ cc.Class({
 
             this.resposta4.string = 'Acessar a rede em aplicações Web';
         } else if (this.contador == 1) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
             this.pergunta.string = 'Qual destes protocolos não pertence\n a camada de transporte?';
@@ -147,6 +186,7 @@ cc.Class({
 
             this.resposta4.string = 'RTP';
         } else if (this.contador == 2) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
             this.pergunta.string = 'Qual a ordem correta\n do protocolo Three Way Handshake\n do TCP/IP?';
@@ -159,6 +199,7 @@ cc.Class({
 
             this.resposta4.string = 'SYN, ACK-SYN, ACK';
         } else if (this.contador == 3) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
             this.pergunta.string = 'Na camada de transporte\n o protocolo para garantir\n a confiabilidade é...?';
@@ -171,9 +212,10 @@ cc.Class({
 
             this.resposta4.string = 'TCP';
         } else if (this.contador == 4) {
+            this.apareceRespostas();
             this.someResposta();
             this.trocaRespostas();
-            this.pergunta.string = 'Os protocolos de camada de transporte\n que estabelecem uma conexão com outro nó\n antes de começarem a transmitir dados\n são conhecidos como ?';
+            this.pergunta.string = 'Os protocolos da camada de transporte\n que estabelecem uma conexão com\n outro nó antes de começarem\n a transmitir dados são conhecidos como ?';
 
             this.resposta1.string = 'Protocolos orientados à conexão';
 
@@ -187,12 +229,14 @@ cc.Class({
 
     buttonRespCerto: function buttonRespCerto() {
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respCer += 1;
         this.contador += 1;
     },
 
     buttonRespErrado: function buttonRespErrado() {
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respErr += 1;
         this.contador += 1;
     },
@@ -216,9 +260,40 @@ cc.Class({
         this.someResposta();
         this.timer = 100000;
         this.contador = 0;
+        this.saiAnimacao = 0;
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+
+    apareceRespostas: function apareceRespostas() {
+        if (this.saiAnimacao == 1) {
+            this.saiAnimacao = 0;
+            var respErrada1 = this.respostaErrada1b.getComponent(cc.Animation);
+            var respErrada2 = this.respostaErrada2b.getComponent(cc.Animation);
+            var respErrada3 = this.respostaErrada3b.getComponent(cc.Animation);
+            var respErrada4 = this.respostaErrada4b.getComponent(cc.Animation);
+            var resp1 = this.resposta1.getComponent(cc.Animation);
+            var resp2 = this.resposta2.getComponent(cc.Animation);
+            var resp3 = this.resposta3.getComponent(cc.Animation);
+            var resp4 = this.resposta4.getComponent(cc.Animation);
+            var respCerta = this.respostaCerta.getComponent(cc.Animation);
+            var respExtra = this.respostaExtra.getComponent(cc.Animation);
+            var fala = this.falaquizprof.getComponent(cc.Animation);
+            var face = this.face.getComponent(cc.Animation);
+            var professor = this.professor.getComponent(cc.Animation);
+            respErrada1.playAdditive('apareceResposta1');
+            respErrada2.playAdditive('apareceResposta2');
+            respErrada3.playAdditive('apareceResposta3');
+            respErrada4.playAdditive('apareceResposta4');
+            resp1.playAdditive('apareceResposta1');
+            resp2.playAdditive('apareceResposta2');
+            resp3.playAdditive('apareceResposta3');
+            resp4.playAdditive('apareceResposta4');
+            fala.playAdditive('apareceFalaProfessor');
+            face.play("falaProfessor3-3");
+            professor.playAdditive('animaProfessor');
+        } else if (this.saiAnimacao === 0) {}
     },
 
     goToCredits: function goToCredits() {
