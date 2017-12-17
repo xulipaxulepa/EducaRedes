@@ -665,6 +665,9 @@
     "face": {
       "__id__": 6
     },
+    "gameAudio": {
+      "__uuid__": "b3f7ccd3-eb8d-4bd9-a4ef-0e72582d7233"
+    },
     "contador": 0
   },
   {

@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "falaProfessor1",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.16666666666666666,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 22,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5fa2864e-a28e-4313-813f-43f4bd15b5bc"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "9107e9c8-a532-412f-8238-35dd8f79f708"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "1042278f-b819-43f9-8835-d74c45abdbc8"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "22d00c18-f9b2-43fc-85ee-5f77fa30b4cb"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -148,7 +148,12 @@ cc.Class({
             type: cc.Label
         },
 
-        tutorial: {
+        tutorial1: {
+            default: null,
+            type: cc.Node
+        },
+
+        tutorial2: {
             default: null,
             type: cc.Node
         },
@@ -156,6 +161,11 @@ cc.Class({
         textWrapper: {
             default: null,
             type: cc.Node
+        },
+
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
         },
 
         acertos: 0,
@@ -176,12 +186,21 @@ cc.Class({
 
         azul: 0,
 
-        verde: 0
+        verde: 0,
+
+        timer: 0,
+
+        jogo: 0,
+
+        pacs: 0,
+
+        tuto: 0
 
     },
 
     // use this for initialization
     onLoad: function onLoad() {
+        cc.audioEngine.play(this.gameAudio, true, 0.5);
         this.acertos = 0;
         this.erros = 0;
         this.contTexto = 0;
@@ -192,6 +211,10 @@ cc.Class({
         this.branco = 0;
         this.azul = 0;
         this.verde = 0;
+        this.timer = 0;
+        this.jogo = 0;
+        this.pacs = 0;
+        this.tuto = 0;
         this.someNos();
         var face = this.face1.getComponent(cc.Animation);
         face.play("falaProfessor3-1");
@@ -199,7 +222,11 @@ cc.Class({
         professor.play("Aparece");
         var texto = this.textoFase.getComponent(cc.Animation);
         texto.playAdditive('ApareceTexto');
-        this.textoFase.string = "Nesse Mini-Jogo, voce aprendera como o pacote\n" + "trafega na rede, atraves do TCP";
+        this.textoFase.string = "Nesse Minijogo, você aprendera como o pacote\n" + "trafega na rede, através do TCP";
+    },
+
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
     },
 
     someNos: function someNos() {
@@ -286,84 +313,138 @@ cc.Class({
     },
 
     movePacote1: function movePacote1() {
-        var pacote11 = cc.moveTo(4, cc.p(-181, -6));
-        var pacote12 = cc.moveTo(4, cc.p(-39, 103));
-        var pacote13 = cc.moveTo(4, cc.p(213, 115));
-        this.pacote1.runAction(cc.sequence(pacote11, pacote12, pacote13));
-        var pacote21 = cc.moveTo(2, cc.p(12, -37));
-        var pacote22 = cc.moveTo(2, cc.p(193, 115));
-        this.pacote2.runAction(cc.sequence(pacote21, pacote22));
-        var pacote31 = cc.moveTo(2, cc.p(12, -27));
-        var pacote32 = cc.moveTo(2, cc.p(-181, -6));
-        var pacote33 = cc.moveTo(2, cc.p(-39, 103));
-        var pacote34 = cc.moveTo(2, cc.p(203, 115));
-        this.pacote3.runAction(cc.sequence(pacote31, pacote32, pacote33, pacote34));
-    },
-
-    movePacote2: function movePacote2() {
-        if (this.roteamentos == 1) {
-            var pacote31 = cc.moveTo(4, cc.p(-181, -6));
-            var pacote32 = cc.moveTo(4, cc.p(-39, 103));
-            var pacote33 = cc.moveTo(4, cc.p(213, 115));
-            this.pacote3.runAction(cc.sequence(pacote31, pacote32, pacote33));
-            var pacote11 = cc.moveTo(2, cc.p(12, -37));
-            var pacote12 = cc.moveTo(2, cc.p(193, 115));
-            this.pacote1.runAction(cc.sequence(pacote11, pacote12));
-            var pacote21 = cc.moveTo(2, cc.p(12, -27));
-            var pacote22 = cc.moveTo(2, cc.p(-181, -6));
-            var pacote23 = cc.moveTo(2, cc.p(-39, 103));
-            var pacote24 = cc.moveTo(2, cc.p(203, 115));
-            this.pacote2.runAction(cc.sequence(pacote21, pacote22, pacote23, pacote24));
-        } else if (this.roteamentos == 2) {
-            pacote11 = cc.moveTo(4, cc.p(-181, -6));
-            pacote12 = cc.moveTo(4, cc.p(-39, 103));
+        if (this.timer == 3) {
+            var pacote11 = cc.moveTo(4, cc.p(-181, -6));
+            var pacote12 = cc.moveTo(4, cc.p(-39, 103));
             var pacote13 = cc.moveTo(4, cc.p(213, 115));
             this.pacote1.runAction(cc.sequence(pacote11, pacote12, pacote13));
-            pacote31 = cc.moveTo(2, cc.p(12, -37));
-            pacote32 = cc.moveTo(2, cc.p(193, 115));
-            this.pacote3.runAction(cc.sequence(pacote31, pacote32));
-            pacote21 = cc.moveTo(2, cc.p(12, -27));
-            pacote22 = cc.moveTo(2, cc.p(-181, -6));
-            pacote23 = cc.moveTo(2, cc.p(-39, 103));
-            pacote24 = cc.moveTo(2, cc.p(203, 115));
-            this.pacote2.runAction(cc.sequence(pacote21, pacote22, pacote23, pacote24));
-        } else if (this.roteamentos == 3) {
-            pacote21 = cc.moveTo(4, cc.p(-181, -6));
-            pacote22 = cc.moveTo(4, cc.p(-39, 103));
-            pacote23 = cc.moveTo(4, cc.p(213, 115));
-            this.pacote2.runAction(cc.sequence(pacote21, pacote22, pacote23));
-            pacote11 = cc.moveTo(2, cc.p(12, -37));
-            pacote12 = cc.moveTo(2, cc.p(193, 115));
-            this.pacote1.runAction(cc.sequence(pacote11, pacote12));
-            pacote11 = cc.moveTo(2, cc.p(12, -27));
-            pacote12 = cc.moveTo(2, cc.p(-181, -6));
-            pacote13 = cc.moveTo(2, cc.p(-39, 103));
-            var pacote14 = cc.moveTo(2, cc.p(203, 115));
-            this.pacote3.runAction(cc.sequence(pacote11, pacote12, pacote13, pacote14));
-        } else if (this.roteamentos == 4) {
-            pacote11 = cc.moveTo(4, cc.p(-181, -6));
-            pacote12 = cc.moveTo(4, cc.p(-39, 103));
-            pacote13 = cc.moveTo(4, cc.p(213, 115));
-            this.pacote1.runAction(cc.sequence(pacote11, pacote12, pacote13));
-            pacote21 = cc.moveTo(2, cc.p(12, -37));
-            pacote22 = cc.moveTo(2, cc.p(193, 115));
+        } else if (this.timer <= 2 && this.timer >= 1.95 && this.pacs === 0) {
+            this.pacs = 1;
+            var pacote21 = cc.moveTo(2, cc.p(12, -37));
+            var pacote22 = cc.moveTo(2, cc.p(193, 115));
             this.pacote2.runAction(cc.sequence(pacote21, pacote22));
-            pacote31 = cc.moveTo(2, cc.p(12, -27));
-            pacote32 = cc.moveTo(2, cc.p(-181, -6));
-            pacote33 = cc.moveTo(2, cc.p(-39, 103));
+        } else if (this.timer <= 1 && this.timer >= 0.95 && this.pacs == 1) {
+            this.pacs = 2;
+            var pacote31 = cc.moveTo(2, cc.p(12, -27));
+            var pacote32 = cc.moveTo(2, cc.p(-181, -6));
+            var pacote33 = cc.moveTo(2, cc.p(-39, 103));
             var pacote34 = cc.moveTo(2, cc.p(203, 115));
             this.pacote3.runAction(cc.sequence(pacote31, pacote32, pacote33, pacote34));
         }
     },
 
+    saiPacote1: function saiPacote1() {
+        if (this.timer == 3) {
+            var pacote31 = cc.moveTo(4, cc.p(-181, -6));
+            var pacote32 = cc.moveTo(4, cc.p(-39, 103));
+            var pacote33 = cc.moveTo(4, cc.p(213, 115));
+            this.pacote3.runAction(cc.sequence(pacote31, pacote32, pacote33));
+        } else if (this.timer <= 2 && this.timer >= 1.95 && this.pacs === 0) {
+            this.pacs = 1;
+            var pacote11 = cc.moveTo(2, cc.p(12, -37));
+            var pacote12 = cc.moveTo(2, cc.p(193, 115));
+            this.pacote1.runAction(cc.sequence(pacote11, pacote12));
+        } else if (this.timer <= 1 && this.timer >= 0.95 && this.pacs == 1) {
+            this.pacs = 2;
+            var pacote21 = cc.moveTo(2, cc.p(12, -27));
+            var pacote22 = cc.moveTo(2, cc.p(-181, -6));
+            var pacote23 = cc.moveTo(2, cc.p(-39, 103));
+            var pacote24 = cc.moveTo(2, cc.p(203, 115));
+            this.pacote2.runAction(cc.sequence(pacote21, pacote22, pacote23, pacote24));
+        }
+    },
+
+    saiPacote2: function saiPacote2() {
+        if (this.timer == 3) {
+            var pacote11 = cc.moveTo(4, cc.p(-181, -6));
+            var pacote12 = cc.moveTo(4, cc.p(-39, 103));
+            var pacote13 = cc.moveTo(4, cc.p(213, 115));
+            this.pacote1.runAction(cc.sequence(pacote11, pacote12, pacote13));
+        } else if (this.timer <= 2 && this.timer >= 1.95 && this.pacs === 0) {
+            this.pacs = 1;
+            var pacote31 = cc.moveTo(2, cc.p(12, -37));
+            var pacote32 = cc.moveTo(2, cc.p(193, 115));
+            this.pacote3.runAction(cc.sequence(pacote31, pacote32));
+        } else if (this.timer <= 1 && this.timer >= 0.95 && this.pacs == 1) {
+            this.pacs = 2;
+            var pacote21 = cc.moveTo(2, cc.p(12, -27));
+            var pacote22 = cc.moveTo(2, cc.p(-181, -6));
+            var pacote23 = cc.moveTo(2, cc.p(-39, 103));
+            var pacote24 = cc.moveTo(2, cc.p(203, 115));
+            this.pacote2.runAction(cc.sequence(pacote21, pacote22, pacote23, pacote24));
+        }
+    },
+
+    saiPacote3: function saiPacote3() {
+        if (this.timer == 3) {
+            var pacote11 = cc.moveTo(2, cc.p(12, -37));
+            var pacote12 = cc.moveTo(2, cc.p(193, 115));
+            this.pacote1.runAction(cc.sequence(pacote11, pacote12));
+        } else if (this.timer <= 2 && this.timer >= 1.95 && this.pacs === 0) {
+            this.pacs = 1;
+            var pacote11 = cc.moveTo(2, cc.p(12, -27));
+            var pacote12 = cc.moveTo(2, cc.p(-181, -6));
+            var pacote13 = cc.moveTo(2, cc.p(-39, 103));
+            var pacote14 = cc.moveTo(2, cc.p(203, 115));
+            this.pacote3.runAction(cc.sequence(pacote11, pacote12, pacote13, pacote14));
+        } else if (this.timer <= 1 && this.timer >= 0.95 && this.pacs == 1) {
+            this.pacs = 2;
+            var pacote21 = cc.moveTo(4, cc.p(-181, -6));
+            var pacote22 = cc.moveTo(4, cc.p(-39, 103));
+            var pacote23 = cc.moveTo(4, cc.p(213, 115));
+            this.pacote2.runAction(cc.sequence(pacote21, pacote22, pacote23));
+        }
+    },
+
+    saiPacote4: function saiPacote4() {
+        if (this.timer == 3) {
+            var pacote11 = cc.moveTo(4, cc.p(-181, -6));
+            var pacote12 = cc.moveTo(4, cc.p(-39, 103));
+            var pacote13 = cc.moveTo(4, cc.p(213, 115));
+            this.pacote1.runAction(cc.sequence(pacote11, pacote12, pacote13));
+        } else if (this.timer <= 2 && this.timer >= 1.95 && this.pacs === 0) {
+            this.pacs = 1;
+            var pacote21 = cc.moveTo(2, cc.p(12, -37));
+            var pacote22 = cc.moveTo(2, cc.p(193, 115));
+            this.pacote2.runAction(cc.sequence(pacote21, pacote22));
+        } else if (this.timer <= 1 && this.timer >= 0.95 && this.pacs == 1) {
+            this.pacs = 2;
+            var pacote31 = cc.moveTo(2, cc.p(12, -27));
+            var pacote32 = cc.moveTo(2, cc.p(-181, -6));
+            var pacote33 = cc.moveTo(2, cc.p(-39, 103));
+            var pacote34 = cc.moveTo(2, cc.p(203, 115));
+            this.pacote3.runAction(cc.sequence(pacote31, pacote32, pacote33, pacote34));
+        }
+    },
+
+    movePacote2: function movePacote2() {
+        if (this.roteamentos == 1) {
+            this.saiPacote1();
+        } else if (this.roteamentos == 2) {
+            this.saiPacote2();
+        } else if (this.roteamentos == 3) {
+            this.saiPacote3();
+        } else if (this.roteamentos == 4) {
+            this.saiPacote4();
+        }
+    },
+
     jogar: function jogar() {
-        this.apareceNos();
-        this.tabrot.setPosition(321, -130);
-        this.pacote1.setPosition(-240, -181);
-        this.pacote2.setPosition(-230, -181);
-        this.pacote3.setPosition(-220, -181);
-        this.movePacote1();
-        this.tutorial.setPosition(2000, 0);
+        if (this.tuto === 0) {
+            this.tutorial1.setOpacity(0);
+            this.tutorial2.setOpacity(255);
+            this.tuto += 1;
+        } else if (this.tuto == 1) {
+            cc.audioEngine.setVolume(0, 1);
+            this.apareceNos();
+            this.tabrot.setPosition(321, -130);
+            this.pacote1.setPosition(-240, -181);
+            this.pacote2.setPosition(-230, -181);
+            this.pacote3.setPosition(-220, -181);
+            this.jogo = 1;
+            this.timer = 3;
+            this.tutorial2.setOpacity(0);
+        }
     },
 
     trocaTexto1: function trocaTexto1() {
@@ -387,53 +468,36 @@ cc.Class({
             texto.playAdditive('ApareceTexto');
             professor.play("animaProfessor");
             face.play("falaProfessor3-1");
-            this.textoFase.string = "No mini jogo a seguir, cada roteador\n" + "representa um nó na rede, o objetivo do jogo é\n" + "organizar o pacote que sai da sua origem\n" + "e chega ao seu destino";
+            this.textoFase.string = "No minijogo a seguir, cada roteador\n" + "representa um nó na rede, o objetivo do jogo é\n" + "organizar o pacote que sai da sua origem\n" + "e chega ao seu destino";
             this.contTexto += 1;
         } else if (this.contTexto == 3) {
             texto.playAdditive('ApareceTexto');
             professor.play("animaProfessor");
             face.play("falaProfessor3-2");
-            this.textoFase.string = "As informações trafegarão através do RIP\n" + "(Routing Information Protocol) que é um padrão para\n" + "troca de informações entre os gateways\n" + "e hosts de roteamento.";
+            this.textoFase.string = "Vamos ao minijogo";
             this.contTexto += 1;
         } else if (this.contTexto == 4) {
             texto.playAdditive('ApareceTexto');
             professor.play("animaProfessor");
             face.play("falaProfessor3-3");
-            this.textoFase.string = "A rede mundial de computadores é organizada\n" + "como um conjunto de sistemas autônomos.";
+            this.textoFase.string = "Nesse cenário, a informação viajara\n" + "do roteador 1 ao roteador 6, nesse minijogo\n" + "o seu objetivo e colocar os pacotes na ordem correta";
             this.contTexto += 1;
         } else if (this.contTexto == 5) {
             texto.playAdditive('ApareceTexto');
             professor.play("animaProfessor");
             face.play("falaProfessor3-1");
-            this.textoFase.string = "O RIP emite mensagens de atualização\n" + "das suas rotas (Tabelas de Roteamento)\n" + "em intervalos regulares(a cada 30 segundos)\n" + "e quando a topologia da rede mudar.";
+            this.textoFase.string = "visualize a ordem de saída dos pacotes\n" + "e os organize, clicando neles, na ordem correta\n";
             this.contTexto += 1;
         } else if (this.contTexto == 6) {
-            texto.playAdditive('ApareceTexto');
-            professor.play("animaProfessor");
-            face.play("falaProfessor3-2");
-            this.textoFase.string = "Os roteadores do RIP mantêm somente\n" + "a melhor rota à um destino.\n" + "com essas informações em mente, vamos ao mini-jogo";
-            this.contTexto += 1;
-        } else if (this.contTexto == 7) {
-            texto.playAdditive('ApareceTexto');
-            professor.play("animaProfessor");
-            face.play("falaProfessor3-3");
-            this.textoFase.string = "Nesse cenario, a informaçao viajara\n" + "do roteador 1 ao roteador 6, nesse mini-jogo\n" + "o seu objetivo e colocar os pacotes na ordem correta";
-            this.contTexto += 1;
-        } else if (this.contTexto == 8) {
-            texto.playAdditive('ApareceTexto');
-            professor.play("animaProfessor");
-            face.play("falaProfessor3-1");
-            this.textoFase.string = "visualize a ordem de chegada dos pacotes\n" + "e os organize, clicando neles, na ordem correta\n" + "demonstrada no canto superior da tela";
-            this.contTexto += 1;
-        } else if (this.contTexto == 9) {
             texto.playAdditive('ApareceTexto');
             professor.play("animaProfessor");
             face.play("falaProfessor3-3");
             this.textoFase.string = "clique em continuar para começar";
             this.contTexto += 1;
-        } else if (this.contTexto == 10) {
+        } else if (this.contTexto == 7) {
             this.bg.setOpacity(255);
-            this.tutorial.setPosition(0, 0);
+            this.tutorial1.setOpacity(255);
+            texto1.playAdditive('ApareceTexto');
             this.textoFase1.string = "Parabéns, voce roteou os 5 pacotes\n" + "fazendo " + this.acertos + " acertos e " + this.erros + " erros\n";
             this.contTexto = 20;
         } else if (this.contTexto == 20) {
@@ -525,7 +589,8 @@ cc.Class({
             this.pacote1.setPosition(-240, -181);
             this.pacote2.setPosition(-230, -181);
             this.pacote3.setPosition(-220, -181);
-            this.movePacote2();
+            this.timer = 3;
+            this.pacs = 0;
         } else if (this.button1 === 0 || this.button2 === 0 || this.button3 === 0) {} else if (this.button1 != this.branco || this.button2 != this.azul || this.button3 != this.verde) {
             this.erros += 1;
             this.roteamentos += 1;
@@ -538,7 +603,8 @@ cc.Class({
             this.pacote1.setPosition(-240, -181);
             this.pacote2.setPosition(-230, -181);
             this.pacote3.setPosition(-220, -181);
-            this.movePacote2();
+            this.timer = 3;
+            this.pacs = 0;
         }
     },
 
@@ -621,20 +687,27 @@ cc.Class({
 
         this.gameOver();
 
-        if (this.roteamentos === 0) {
+        if (this.roteamentos === 0 && this.jogo == 1) {
+            this.movePacote1();
             this.aparecePacotes1();
         } else if (this.roteamentos == 1) {
             this.aparecePacotes2();
+            this.movePacote2();
         } else if (this.roteamentos == 2) {
             this.aparecePacotes3();
+            this.movePacote2();
         } else if (this.roteamentos == 3) {
             this.aparecePacotes4();
+            this.movePacote2();
         } else if (this.roteamentos == 4) {
             this.aparecePacotes5();
+            this.movePacote2();
         }
 
         this.LblAcertos.string = "Acertos: " + this.acertos;
         this.LblErros.string = "Erros: " + this.erros;
+
+        this.timer -= dt;
     }
 });
 

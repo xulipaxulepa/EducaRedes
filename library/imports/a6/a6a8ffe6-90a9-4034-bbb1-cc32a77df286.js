@@ -23,6 +23,11 @@ cc.Class({
             type: cc.Node
         },
 
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+
         contador: 0
     },
 
@@ -32,7 +37,7 @@ cc.Class({
         if (this.contador === 0) {
             texto.playAdditive('ApareceTexto');
             professora.play("moveProfessor2-1");
-            this.label.string = 'A camada internet é Responsável pela entrega\n' + 'de um pacote, de sua origem até o seu\n' + 'destino final.';
+            this.label.string = 'A camada internet é responsável pela entrega\n' + 'de um pacote, de sua origem até o seu\n' + 'destino final.';
             this.contador += 1;
         } else if (this.contador == 1) {
             texto.playAdditive('ApareceTexto');
@@ -46,7 +51,7 @@ cc.Class({
             this.contador += 1;
         } else if (this.contador == 3) {
             texto.playAdditive('ApareceTexto');
-            this.label.string = 'Endereço IP, de forma genérica, é uma identificação\n' + 'de um dispositivo (computador, impressora, etc)\n' + 'em uma rede local ou pública.';
+            this.label.string = 'Endereço IP, de forma genérica, é uma identificação\n' + 'de um endereço do dispositivo\n (computador, impressora, etc)\n' + 'em uma rede local ou pública.';
             this.contador += 1;
         } else if (this.contador == 4) {
             texto.playAdditive('ApareceTexto');
@@ -69,7 +74,7 @@ cc.Class({
         } else if (this.contador == 8) {
             texto.playAdditive('ApareceTexto');
             professora.play("animaProfessora2-1");
-            this.label.string = 'Um  exemplo de  serviço  oferecido\n' + 'por  essa  camada  é  o  roteamento  de  pacotes,\n' + 'através dos endereços de origem/destino.';
+            this.label.string = 'Um exemplo de serviço oferecido\n' + 'por essa camada é o roteamento de pacotes,\n' + 'através dos endereços de origem/destino.';
             this.contador += 1;
         } else if (this.contador == 9) {
             cc.director.loadScene("jogoFase2");
@@ -78,6 +83,8 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
+        cc.audioEngine.play(this.gameAudio, true, 0.2);
+        cc.audioEngine.setVolume(0, 0.2);
         this.contador = 0;
         var face = this.face.getComponent(cc.Animation);
         face.play("falaProfessor2");
@@ -85,7 +92,11 @@ cc.Class({
         professora.play("Aparece");
         var texto = this.label.getComponent(cc.Animation);
         texto.playAdditive('ApareceTexto');
-        this.label.string = 'Ola, eu sou a professora Anette!\n' + 'Eu vou te ensinar sobre a camada Internet';
+        this.label.string = 'Olá, eu sou a professora Anette! \n' + 'Eu vou te ensinar sobre a camada Internet';
+    },
+
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
     }
 
 });

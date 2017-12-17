@@ -23,6 +23,11 @@ cc.Class({
             type: cc.Node
         },
 
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+
         contador: 0
     },
 
@@ -58,15 +63,46 @@ cc.Class({
             texto.playAdditive('ApareceTexto');
             professor.play("animaProfessor");
             face.play("falaProfessor3-3");
-            this.label.string = 'O proximo mini-jogo demonstra como\n' + 'a mensagem viaja entre varios nós\n' + 'ate chegar em seu destino';
+            this.label.string = 'O outro protocolo é o UDP(User Datagram Protocol)\n' + 'O UDP permite que a aplicação\n envie um datagrama encapsulado\n' + 'num pacote IPv4 ou IPv6, e então enviado ao destino.';
             this.contador += 1;
         } else if (this.contador == 5) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.label.string = 'a mensagem viaja entre vários nós\n' + 'até chegar em seu destino. \n';
+            this.contador += 1;
+        } else if (this.contador == 6) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.label.string = 'Mas não há qualquer tipo de garantia\n' + 'que o pacote irá chegar ou não \n' + 'O protocolo UDP não é confiável.';
+            this.contador += 1;
+        } else if (this.contador == 7) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.label.string = 'O UDP é um serviço sem conexão\n' + 'pois não há necessidade de manter\n' + 'um relacionamento longo entre cliente e o servidor.';
+            this.contador += 1;
+        } else if (this.contador == 8) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.label.string = 'No entanto, focaremos apenas no TCP\n' + 'que é o principal protocolo e \n' + 'o mais utilizado pelas aplicações.';
+            this.contador += 1;
+        } else if (this.contador == 9) {
+            texto.playAdditive('ApareceTexto');
+            professor.play("animaProfessor");
+            face.play("falaProfessor3-3");
+            this.label.string = 'O próximo minijogo demonstra como\n' + 'a mensagem viaja entre vários nós\n' + ' até chegar em seu destino';
+            this.contador += 1;
+        } else if (this.contador == 10) {
             cc.director.loadScene("jogoFase3");
         }
     },
 
     // use this for initialization
     onLoad: function onLoad() {
+        cc.audioEngine.play(this.gameAudio, true, 0.2);
         this.contador = 0;
         var face = this.face.getComponent(cc.Animation);
         face.play("falaProfessor3-1");
@@ -74,7 +110,11 @@ cc.Class({
         professor.play("Aparece");
         var texto = this.label.getComponent(cc.Animation);
         texto.playAdditive('ApareceTexto');
-        this.label.string = 'Ola, eu sou o professor Portty!\n' + 'Eu vou te ensinar sobre a camada Transporte';
+        this.label.string = 'Olá, eu sou o professor Portty!\n' + 'Eu vou te ensinar sobre a camada Transporte';
+    },
+
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
     }
 
 });

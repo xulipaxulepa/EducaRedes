@@ -21,6 +21,10 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {
         cc.audioEngine.play(this.gameAudio, true);
+    },
+
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
     }
 
 });

@@ -118,6 +118,11 @@ cc.Class({
             type: cc.Node
         },
 
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+
         resp: 0,
 
         contador: 0,
@@ -257,6 +262,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
+        cc.audioEngine.play(this.gameAudio, true);
         this.someResposta();
         this.timer = 100000;
         this.contador = 0;
@@ -264,6 +270,10 @@ cc.Class({
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+
+    onDestroy: function onDestroy() {
+        cc.audioEngine.pauseAll();
     },
 
     apareceRespostas: function apareceRespostas() {

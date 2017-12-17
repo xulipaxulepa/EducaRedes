@@ -144,7 +144,7 @@ cc.Class({
             animaFace.speed = 0.5;
             animaFace.repeatCount = Infinity;
             professor.playAdditive('moveProfessor2');
-            this.label.string = 'O mini-jogo a seguir, demonstra melhor\n'+
+            this.label.string = 'O minijogo a seguir, demonstra melhor\n'+
             'a diferença entre os sinais e os seus conceitos';
             this.contador += 1;
         } else if(this.contador == 13){
@@ -154,7 +154,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        cc.audioEngine.play(this.gameAudio, true);
+        cc.audioEngine.play(this.gameAudio, true, 0.2);
         this.contador = 0;
         var texto = this.label.getComponent(cc.Animation);
         var professor = this.professor.getComponent(cc.Animation);
@@ -164,7 +164,7 @@ cc.Class({
         animaFace.repeatCount = Infinity;
         texto.playAdditive('ApareceTexto');
         professor.playAdditive('Aparece');
-        this.label.string = 'Ola, eu sou o professor Sinaldo!\n'+
+        this.label.string = 'Olá, eu sou o professor Sinaldo!\n'+
         'Eu vou te ensinar sobre rede de computadores\n'+
         'arquitetura TCP/IP e a camada de acesso a rede';
 

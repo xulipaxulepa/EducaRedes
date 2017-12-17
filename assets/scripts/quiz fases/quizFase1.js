@@ -112,6 +112,11 @@ cc.Class({
             type: cc.Node
         },
         
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        
         resp: 0,
         
         contador: 0,
@@ -157,17 +162,17 @@ cc.Class({
         if(this.contador === 0){
         this.apareceRespostas();
         this.someResposta();
-        this.pergunta.string = 'Quais os PDUs(Unidades de \n'+
+        this.pergunta.string = 'Quais as PDUs(Unidades de \n'+
         'dados de protocolos) usados\n'+
         'na camada de acesso a rede?';
         
-        this.resposta1.string = 'Segmento';
+        this.resposta1.string = 'Segmento e bit';
         
-        this.resposta2.string = 'Datagrama';
+        this.resposta2.string = 'Datagrama e pacotes';
         
         this.resposta3.string = 'Bit e Quadros(Frames)';
         
-        this.resposta4.string = 'Pacotes';
+        this.resposta4.string = 'Pacotes e quadros';
         } else if(this.contador == 1){
         this.apareceRespostas();
         this.someResposta();
@@ -207,7 +212,7 @@ cc.Class({
         this.trocaRespostas();
         this.pergunta.string = 'O sinal digital é caracterizado por...:';
         
-        this.resposta1.string = 'Ser alterado em contínuo';
+        this.resposta1.string = 'Ser alternado em contínuo';
         
         this.resposta2.string = 'Ser um sinal que não possui falhas';
         
@@ -270,6 +275,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        cc.audioEngine.play(this.gameAudio, true);
         this.someResposta();
         this.timer = 100000;
         this.contador = 0;
@@ -277,6 +283,10 @@ cc.Class({
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
+    },
+    
+    onDestroy: function () {
+        cc.audioEngine.pauseAll();
     },
     
     apareceRespostas: function(){

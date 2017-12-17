@@ -165,6 +165,7 @@ cc.Class({
     },
 
     jogar: function jogar() {
+        cc.audioEngine.setVolume(0, 1);
         this.fase = 0;
         this.frentePlayer();
         var tutorial = this.tutorial.getComponent(cc.Animation);
@@ -283,6 +284,7 @@ cc.Class({
     },
 
     trocaTexto1: function trocaTexto1() {
+        cc.audioEngine.setVolume(0, 0.2);
         var texto = this.textoFase.getComponent(cc.Animation);
         var professor = this.professor.getComponent(cc.Animation);
         var face = this.face.getComponent(cc.Animation);
@@ -292,7 +294,7 @@ cc.Class({
         if (this.contTexto === 0) {
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor1');
-            this.textoFase.string = "O sinal analogico é gerado como uma onda\n" + "já que os valores vão se alterando no intervalo de tempo";
+            this.textoFase.string = "O sinal analógico é gerado como uma onda\n" + "já que os valores vão se alterando no intervalo de tempo";
             this.contTexto += 1;
         } else if (this.contTexto == 1) {
             texto.playAdditive('ApareceTexto');
@@ -302,17 +304,17 @@ cc.Class({
         } else if (this.contTexto == 2) {
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor1');
-            this.textoFase.string = "A camada de acesso a rede tambem fornece\n" + "o serviço de  transformar  um  canal  de transmissão  bruta\n" + "em  uma  linha  que  pareça  livre  de  erros  de  transmissão";
+            this.textoFase.string = "A camada de acesso a rede também fornece\n" + "o serviço de transformar um canal de transmissão bruta\n" + "em uma linha que pareça livre de erros de transmissão";
             this.contTexto += 1;
         } else if (this.contTexto == 3) {
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor2');
-            this.textoFase.string = "Oferecendo enquadramento de bits\n" + "verificação de erros e protocolos que assegurem a correçao de erros";
+            this.textoFase.string = "Oferecendo enquadramento de bits\n" + "verificação de erros e protocolos que assegurem a correção de erros";
             this.contTexto += 1;
         } else if (this.contTexto == 4) {
             texto.playAdditive('ApareceTexto');
             professor.playAdditive('animaProfessor1');
-            this.textoFase.string = "Visto os conteudos desta fase e em sala de aula\n" + "responda agora o Quiz";
+            this.textoFase.string = "Visto os conteúdos desta fase e em sala de aula\n" + "responda agora o Quiz";
             this.contTexto += 1;
         } else if (this.contTexto == 5) {
             this.textoFase.string = "";

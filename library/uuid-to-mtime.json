@@ -220,29 +220,9 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "81e92991-548c-4d78-a538-0ec5f7ceb692": {
-    "asset": 1508344718967,
-    "meta": 1508344721467,
+    "asset": 1511007525362,
+    "meta": 1511007525892,
     "relativePath": "Music"
-  },
-  "8aa80989-e3ea-4bce-86e5-549c2fb00ab9": {
-    "asset": 1493484005235,
-    "meta": 1493743527095,
-    "relativePath": "Music\\music1.mp3"
-  },
-  "ba4accd9-799a-4e7a-acb9-864862bf15f9": {
-    "asset": 1499919220735,
-    "meta": 1500180800894,
-    "relativePath": "Music\\music2.mp3"
-  },
-  "c28df299-2ac4-412a-b7ff-ccd86d023c6c": {
-    "asset": 1499920279409,
-    "meta": 1500180800897,
-    "relativePath": "Music\\music3.mp3"
-  },
-  "c3500df7-5c93-42e6-9bb0-afdedd1b8556": {
-    "asset": 1499920994843,
-    "meta": 1500180800898,
-    "relativePath": "Music\\music4.mp3"
   },
   "d4e6899f-98ce-4eb0-bb8b-3fb2af2b02e7": {
     "asset": 1501106665011,
@@ -255,23 +235,23 @@
     "relativePath": "scenes\\fases"
   },
   "7eaf6153-f18e-4d1c-837c-5a1615737063": {
-    "asset": 1499304749412,
-    "meta": 1501106673267,
+    "asset": 1513112284123,
+    "meta": 1513112284128,
     "relativePath": "scenes\\credits.fire"
   },
   "59d92acb-d873-43c6-8da9-3250cc79a965": {
-    "asset": 1507660555439,
-    "meta": 1507660555452,
+    "asset": 1510865295596,
+    "meta": 1510865295615,
     "relativePath": "scenes\\fases\\fase1.fire"
   },
   "c835567d-6026-42b2-90e1-01b903e0975e": {
-    "asset": 1508361051409,
-    "meta": 1508361051429,
+    "asset": 1511013138918,
+    "meta": 1511013138931,
     "relativePath": "scenes\\fases\\fase2.fire"
   },
   "a643934e-1b58-415c-9f9d-1eec6526e4e1": {
-    "asset": 1509882838276,
-    "meta": 1509882838370,
+    "asset": 1512614976734,
+    "meta": 1512614976829,
     "relativePath": "scenes\\fases\\fase3.fire"
   },
   "d3357bdf-69c5-494a-902b-9fc0af3e0820": {
@@ -280,43 +260,43 @@
     "relativePath": "scenes\\jogos"
   },
   "b46ea76b-fef4-4fb0-9eca-90739ca00b5c": {
-    "asset": 1498887552732,
-    "meta": 1501106673275,
+    "asset": 1511014434978,
+    "meta": 1511014434989,
     "relativePath": "scenes\\fases\\fase4.fire"
   },
   "c2450dd6-b026-4a14-90d4-d7d9063f34d0": {
-    "asset": 1508187280950,
-    "meta": 1508187280992,
+    "asset": 1512617333431,
+    "meta": 1512617333440,
     "relativePath": "scenes\\jogos\\jogoFase1-1.fire"
   },
   "d9ff7308-a36a-4aa9-8203-de228b2386d3": {
-    "asset": 1508271083743,
-    "meta": 1508271083790,
+    "asset": 1512436848976,
+    "meta": 1512436849007,
     "relativePath": "scenes\\jogos\\jogoFase1.fire"
   },
   "43da3ba4-5a5e-4175-a50c-c927d6e56320": {
-    "asset": 1509412903666,
-    "meta": 1509412903710,
+    "asset": 1512613574693,
+    "meta": 1512613574734,
     "relativePath": "scenes\\jogos\\jogoFase2.fire"
   },
   "4b29766e-d194-4982-b628-98daca6c59f3": {
-    "asset": 1510083821413,
-    "meta": 1510083821501,
+    "asset": 1512648694845,
+    "meta": 1512648694862,
     "relativePath": "scenes\\jogos\\jogoFase3.fire"
   },
   "1c8cefff-0d61-4b74-adf6-8668d6f81c21": {
-    "asset": 1500184748937,
-    "meta": 1501106673310,
+    "asset": 1511883258549,
+    "meta": 1511883258571,
     "relativePath": "scenes\\jogos\\jogoFase4.fire"
   },
   "d24c8a04-c532-41c1-8cd4-e300801091ca": {
-    "asset": 1507660370676,
-    "meta": 1507660370721,
+    "asset": 1513112824133,
+    "meta": 1513112824161,
     "relativePath": "scenes\\logo.fire"
   },
   "afcad128-7f4f-40cd-9c8d-0374b7dcc8fb": {
-    "asset": 1508868959494,
-    "meta": 1508868959554,
+    "asset": 1510865348144,
+    "meta": 1510865348154,
     "relativePath": "scenes\\main.fire"
   },
   "3945941e-1a1a-433c-9ba5-81e11ca4977c": {
@@ -330,23 +310,23 @@
     "relativePath": "scenes\\opcoes.fire"
   },
   "56608ed1-bdf4-4826-91d8-e11f737bd775": {
-    "asset": 1508188691325,
-    "meta": 1508188691340,
+    "asset": 1512437262079,
+    "meta": 1512437262171,
     "relativePath": "scenes\\quiz\\quizFase1.fire"
   },
   "fdcdd846-4a0b-4c96-bbf3-ff04e747a642": {
-    "asset": 1508862063356,
-    "meta": 1508862063396,
+    "asset": 1510866080020,
+    "meta": 1510866080036,
     "relativePath": "scenes\\quiz\\quizFase2.fire"
   },
   "d3ab1b16-fe7b-4d53-b125-0cfd52459595": {
-    "asset": 1510089405018,
-    "meta": 1510089405032,
+    "asset": 1510866377851,
+    "meta": 1510866377865,
     "relativePath": "scenes\\quiz\\quizFase3.fire"
   },
   "e032f4c8-448e-4c83-9b13-e0c877e67a19": {
-    "asset": 1507575448874,
-    "meta": 1507575448889,
+    "asset": 1510866821293,
+    "meta": 1510866821328,
     "relativePath": "scenes\\quiz\\quizFase4.fire"
   },
   "5f688aa6-61a8-43ba-9ba6-6fd97797aa45": {
@@ -360,8 +340,8 @@
     "relativePath": "scripts\\buttons"
   },
   "5f9d7401-1d4a-4dc0-a933-92c6d4c8bb36": {
-    "asset": 1507660520650,
-    "meta": 1507660520663,
+    "asset": 1511015035502,
+    "meta": 1511015035514,
     "relativePath": "scenes\\selectFase.fire"
   },
   "0623b345-30e7-4e15-8c25-fa8eeb0d8195": {
@@ -370,8 +350,8 @@
     "relativePath": "scripts\\buttons\\btnCarregarJogo.js"
   },
   "b94cb309-f16a-4334-a4b4-4a947ced6f4d": {
-    "asset": 1504547979047,
-    "meta": 1504547979161,
+    "asset": 1511014669460,
+    "meta": 1511014669552,
     "relativePath": "scripts\\buttons\\btnNovoJogo.js"
   },
   "ebaf8ea5-acbf-4878-9bab-105bbbc6951d": {
@@ -460,23 +440,23 @@
     "relativePath": "scripts\\buttons\\buttons dialogues"
   },
   "2b869036-d937-40e6-9084-edea2733661c": {
-    "asset": 1508182486931,
-    "meta": 1508182488492,
+    "asset": 1513039827542,
+    "meta": 1513039827763,
     "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase1.js"
   },
   "a6a8ffe6-90a9-4034-bbb1-cc32a77df286": {
-    "asset": 1508360782053,
-    "meta": 1508360782445,
+    "asset": 1513040116333,
+    "meta": 1513040116526,
     "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase2.js"
   },
   "81f93381-97c0-4cff-8496-b4458ed2dbef": {
-    "asset": 1509882822309,
-    "meta": 1509882822518,
+    "asset": 1513040189792,
+    "meta": 1513040189944,
     "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase3.js"
   },
   "0d608320-3373-4130-b8d0-7f43b3a21bab": {
-    "asset": 1499268794073,
-    "meta": 1501106674685,
+    "asset": 1513040258843,
+    "meta": 1513040258947,
     "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase4.js"
   },
   "f1696aa5-033f-4ed0-a4e1-74c4aafff72e": {
@@ -495,28 +475,28 @@
     "relativePath": "scripts\\logica fases\\alvo.js"
   },
   "4b39d0a8-942a-4e02-bab5-ca1343dfe0c3": {
-    "asset": 1508270933806,
-    "meta": 1508270934160,
+    "asset": 1513043484555,
+    "meta": 1513043484807,
     "relativePath": "scripts\\logica fases\\logicaFase1-1.js"
   },
   "ad2dfb13-66c8-48ac-8308-94fe147f18db": {
-    "asset": 1508270901496,
-    "meta": 1508270901997,
+    "asset": 1513040813399,
+    "meta": 1513040813879,
     "relativePath": "scripts\\logica fases\\logicaFase1.js"
   },
   "a3a26178-2f4d-4a0c-8541-b66335517138": {
-    "asset": 1509412670749,
-    "meta": 1509412671116,
+    "asset": 1513040864744,
+    "meta": 1513040865232,
     "relativePath": "scripts\\logica fases\\logicaFase2.js"
   },
   "8efd8835-0ec0-4c75-88e3-0b157c58834f": {
-    "asset": 1510083794735,
-    "meta": 1510083795367,
+    "asset": 1513043871785,
+    "meta": 1513043872453,
     "relativePath": "scripts\\logica fases\\logicaFase3.js"
   },
   "cef6de86-2637-4071-b367-e2036c7b5ecd": {
-    "asset": 1500184688278,
-    "meta": 1501106675218,
+    "asset": 1513043975632,
+    "meta": 1513043976071,
     "relativePath": "scripts\\logica fases\\logicaFase4.js"
   },
   "c8e9f1a6-d26d-4399-90f6-92907a8a4f37": {
@@ -555,23 +535,23 @@
     "relativePath": "scripts\\quiz fases"
   },
   "3c65834e-e127-4d58-9cb9-07a484f6aea6": {
-    "asset": 1507654197706,
-    "meta": 1507654198169,
+    "asset": 1512437157348,
+    "meta": 1512437157685,
     "relativePath": "scripts\\quiz fases\\quizFase1.js"
   },
   "da591fba-434d-4cee-badb-66141167f292": {
-    "asset": 1508861855704,
-    "meta": 1508861856196,
+    "asset": 1510866020309,
+    "meta": 1510866020665,
     "relativePath": "scripts\\quiz fases\\quizFase2.js"
   },
   "f22e5686-1f8c-4dbe-a5d8-c7e825fa08f8": {
-    "asset": 1510089392155,
-    "meta": 1510089392357,
+    "asset": 1510866287604,
+    "meta": 1510866287945,
     "relativePath": "scripts\\quiz fases\\quizFase3.js"
   },
   "be410fc3-43a3-4c51-ad85-44e31c6a6880": {
-    "asset": 1507663838226,
-    "meta": 1507663838483,
+    "asset": 1510866704186,
+    "meta": 1510866704489,
     "relativePath": "scripts\\quiz fases\\quizFase4.js"
   },
   "e629cc0c-c538-460b-bcff-cd6549b3c5e7": {
@@ -655,8 +635,8 @@
     "relativePath": "textures\\educaredes.psd"
   },
   "d1ffaf49-16d4-45ff-8944-3cbeba2a7013": {
-    "asset": 1507591784040,
-    "meta": 1507591785111,
+    "asset": 1512617272140,
+    "meta": 1512617273550,
     "relativePath": "textures\\Fase 1"
   },
   "3fa8b7b5-27b3-4942-b5a3-9d6e45c946bc": {
@@ -725,8 +705,8 @@
     "relativePath": "textures\\Fase 1\\prof camada1.png"
   },
   "3f65d06c-c141-4b0b-9b67-7b765147b52d": {
-    "asset": 1508857852309,
-    "meta": 1508857853269,
+    "asset": 1512616991550,
+    "meta": 1512617274650,
     "relativePath": "textures\\Fase 2"
   },
   "fb769655-3348-4f2d-9b71-f067492c6ea0": {
@@ -775,8 +755,8 @@
     "relativePath": "textures\\Fase 2\\tabela roteamento.png"
   },
   "5900db88-31ee-493e-ae89-6ab8d2d8dc2f": {
-    "asset": 1509897112430,
-    "meta": 1510081570667,
+    "asset": 1512647511804,
+    "meta": 1512791192219,
     "relativePath": "textures\\Fase 3"
   },
   "2a2ef6e6-728d-4879-bb28-7e05c1dc1319": {
@@ -835,13 +815,13 @@
     "relativePath": "textures\\Fase 3\\tabrot.png"
   },
   "042c1e27-a112-4837-9bcb-22a574f40556": {
-    "asset": 1504561955314,
-    "meta": 1504561960428,
+    "asset": 1510622204653,
+    "meta": 1510667936553,
     "relativePath": "textures\\Fase 4"
   },
   "75a20a1d-8d1c-4270-aaf8-76854357a85c": {
-    "asset": 1497918826175,
-    "meta": 1501106676082,
+    "asset": 1510515465013,
+    "meta": 1510527057626,
     "relativePath": "textures\\Fase 4\\bgfase2.png"
   },
   "263c48a8-bb57-4a57-a153-6b7f1e2f2c19": {
@@ -868,11 +848,6 @@
     "asset": 1499024822806,
     "meta": 1501106676150,
     "relativePath": "textures\\Fase 4\\Google_Chrome.png"
-  },
-  "e750cade-5e11-430a-838f-7d263aedeca2": {
-    "asset": 1499130322515,
-    "meta": 1501106676183,
-    "relativePath": "textures\\Fase 4\\porta.png"
   },
   "4629a760-bc68-4dfd-90c4-8b9ffb16cbaf": {
     "asset": 1499024756917,
@@ -950,23 +925,23 @@
     "relativePath": "scripts\\buttons\\btnPlay\\btnPlayCamada5.js"
   },
   "10fd56bb-a147-45ab-aaa0-f0abbfe83eed": {
-    "asset": 1503581699764,
-    "meta": 1503581699776,
+    "asset": 1512616590374,
+    "meta": 1512616590416,
     "relativePath": "scenes\\fases\\fase5.fire"
   },
   "50dd6117-4387-4ad5-a6cc-b7fdf73e848e": {
-    "asset": 1503581235574,
-    "meta": 1503581235714,
+    "asset": 1513043400972,
+    "meta": 1513043401149,
     "relativePath": "scripts\\buttons\\buttons dialogues\\btnContFase5.js"
   },
   "22be01d4-b9d7-4036-aad9-de270d52c60e": {
-    "asset": 1503666900273,
-    "meta": 1503666900281,
+    "asset": 1511030588445,
+    "meta": 1511030588474,
     "relativePath": "scenes\\quiz\\quizFase5.fire"
   },
   "3082e38a-81b5-4661-b52a-0d62b19745e1": {
-    "asset": 1503666624587,
-    "meta": 1503666624848,
+    "asset": 1511030194501,
+    "meta": 1511030194909,
     "relativePath": "scripts\\quiz fases\\quizFase5.js"
   },
   "bf6ef539-61ec-4378-bde8-17553ef78aa9": {
@@ -975,8 +950,8 @@
     "relativePath": "scripts\\buttons\\button quiz\\btnQuiz5.js"
   },
   "81359eb5-1c93-471e-8b3b-64eecf33d878": {
-    "asset": 1509822448354,
-    "meta": 1509825343052,
+    "asset": 1510494976329,
+    "meta": 1510527056828,
     "relativePath": "Animaçoes"
   },
   "546ac1a6-bb81-4522-ac4b-73f4e3ee66fd": {
@@ -1060,8 +1035,8 @@
     "relativePath": "textures\\Buttons\\btnFront.png"
   },
   "ca0f062c-a8da-4d40-8e26-e331bafa1e4c": {
-    "asset": 1508268337878,
-    "meta": 1508268338277,
+    "asset": 1511014766579,
+    "meta": 1511014766720,
     "relativePath": "scripts\\selectStage.js"
   },
   "6024d16a-0298-4f3d-a8c4-67f84ebafd4b": {
@@ -1155,8 +1130,8 @@
     "relativePath": "textures\\Fase 3\\textwrapper3.png"
   },
   "bd3517c1-9076-4476-bc75-e9e3411deca6": {
-    "asset": 1504561955344,
-    "meta": 1504561960486,
+    "asset": 1510673187654,
+    "meta": 1510680829431,
     "relativePath": "textures\\Fase5"
   },
   "1d41bab1-9372-47e3-834a-476f965c9d7f": {
@@ -1210,8 +1185,8 @@
     "relativePath": "textures\\Fase 1\\Prof1.png"
   },
   "dc6bf8a0-b357-4940-87dd-27fcbf3e7f84": {
-    "asset": 1505781442927,
-    "meta": 1505783779387,
+    "asset": 1511012474321,
+    "meta": 1511028699065,
     "relativePath": "Animaçoes\\Fase1\\professor"
   },
   "f15a9ab4-6dc1-48b2-9daf-8db738c91861": {
@@ -1269,14 +1244,9 @@
     "meta": 1505781603079,
     "relativePath": "Animaçoes\\Fase1\\professor\\falaProfessor3.anim"
   },
-  "7c965376-dd02-403f-8d3f-80ea0b01eb98": {
-    "asset": 1505783262788,
-    "meta": 1505783284431,
-    "relativePath": "Music\\music5.mp3"
-  },
   "25e2229b-6b54-44d5-96ad-9882e1e3bc2c": {
-    "asset": 1506029806491,
-    "meta": 1506029863049,
+    "asset": 1512428063482,
+    "meta": 1512428286927,
     "relativePath": "textures\\Fase 1\\eixox.png"
   },
   "0d4e9402-1196-4216-ad8d-d9c7a6619b5c": {
@@ -1328,11 +1298,6 @@
     "asset": 1506971875172,
     "meta": 1506971875215,
     "relativePath": "Animaçoes\\Fase1\\JogoFase1\\someTutorial.anim"
-  },
-  "21ebdbab-19e8-469b-841d-6649320600af": {
-    "asset": 1507334776057,
-    "meta": 1507571790706,
-    "relativePath": "Music\\music6.mp3"
   },
   "c68c0907-e52f-4132-9d10-683ddd423e2c": {
     "asset": 1507585775573,
@@ -1429,11 +1394,6 @@
     "meta": 1508270140517,
     "relativePath": "textures\\Fase 2\\global-internet-thumbnail.jpg"
   },
-  "981478a7-f83a-4fdd-840b-96118a2c3e68": {
-    "asset": 1508279226370,
-    "meta": 1508344718967,
-    "relativePath": "Music\\music7.mp3"
-  },
   "e07a7c9c-6201-404a-8ed3-747a0a3e305b": {
     "asset": 1508290699421,
     "meta": 1508344723412,
@@ -1525,13 +1485,13 @@
     "relativePath": "textures\\Fase 2\\tutorial1.png"
   },
   "6e0301ce-88d5-4543-ad5d-6e4e8630f06a": {
-    "asset": 1508806431691,
-    "meta": 1508806724675,
+    "asset": 1512616898627,
+    "meta": 1512617274754,
     "relativePath": "textures\\Fase 2\\tutorial2.png"
   },
   "5cf5fd9d-abf1-4125-b953-f007d202d309": {
-    "asset": 1508806578445,
-    "meta": 1508806724733,
+    "asset": 1512616991548,
+    "meta": 1512617274791,
     "relativePath": "textures\\Fase 2\\tutorial3.png"
   },
   "93159b1a-dcc8-4a1f-85f8-590e015f72a2": {
@@ -1610,8 +1570,8 @@
     "relativePath": "Animaçoes\\Fase3\\animaProfessor.anim"
   },
   "b2c82231-b3ef-4e2d-baae-b0085c3e3154": {
-    "asset": 1509896820906,
-    "meta": 1509897112544,
+    "asset": 1511878787346,
+    "meta": 1511880883384,
     "relativePath": "textures\\Fase 3\\tutorial1.png"
   },
   "8b3de537-6e49-4d43-9ac5-269c08fe7650": {
@@ -1638,5 +1598,210 @@
     "asset": 1510085448768,
     "meta": 1510085455534,
     "relativePath": "textures\\Fase 3\\respostaserrada.png"
+  },
+  "0bbb61f1-64fd-45e1-8fcc-982f0734aa07": {
+    "asset": 1510180700815,
+    "meta": 1510180709489,
+    "relativePath": "textures\\Fase 4\\bg.jpg"
+  },
+  "617b6000-e981-4275-a432-7d5c2c7c2cc9": {
+    "asset": 1510350344160,
+    "meta": 1510494001915,
+    "relativePath": "textures\\Fase 4\\faceProfessor4.plist"
+  },
+  "9bda33f9-8896-43fc-b4d4-cad0ad11bbe0": {
+    "asset": 1510362537890,
+    "meta": 1510494001937,
+    "relativePath": "textures\\Fase 4\\professor4.plist"
+  },
+  "030f5ea3-87f9-4964-b63e-88006744d30a": {
+    "asset": 1510350344158,
+    "meta": 1510494001807,
+    "relativePath": "textures\\Fase 4\\faceProfessor4.png"
+  },
+  "dec7e3c0-2ada-4971-b646-dc62e271013a": {
+    "asset": 1510362537888,
+    "meta": 1510494001899,
+    "relativePath": "textures\\Fase 4\\professor4.png"
+  },
+  "157f339b-9134-4a24-9174-7a001087656f": {
+    "asset": 1510617753519,
+    "meta": 1510620222680,
+    "relativePath": "Animaçoes\\Fase4"
+  },
+  "a56d14c7-fe0f-4bde-bd1b-20be595ed633": {
+    "asset": 1510496218944,
+    "meta": 1510496218990,
+    "relativePath": "Animaçoes\\Fase4\\moveProfessor.anim"
+  },
+  "3c94e589-2c28-4153-9a24-ff91474c0294": {
+    "asset": 1510496400772,
+    "meta": 1510496400805,
+    "relativePath": "Animaçoes\\Fase4\\animaProfessor1.anim"
+  },
+  "74a3e7ce-88e3-42d0-9dfc-bc20e2456d26": {
+    "asset": 1510496812986,
+    "meta": 1510496813010,
+    "relativePath": "Animaçoes\\Fase4\\animaProfessor2.anim"
+  },
+  "61a23adb-82ed-4888-8cf3-753b5942e879": {
+    "asset": 1510497132645,
+    "meta": 1510497132697,
+    "relativePath": "Animaçoes\\Fase4\\falaProfessor1.anim"
+  },
+  "7ed11e07-caee-4275-a6f7-37105e210594": {
+    "asset": 1510497364542,
+    "meta": 1510497364573,
+    "relativePath": "Animaçoes\\Fase4\\falaProfessor2.anim"
+  },
+  "16e81362-3db3-4e0d-bafd-68107f404b6d": {
+    "asset": 1510594294934,
+    "meta": 1510594309449,
+    "relativePath": "textures\\Fase 4\\tutorial1.png"
+  },
+  "2993e04b-5859-4038-83f6-d0cdd32c7ca3": {
+    "asset": 1510593045313,
+    "meta": 1510593127468,
+    "relativePath": "textures\\Fase 4\\tutorial2.png"
+  },
+  "b81e8383-eb4b-4ebe-bc9c-de6c1311beca": {
+    "asset": 1510617328034,
+    "meta": 1510617452715,
+    "relativePath": "textures\\Fase 4\\porta.plist"
+  },
+  "81ffc2ad-59eb-4555-8576-63e3c5f9dfda": {
+    "asset": 1499130322515,
+    "meta": 1510617452703,
+    "relativePath": "textures\\Fase 4\\portaa.png"
+  },
+  "b1f69a5b-e634-4359-8be0-29ab125758fe": {
+    "asset": 1510617328011,
+    "meta": 1510617452706,
+    "relativePath": "textures\\Fase 4\\porta.png"
+  },
+  "175b2522-5653-454a-a5a4-130c77b3c891": {
+    "asset": 1510619106446,
+    "meta": 1510619106461,
+    "relativePath": "Animaçoes\\Fase4\\porta.anim"
+  },
+  "f6e6411f-a41d-43e5-940a-c27dbdc2a833": {
+    "asset": 1510620141513,
+    "meta": 1510620222930,
+    "relativePath": "textures\\Fase 4\\bgquiz.jpg"
+  },
+  "b31ace1d-fb6d-4787-adc9-5725bbdf18bc": {
+    "asset": 1510620400198,
+    "meta": 1510620405715,
+    "relativePath": "textures\\Fase 4\\topquizbg.jpg"
+  },
+  "15ebd3cc-925a-4e32-ac81-089755c0e0b2": {
+    "asset": 1510622023026,
+    "meta": 1510622204764,
+    "relativePath": "textures\\Fase 4\\respostascorreta.png"
+  },
+  "7e38e84c-8931-42e4-b47f-9e0edf3f932b": {
+    "asset": 1510621920152,
+    "meta": 1510622204766,
+    "relativePath": "textures\\Fase 4\\respostas.png"
+  },
+  "72b61823-d82e-4ec7-b4bf-6014d13bd91d": {
+    "asset": 1510622194082,
+    "meta": 1510622204805,
+    "relativePath": "textures\\Fase 4\\respostaserrada.png"
+  },
+  "1a1435b9-c8d5-4838-a9fe-dc074547eb67": {
+    "asset": 1510672597007,
+    "meta": 1510672819291,
+    "relativePath": "textures\\Fase5\\respostas.png"
+  },
+  "b82d7e6b-1d98-491e-bb0b-50d761c7792a": {
+    "asset": 1510672790703,
+    "meta": 1510672819299,
+    "relativePath": "textures\\Fase5\\respostascorreta.png"
+  },
+  "ca5f5db4-9dca-431f-8647-82a2c9b9867f": {
+    "asset": 1510672710263,
+    "meta": 1510672819338,
+    "relativePath": "textures\\Fase5\\respostaserrada.png"
+  },
+  "7c2a07f6-a6b5-465f-ab47-d336976b20e2": {
+    "asset": 1510672459300,
+    "meta": 1510672819354,
+    "relativePath": "textures\\Fase5\\topquizbg.png"
+  },
+  "ac2df673-453e-4cd7-916d-b3f1eafa8a9d": {
+    "asset": 1510673182564,
+    "meta": 1510673187804,
+    "relativePath": "textures\\Fase5\\bgquiz.jpg"
+  },
+  "003aa016-4e95-4c97-88eb-8ed1d7df428a": {
+    "asset": 1493484005235,
+    "meta": 1510864706119,
+    "relativePath": "Music\\Main Menu Song.mp3"
+  },
+  "5736e6df-de55-4aca-8649-d86a6a6cdba9": {
+    "asset": 1507334776057,
+    "meta": 1510864706129,
+    "relativePath": "Music\\Professor1 explaining again.mp3"
+  },
+  "47c519ae-5b23-4d42-9418-519b7a2d684b": {
+    "asset": 1505783262788,
+    "meta": 1510864706129,
+    "relativePath": "Music\\Professor1 explaining.mp3"
+  },
+  "cde3fedd-96d3-42f7-86be-460580076e6f": {
+    "asset": 1508279226370,
+    "meta": 1510865228494,
+    "relativePath": "Music\\Quiz Time.mp3"
+  },
+  "f5a3432c-11f6-497a-8387-fb66b94713c8": {
+    "asset": 1510870414281,
+    "meta": 1511006084688,
+    "relativePath": "Music\\Professor2 explaining again.mp3"
+  },
+  "b3f7ccd3-eb8d-4bd9-a4ef-0e72582d7233": {
+    "asset": 1510869692056,
+    "meta": 1511006084688,
+    "relativePath": "Music\\Professor2 explaining.mp3"
+  },
+  "0a2620e3-04a2-4b88-ac7f-6f1b5e5d7372": {
+    "asset": 1510877560816,
+    "meta": 1511006084698,
+    "relativePath": "Music\\Professor3 explaining again.mp3"
+  },
+  "7a816486-a28e-4988-b850-76568e8560c1": {
+    "asset": 1510876378064,
+    "meta": 1511006084698,
+    "relativePath": "Music\\Professor3 explaining.mp3"
+  },
+  "b49fabbf-5fc6-475f-8dc3-83ee4f4f2d87": {
+    "asset": 1510879499743,
+    "meta": 1511006084698,
+    "relativePath": "Music\\Professor4 explaining again.mp3"
+  },
+  "02d79ef8-7785-4218-abb6-e7560d7293a7": {
+    "asset": 1510878821826,
+    "meta": 1511006084698,
+    "relativePath": "Music\\Professor4 explaining.mp3"
+  },
+  "5350fce6-cff6-4f25-9d82-90465b9057f9": {
+    "asset": 1511007396074,
+    "meta": 1511007525362,
+    "relativePath": "Music\\final test.mp3"
+  },
+  "c7822715-a475-4ee3-bb3a-585439cf0c01": {
+    "asset": 1511012588866,
+    "meta": 1511012588876,
+    "relativePath": "Animaçoes\\Fase1\\professor\\falaProfessor1 - 5.anim"
+  },
+  "7f49a1ee-b55e-49a3-9a4f-dae1525b0a99": {
+    "asset": 1512617211939,
+    "meta": 1512617274748,
+    "relativePath": "textures\\Fase 1\\tutoria2.png"
+  },
+  "0634b172-1ff6-47ce-89fd-bbd77bd0002a": {
+    "asset": 1512647499485,
+    "meta": 1512647511871,
+    "relativePath": "textures\\Fase 3\\tutorial2.png"
   }
 }

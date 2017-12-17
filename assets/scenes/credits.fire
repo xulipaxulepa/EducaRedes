@@ -222,8 +222,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 976.11,
-      "height": 680
+      "width": 847.85,
+      "height": 920
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -254,10 +254,12 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "96f1f0ad-9c12-4f2f-8640-31fcbfff80d2"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "Jogo realizado como projeto de conclusao\nde curso, no curso de Analise e Desenvovimento\nde Sistemas, no Instituto Federal do Norte de \nMinas Gerais - Campus Januaria.\n\nArtes: Aquilla Odlanier Faria Nascimento\nProgramaçao: Aquilla Odlanier Faria Nascimento\nMusicas: Aquilla Odlanier Faria Nascimento\nGame Designer: Aquilla Odlanier Faria Nascimento\n\nEsse jogo se baseia no livro Redes de Computadores, \nde Andrew. Tanenbaum,  na sua 5º ediçao.\n\nAgradeço a minha orientadora Joselice Ferreira Lima\ne a minha familia por todo o apoio!\n\nObrigado por Jogarem!",
+    "_N$string": "Jogo realizado como projeto de conclusão\nde curso de Análise e Desenvovimento\nde Sistemas, no Instituto Federal do Norte de \nMinas Gerais - Câmpus Januária.\n\nOrientadora: Joselice Ferreira Lima \nCo-Orientador: Adriano Antunes Prates\nArtes: Aquilla O F Nascimento\nProgramaçao: Aquilla O F Nascimento\nMusicas: Aquilla O F Nascimento\nGame Designer: Aquilla O F Nascimento\n\nEsse jogo se baseia \nno livro Redes de Computadores, \nde Andrew. Tanenbaum,  na sua 5º edição.\n\nAgradeço a minha orientadora \nJoselice Ferreira Lima\nmeu co-orientador\nAdriano Antunes Prates\ne a minha familia por todo o apoio!\n\nObrigado por Jogarem!",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",

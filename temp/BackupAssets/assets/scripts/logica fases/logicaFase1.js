@@ -114,7 +114,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        cc.audioEngine.play(this.gameAudio, true);
+        cc.audioEngine.play(this.gameAudio, true, 0.5);
         this.frentePlayer();
         this.criaAlvo();
         this.btnContinuar2.setOpacity(0);
@@ -134,8 +134,8 @@ cc.Class({
         animaFace.repeatCount = Infinity;
         texto.playAdditive('ApareceTexto');
         professor.playAdditive('Aparece');
-        this.textoFase.string = "Nesse Mini-Jogo, voce aprendera a diferença\n"+ 
-            "entre o sinal analogico e o sinal digital";
+        this.textoFase.string = "Nesse Minijogo, você aprendera a diferença\n"+ 
+            "entre o sinal analógico e o sinal digital";
     },
     
     //movimentar via teclado
@@ -306,7 +306,7 @@ cc.Class({
             var animaFace = face.play("falaProfessor2");
             animaFace.speed = 0.5;
             animaFace.repeatCount = Infinity;
-            this.textoFase.string = "um  sinal  analógico  é  caracterizado por\n"+ 
+            this.textoFase.string = "um sinal analógico é caracterizado por\n"+ 
             "uma equação matemática continua.\n"+ 
             "Quando a entrada muda";
             this.contTexto += 1;
@@ -325,12 +325,12 @@ cc.Class({
         }else if(this.contTexto == 3){
             texto.playAdditive('ApareceTexto');
             this.textoFase.string = "Tente acertar 10 alvos para avançar\n"+
-            "para a proxima etapa";
+            "para a próxima etapa";
             this.contTexto += 1;
         } else if(this.contTexto == 4){
             texto.playAdditive('ApareceTexto');
             this.textoFase.string = "Evite subir demais ou descer demais\n"+
-            "caso isso aconteça, sera Game Over";
+            "caso isso aconteça, será Game Over";
             this.contTexto += 1;
         } else if(this.contTexto == 5){
             texto.playAdditive('ApareceTexto');
@@ -342,31 +342,38 @@ cc.Class({
     },
     
     jogar: function(){
-        this.textoFase.string = "Como pode ser visto o sinal analogico é gerado como\n"+
-            "um conjunto de ondas, já que o sinal passa por todos os valores\n"+
-            "naquele intervalo de tempo";
+        this.textoFase.string = "A frequência é demonstrada como\n"+
+            "a soma de todos os ciclos ou períodos\n"+
+            "em um intervalo de 1 segundo";
             this.contTexto = 7;
             this.fase = 1;
             this.player.setPosition(-418,0);
+            cc.audioEngine.setVolume(0, 1);
             var tutorial = this.tutorial.getComponent(cc.Animation);
             tutorial.play("someTutorial");
     },
     
     trocaTexto2: function(){
+        cc.audioEngine.setVolume(0, 0.2);
         if(this.contTexto == 7){
+            this.textoFase.string = "Como pode ser visto o sinal analógico é gerado como\n"+
+            "um conjunto de ondas, já que o sinal passa por todos os valores\n"+
+            "naquele intervalo de tempo";
+            this.contTexto += 1;
+        } else if(this.contTexto == 8){
             this.textoFase.string = "Já o sinal digital é gerado como um conjunto de retas\n"+
             "já que possui um conjunto limitado\n"+
             "de valores em um intervalo de tempo";
             this.contTexto += 1;
-        } else if(this.contTexto == 8){
-            this.textoFase.string = "Tente acertar 10 alvos para avançar\n"+
-            "para a proxima etapa";
-            this.contTexto += 1;
         } else if(this.contTexto == 9){
-            this.textoFase.string = "Evite subir demais ou descer demais\n"+
-            "caso isso aconteça, sera Game Over";
+            this.textoFase.string = "Tente acertar 10 alvos para avançar\n"+
+            "para a próxima etapa";
             this.contTexto += 1;
         } else if(this.contTexto == 10){
+            this.textoFase.string = "Evite subir demais ou descer demais\n"+
+            "caso isso aconteça, será Game Over";
+            this.contTexto += 1;
+        } else if(this.contTexto == 11){
             this.textoFase.string = "Boa Sorte!";
             this.contTexto = 0;
             this.fase = 3;

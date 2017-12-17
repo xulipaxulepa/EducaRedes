@@ -42,6 +42,11 @@ cc.Class({
             type: cc.Node
         },
         
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        
         contador: 0,
     },
     
@@ -109,6 +114,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        cc.audioEngine.play(this.gameAudio, true);
         this.contador = 1;
 
     },

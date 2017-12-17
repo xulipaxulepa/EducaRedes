@@ -17,6 +17,10 @@ cc.Class({
         cc.audioEngine.play(this.gameAudio, true);
     },
     
+    onDestroy: function () {
+        cc.audioEngine.pauseAll();
+    },
+    
     
 
     // called every frame, uncomment this function to activate update callback

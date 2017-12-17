@@ -2356,7 +2356,7 @@
       "__id__": 67
     },
     "gameAudio": {
-      "__uuid__": "21ebdbab-19e8-469b-841d-6649320600af"
+      "__uuid__": "5736e6df-de55-4aca-8649-d86a6a6cdba9"
     },
     "fase": 0,
     "pontuacao": 0,
@@ -2478,7 +2478,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "Frequência",
+    "_N$string": "Ciclo",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2520,7 +2520,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 201.48,
+      "width": 81.68,
       "height": 40
     },
     "_rotationX": 0,

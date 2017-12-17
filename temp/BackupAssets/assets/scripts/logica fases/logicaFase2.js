@@ -82,6 +82,11 @@ cc.Class({
             type: cc.Node
         },
         
+        no1aLinha: {
+            default: null,
+            type: cc.Node
+        },
+        
         tabRot: {
             default: null,
             type: cc.Node
@@ -177,6 +182,11 @@ cc.Class({
             type: cc.Node
         },
         
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        
         saltos: 0,
         
         pontuacao: 0,
@@ -189,6 +199,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        cc.audioEngine.play(this.gameAudio, true, 0.5);
         this.player.setPosition(1360, 0);
         this.pontuacao = 0;
         this.contTexto = 0;
@@ -203,8 +214,12 @@ cc.Class({
         professora.play("Aparece");
         var texto = this.textoFase.getComponent(cc.Animation);
         texto.playAdditive('ApareceTexto');
-        this.textoFase.string = "Nesse Mini-Jogo, voce aprendera a rotear\n"+ 
+        this.textoFase.string = "Nesse Minijogo, você aprendera a rotear\n"+ 
             "pacotes IPs";
+    },
+    
+    onDestroy: function () {
+        cc.audioEngine.pauseAll();
     },
     
     someNos: function(){
@@ -234,6 +249,10 @@ cc.Class({
         this.no6a.setPosition(193, 115);
     },
     
+    apareceNosLinha: function(){
+        this.no1aLinha.setOpacity(255);
+    },
+    
     movePlayer: function (x, y){
         var move = cc.moveTo(3, cc.p(x, y));
         //this.player.runAction(move);
@@ -260,9 +279,11 @@ cc.Class({
             this.no1.setPosition(-240, -181);
             this.player.setPosition(-210, -154);
         } else if(this.tuto == 3){
+            cc.audioEngine.setVolume(0, 1);
             this.btnJogar.setPosition(1300, -206);
             this.tutorial3.setOpacity(0);
             this.apareceNos();
+            this.apareceNosLinha();
         }
     },
     
@@ -300,23 +321,23 @@ cc.Class({
             this.contTexto += 1;
         } else if(this.contTexto == 4){
             texto.playAdditive('ApareceTexto');
-            this.textoFase.string = "O cenario acima demonstra uma rede\n"+
+            this.textoFase.string = "O cenário acima demonstra uma rede\n"+
             "com 6 roteadores, cada um deles com sua tabela\n"+
             "de roteamento";
             this.contTexto += 1;
         } else if(this.contTexto == 5){
             texto.playAdditive('ApareceTexto');
             professora.play("animaProfessora2-2");
-            this.textoFase.string = "No papel de um pacote, voce tera\n"+
+            this.textoFase.string = "No papel de um pacote, você terá\n"+
             "5 saltos para sair do nó 1 e chegar ao nó 6!\n"+
-            "caso contrario, a mensagem sera perdida";
+            "caso contrário, a mensagem será perdida";
             this.modeloRede.setOpacity(0);
             this.contTexto += 1;
         } else if(this.contTexto == 6){
             texto.playAdditive('ApareceTexto');
             professora.play("animaProfessora2-1");
             this.textoFase.string = "Cada salto possui um custo\n"+
-            "Usaremos nesse exemplo, o numero de saltos\n"+
+            "Usaremos nesse exemplo, o número de saltos\n"+
             "para se alcançar determinado nó";
             this.modeloRede.setOpacity(0);
             this.contTexto += 1;
@@ -336,9 +357,9 @@ cc.Class({
             this.tutorial1.setOpacity(255);
             this.btnJogar.setPosition(0, -206);
             this.bg.setOpacity(255);
-            this.textoFase1.string = "Parabéns, voce chegou ao nó 6!\n"+
+            this.textoFase1.string = "Parabéns, você chegou ao nó 6!\n"+
             "apesar de bastante simplificado\n"+ 
-            "o mini-jogo demonstrou como uma \n"+
+            "o minijogo demonstrou como uma \n"+
             "informação trafega em diversas redes!";
             this.contTexto += 1;
         } else if(this.contTexto == 20){
@@ -423,7 +444,7 @@ cc.Class({
     },
     
     buttonSalto1: function(){
-        this.someNos();
+        //this.someNos();
         this.tabRot.setPosition(1320, -130);
         this.no1.setPosition(-240, -181);
         this.saltos -= 1;
@@ -431,7 +452,7 @@ cc.Class({
     },
     
     buttonSalto2: function(){
-        this.someNos();
+        //this.someNos();
         this.tabRot.setPosition(1320, -130);
         this.no2.setPosition(-181, -6);
         if(this.player.x == 12){
@@ -440,14 +461,13 @@ cc.Class({
         this.player.runAction(move2);    
         } else{
         this.saltos -= 2;
-        var move1 = this.movePlayer(12, -27);
         var move2 = this.movePlayer(-181, -6);
-        this.player.runAction(cc.sequence(move1,move2));
+        this.player.runAction(move2);
         }
     },
     
     buttonSalto3: function(){
-        this.someNos();
+        //this.someNos();
         this.tabRot.setPosition(1320, -130);
         this.no3.setPosition(-15, -181);
         this.saltos -= 1;
@@ -456,7 +476,7 @@ cc.Class({
     },
     
     buttonSalto4: function(){
-        this.someNos();
+        //this.someNos();
         this.tabRot.setPosition(1320, -130);
         this.no4.setPosition(12, -27);
         this.saltos -= 1;
@@ -465,7 +485,7 @@ cc.Class({
     },
     
     buttonSalto5: function(){
-        this.someNos();
+        //this.someNos();
         this.tabRot.setPosition(1320, -130);
         this.no5.setPosition(-39, 103);
         if(this.player.x == -15){
@@ -478,29 +498,23 @@ cc.Class({
         this.player.runAction(move2);    
         } else {
             this.saltos -= 2;
-        move1 = this.movePlayer(12, -27);
         var move2 = this.movePlayer(-39, 103);
-        this.player.runAction(cc.sequence(move1,move2));
+        this.player.runAction(move2);
         }
     },
     
     buttonSalto6: function(){
-        this.someNos();
+        //this.someNos();
         this.tabRot.setPosition(1320, -130);
         this.no6.setPosition(193, 115);
         if(this.player.x == -210){
         this.saltos -= 5;
-        var move1 = this.movePlayer(-181, -6);
-        var move2 = this.movePlayer(-15, -181);
-        var move3 = this.movePlayer(12, -27);
-        var move5 = this.movePlayer(-39, 103);
         var move6 = this.movePlayer(193, 115);
-        this.player.runAction(cc.sequence(move1,move2,move3,move5,move6));
+        this.player.runAction(move6);
         } else if(this.player.x == -39){
         this.saltos -= 2;
-        var move1 = this.movePlayer(12, -27);
         var move2 = this.movePlayer(193, 115);
-        this.player.runAction(cc.sequence(move1,move2));
+        this.player.runAction(move2);
         } else {
             this.saltos -= 1;
             var move6 = this.movePlayer(193, 115);

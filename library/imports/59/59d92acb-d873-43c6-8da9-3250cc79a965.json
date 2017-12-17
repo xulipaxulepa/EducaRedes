@@ -763,7 +763,7 @@
       "__id__": 8
     },
     "gameAudio": {
-      "__uuid__": "7c965376-dd02-403f-8d3f-80ea0b01eb98"
+      "__uuid__": "47c519ae-5b23-4d42-9418-519b7a2d684b"
     },
     "contador": 0
   },
@@ -1011,9 +1011,6 @@
     },
     "face": {
       "__id__": 8
-    },
-    "gameAudio": {
-      "__uuid__": "7c965376-dd02-403f-8d3f-80ea0b01eb98"
     },
     "contador": 0
   },

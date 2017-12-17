@@ -42,6 +42,26 @@ cc.Class({
             type: cc.Node
         },
         
+        respostaErrada1b: {
+            default: null,
+            type: cc.Node
+        },
+        
+        respostaErrada2b: {
+            default: null,
+            type: cc.Node
+        },
+        
+        respostaErrada3b: {
+            default: null,
+            type: cc.Node
+        },
+        
+        respostaErrada4b: {
+            default: null,
+            type: cc.Node
+        },
+        
         respostaCerta: {
             default: null,
             type: cc.Node
@@ -77,6 +97,16 @@ cc.Class({
             type: cc.Node
         },
         
+        falaquizprof: {
+            default: null,
+            type: cc.Node
+        },
+        
+        gameAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        
         resp: 0,
         
         contador: 0,
@@ -86,6 +116,8 @@ cc.Class({
         respCer: 0,
         
         respErr: 0,
+        
+        saiAnimacao: 0,
     },
     
     someResposta: function(){
@@ -128,8 +160,9 @@ cc.Class({
     
     perguntas: function(){
         if(this.contador === 0){
+        this.apareceRespostas();
         this.someResposta();
-        this.pergunta.string = 'Questao 1:Qual protocolo é responsável por resolver\n'+
+        this.pergunta.string = 'Questao 1:\nQual protocolo é responsável por resolver\n'+
         'o mapeamento entre os endereço IP\n'+
         'e os endereços MAC da rede?';
         
@@ -141,11 +174,12 @@ cc.Class({
         
         this.resposta4.string = 'DNS';
         } else if(this.contador == 1){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 2:Assinale a alternativa que representa\n'+
-        'o tamanho em bytes dos campos de endereço MAC\n'+
-        'IPv4 e IPv6, respectivamente.';
+        this.pergunta.string = 'Questao 2:\nAssinale a alternativa que representa\n'+
+        'o tamanho em bytes dos campos de\n'+
+        'endereço MAC, IPv4 e IPv6\n respectivamente.';
         
         this.resposta1.string = '4, 6, 16';
         
@@ -155,39 +189,42 @@ cc.Class({
         
         this.resposta4.string = '16, 32, 64';
         } else if(this.contador == 2){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 3: Na pilha TCP/IP, a função de enviar\n'+
-        'ao transmissor da informação uma confirmação\n'+
-        'de recebimento da mensagem(ack) é realizada pela camada:';
+        this.pergunta.string = 'Questao 3:\nNa pilha TCP/IP, a função de enviar ao\n'+
+        'transmissor da informação uma confirmação\n'+
+        'de recebimento da mensagem(ack)\n é realizada pela camada:';
         
-        this.resposta1.string = 'Transporte';
+        this.resposta1.string = 'Internet';
         
         this.resposta2.string = 'Acesso a rede';
         
         this.resposta3.string = 'Aplicaçao';
         
-        this.resposta4.string = 'Internet';//correta
+        this.resposta4.string = 'Transporte';//correta
         } else if(this.contador == 3){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 4: Assinale a alternativa que contém protocolos\n'+
-        'das camadas de enlace, rede, transporte e aplicação\n'+
-        'respectivamente, da pilha de protocolos TCP/IP.';
+        this.pergunta.string = 'Questao 4:\nAssinale a alternativa que contém\n'+
+        ' protocolos das camadas de enlace, rede\n'+
+        'transporte e aplicação respectivamente\n da pilha de protocolos TCP/IP.';
         
         this.resposta1.string = 'ARP, IP, TCP, IP';
         
-        this.resposta2.string = 'PPP, ICMP, UDP, SNMP';
+        this.resposta2.string = 'Ethernet, PPP, UDP, SSH';
         
-        this.resposta3.string = 'Ethernet, PPP, UDP, SSH';//correta
+        this.resposta3.string = 'PPP, ICMP, UDP, SNMP';//correta
         
         this.resposta4.string = 'Ethernet, DNS, TCP, SMTP';
         } else if(this.contador == 4){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 5: O endereço de um recurso disponível em uma rede\n'+
-        'seja na Internet ou numa rede corporativa Intranet\n'+
-        'tem a seguinte estrutura:';
+        this.pergunta.string = 'Questao 5:\nO endereço de um recurso\n'+
+        ' disponível em uma rede seja na Internet \n'+
+        'ou numa rede corporativa Intranet\n tem a seguinte estrutura:';
         
         this.resposta1.string = 'protocolo://caminho/recurso/máquina. ';
         
@@ -197,22 +234,24 @@ cc.Class({
         
         this.resposta4.string = 'máquina://protocolo/caminho/recurso. ';
         } else if(this.contador == 5){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 6: Na classe padrão C\n'+
+        this.pergunta.string = 'Questao 6:\nNa classe padrão C\n'+
         'quantos bytes são reservados para redes?';
         
-        this.resposta1.string = '01 byte';//correto
+        this.resposta1.string = '03 bytes';//correto
         
         this.resposta2.string = '02 bytes';
         
-        this.resposta3.string = '03 bytes';
+        this.resposta3.string = '01 byte';
         
         this.resposta4.string = '04 bytes';
         } else if(this.contador == 6){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 7: Como é denominado o protocolo\n'+ 
+        this.pergunta.string = 'Questao 7:\nComo é denominado o protocolo\n'+ 
         'de configuração dinâmica de IP?';
         
         this.resposta1.string = 'FTP';
@@ -223,9 +262,10 @@ cc.Class({
         
         this.resposta4.string = 'DNS';
         } else if(this.contador == 7){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 8: Qual detses protocolos é mais rápido\n'+
+        this.pergunta.string = 'Questao 8:\nQual destes protocolos é mais rápido\n'+
         'porém menos confiável?';
         
         this.resposta1.string = 'UDP';//correto
@@ -236,9 +276,10 @@ cc.Class({
         
         this.resposta4.string = 'TCP';
         } else if(this.contador == 8){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 9: Qual é a classe de endereço IP\n'+
+        this.pergunta.string = 'Questao 9:\nQual é a classe de endereço IP\n'+
         'que utiliza a máscara padrão 255.255.0.0?';
         
         this.resposta1.string = 'A';
@@ -249,9 +290,10 @@ cc.Class({
         
         this.resposta4.string = 'B';//correta
         } else if(this.contador == 9){
+        this.apareceRespostas();
         this.someResposta();
         this.trocaRespostas();
-        this.pergunta.string = 'Questao 10: O conjunto formado por um endereço IP\n'+
+        this.pergunta.string = 'Questao 10:\nO conjunto formado por um endereço IP\n'+
         'e um número de porta constitui:';
         
         this.resposta1.string = 'Uma conexao';
@@ -266,12 +308,14 @@ cc.Class({
     
     buttonRespCerto: function(){
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respCer += 1;
         this.contador += 1;
     },
     
     buttonRespErrado: function(){
         this.timer = 3;
+        this.saiAnimacao = 1;
         this.respErr += 1;
         this.contador += 1;
     },
@@ -295,16 +339,50 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        cc.audioEngine.play(this.gameAudio, true);
         this.someResposta();
         this.timer = 100000;
         this.contador = 0;
+        this.saiAnimacao = 0;
         this.respCer = 0;
         this.respErr = 0;
         this.perguntas();
     },
     
+    onDestroy: function () {
+        cc.audioEngine.pauseAll();
+    },
+    
     goToCredits: function(){
         cc.director.loadScene("credits");
+    },
+    
+    apareceRespostas: function(){
+        if(this.saiAnimacao == 1){
+            this.saiAnimacao = 0;
+            var respErrada1 = this.respostaErrada1b.getComponent(cc.Animation);
+            var respErrada2 = this.respostaErrada2b.getComponent(cc.Animation);
+            var respErrada3 = this.respostaErrada3b.getComponent(cc.Animation);
+            var respErrada4 = this.respostaErrada4b.getComponent(cc.Animation);
+            var resp1 = this.resposta1.getComponent(cc.Animation);
+            var resp2 = this.resposta2.getComponent(cc.Animation);
+            var resp3 = this.resposta3.getComponent(cc.Animation);
+            var resp4 = this.resposta4.getComponent(cc.Animation);
+            var respCerta = this.respostaCerta.getComponent(cc.Animation);
+            var respExtra = this.respostaExtra.getComponent(cc.Animation);
+            var fala = this.falaquizprof.getComponent(cc.Animation);
+            respErrada1.playAdditive('apareceResposta1');
+            respErrada2.playAdditive('apareceResposta2');
+            respErrada3.playAdditive('apareceResposta3');
+            respErrada4.playAdditive('apareceResposta4');
+            resp1.playAdditive('apareceResposta1');
+            resp2.playAdditive('apareceResposta2');
+            resp3.playAdditive('apareceResposta3');
+            resp4.playAdditive('apareceResposta4');
+            fala.playAdditive('apareceFalaProfessor');
+        } else if(this.saiAnimacao === 0){
+            
+        }
     },
 
     // called every frame, uncomment this function to activate update callback
